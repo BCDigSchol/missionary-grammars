@@ -49,3 +49,6 @@ bower.json
 
 # Ignore text images
 /public/img/texts
+
+# Ignore databases
+*.sqlite

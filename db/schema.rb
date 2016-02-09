@@ -13,9 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20160122035554) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "alternate_designations", force: :cascade do |t|
     t.string   "designation"
     t.datetime "created_at",  null: false
@@ -35,8 +32,8 @@ ActiveRecord::Schema.define(version: 20160122035554) do
     t.integer "author_id", null: false
   end
 
-  add_index "authors_texts", ["author_id"], name: "index_authors_texts_on_author_id", using: :btree
-  add_index "authors_texts", ["text_id"], name: "index_authors_texts_on_text_id", using: :btree
+  add_index "authors_texts", ["author_id"], name: "index_authors_texts_on_author_id"
+  add_index "authors_texts", ["text_id"], name: "index_authors_texts_on_text_id"
 
   create_table "languages", force: :cascade do |t|
     t.text     "designation"
@@ -52,31 +49,28 @@ ActiveRecord::Schema.define(version: 20160122035554) do
     t.decimal  "longitude",            precision: 5, scale: 2
   end
 
-  add_index "languages", ["glottocode"], name: "index_languages_on_glottocode", using: :btree
-  add_index "languages", ["iso"], name: "index_languages_on_iso", using: :btree
-  add_index "languages", ["location"], name: "index_languages_on_location", using: :btree
-  add_index "languages", ["macro_classification"], name: "index_languages_on_macro_classification", using: :btree
-  add_index "languages", ["orthography"], name: "index_languages_on_orthography", using: :btree
-  add_index "languages", ["status"], name: "index_languages_on_status", using: :btree
+  add_index "languages", ["glottocode"], name: "index_languages_on_glottocode"
+  add_index "languages", ["iso"], name: "index_languages_on_iso"
+  add_index "languages", ["location"], name: "index_languages_on_location"
+  add_index "languages", ["macro_classification"], name: "index_languages_on_macro_classification"
+  add_index "languages", ["orthography"], name: "index_languages_on_orthography"
+  add_index "languages", ["status"], name: "index_languages_on_status"
 
   create_table "languages_orthographies", id: false, force: :cascade do |t|
     t.integer "language_id",    null: false
     t.integer "orthography_id", null: false
   end
 
-  add_index "languages_orthographies", ["language_id", "orthography_id"], name: "index_languages_orthographies_on_language_id_and_orthography_id", using: :btree
-  add_index "languages_orthographies", ["orthography_id", "language_id"], name: "index_languages_orthographies_on_orthography_id_and_language_id", using: :btree
+  add_index "languages_orthographies", ["language_id", "orthography_id"], name: "index_lang_orth"
+  add_index "languages_orthographies", ["orthography_id", "language_id"], name: "index_orth_lang"
 
-  create_table "languages_texts", force: :cascade do |t|
-    t.integer  "language_id"
-    t.integer  "text_id"
-    t.string   "name"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+  create_table "languages_texts", id: false, force: :cascade do |t|
+    t.integer "language_id", null: false
+    t.integer "text_id",     null: false
   end
 
-  add_index "languages_texts", ["language_id"], name: "index_languages_texts_on_language_id", using: :btree
-  add_index "languages_texts", ["text_id"], name: "index_languages_texts_on_text_id", using: :btree
+  add_index "languages_texts", ["language_id", "text_id"], name: "index_languages_texts_on_language_id_and_text_id"
+  add_index "languages_texts", ["text_id", "language_id"], name: "index_languages_texts_on_text_id_and_language_id"
 
   create_table "missionary_groups", force: :cascade do |t|
     t.string   "name"
@@ -101,8 +95,8 @@ ActiveRecord::Schema.define(version: 20160122035554) do
     t.integer "publisher_id", null: false
   end
 
-  add_index "publishers_texts", ["publisher_id", "text_id"], name: "index_publishers_texts_on_publisher_id_and_text_id", using: :btree
-  add_index "publishers_texts", ["text_id", "publisher_id"], name: "index_publishers_texts_on_text_id_and_publisher_id", using: :btree
+  add_index "publishers_texts", ["publisher_id", "text_id"], name: "index_publishers_texts_on_publisher_id_and_text_id"
+  add_index "publishers_texts", ["text_id", "publisher_id"], name: "index_publishers_texts_on_text_id_and_publisher_id"
 
   create_table "text_categories", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -120,7 +114,7 @@ ActiveRecord::Schema.define(version: 20160122035554) do
     t.string   "digital_copy_url"
     t.string   "hathi_url"
     t.string   "google_url"
-    t.integer  "text_category_id"
+    t.integer  "text_categories_id"
     t.boolean  "by_same_author_flag"
     t.boolean  "preface_flag"
     t.boolean  "foreward_flag"
@@ -149,7 +143,4 @@ ActiveRecord::Schema.define(version: 20160122035554) do
     t.string   "title"
   end
 
-  add_foreign_key "alternate_designations", "languages"
-  add_foreign_key "languages_orthographies", "languages"
-  add_foreign_key "languages_orthographies", "orthographies"
 end
