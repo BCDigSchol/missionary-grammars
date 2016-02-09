@@ -1,0 +1,286 @@
+{
+  "sections": [
+    {
+      "title": "Cover",
+      "page": 1
+    },
+    {
+      "title": "Title page",
+      "page": 5
+    },
+    {
+      "title": "Printer’s page",
+      "page": 7
+    },
+    {
+      "title": "Géographie de la Langue Volofe: sa pronunciation",
+      "page": 9
+    },
+    {
+      "title": "Alphabet Volof",
+      "page": 11
+    },
+    {
+      "title": "Observations",
+      "page": 12
+    },
+    {
+      "title": "Abrégé de la Grammaire Volofe",
+      "page": 13,
+      "sections": [
+        {
+          "title": "Chapitre I",
+          "page": 13,
+          "sections": [
+            {
+              "title": "I. Du nom ou substantif",
+              "page": 13
+            },
+            {
+              "title": "II. Nom propre",
+              "page": 13
+            },
+            {
+              "title": "III. Nom compellatif",
+              "page": 14
+            },
+            {
+              "title": "IV. Noms dérivés",
+              "page": 14
+            }
+          ]
+        },
+        {
+          "title": "Chapitre II: De l’adjectif",
+          "page": 15,
+          "sections": [
+            {
+              "title": "I. De l’article et de l’adjectif défini",
+              "page": 15
+            },
+            {
+              "title": "II. Adjectifs démonstratifs",
+              "page": 17
+            },
+            {
+              "title": "III. Adjectifs possesifs",
+              "page": 18
+            },
+            {
+              "title": "IV. Adjectif interrogatif",
+              "page": 19
+            },
+            {
+              "title": "V. Adjectif numéral cardinal",
+              "page": 19
+            },
+            {
+              "title": "VI. Adjectif numéral ordinal",
+              "page": 20
+            },
+            {
+              "title": "VII. Adjectif indéfini",
+              "page": 21
+            },
+            {
+              "title": "VIII. Adjectif diminutif",
+              "page": 22
+            }
+          ]
+        },
+        {
+          "title": "Chapitre III: Du pronom",
+          "page": 22,
+          "sections": [
+            {
+              "title": "I. Pronom personnel isolé",
+              "page": 22
+            },
+            {
+              "title": "II. Pronoms personnels sujets et régimes",
+              "page": 22
+            },
+            {
+              "title": "III. Pronoms possessifs",
+              "page": 23
+            },
+            {
+              "title": "IV. Autres pronoms",
+              "page": 23
+            }
+          ]
+        },
+        {
+          "title": "Chapitre IV: Du verbe",
+          "page": 23,
+          "sections": [
+            {
+              "title": "I. La conjugaison",
+              "page": 23,
+              "sections": [
+                {
+                  "title": "1º Verbes affirmatifs",
+                  "page": 24,
+                  "sections": [
+                    {
+                      "title": "Voix affirmative",
+                      "page": 26
+                    }
+                  ]
+                },
+                {
+                  "title": "2º Verbes négatifs",
+                  "page": 28,
+                  "sections": [
+                    {
+                      "title": "Voix négative",
+                      "page": 30
+                    }
+                  ]
+                },
+                {
+                  "title": "3º Particules de renforcement",
+                  "page": 32
+                }
+              ]
+            },
+            {
+              "title": "II. Verbes dérivés",
+              "page": 33,
+              "sections": [
+                {
+                  "title": "Formes dérivées de verbes",
+                  "page": 33
+                },
+                {
+                  "title": "Verbes dérivés d’autres espèces de mots",
+                  "page": 36
+                }
+              ]
+            },
+            {
+              "title": "III. Autres verbes. Locutions verbales",
+              "page": 37
+            }
+          ]
+        },
+        {
+          "title": "Chapitre V: Des particules",
+          "page": 0,
+          "sections": [
+            {
+              "title": "Contractions, élisions, lettres euphoniques",
+              "page": 38,
+              "sections": [
+                {
+                  "title": "I. Des adverbes",
+                  "page": 38
+                },
+                {
+                  "title": "II. Prépositions",
+                  "page": 39
+                },
+                {
+                  "title": "III. Contractions",
+                  "page": 39
+                },
+                {
+                  "title": "IV. Élisions",
+                  "page": 40
+                },
+                {
+                  "title": "V. Lettres euphoniques",
+                  "page": 40
+                }
+              ]
+            },
+            {
+              "title": "Chapitre VI: Syntaxe",
+              "page": 41,
+              "sections": [
+                {
+                  "title": "I. Place du pronom sujet",
+                  "page": 41
+                },
+                {
+                  "title": "II. Place du nom sujet",
+                  "page": 42
+                },
+                {
+                  "title": "III. Plusieurs sujets",
+                  "page": 43
+                },
+                {
+                  "title": "IV. Place du pronom complément",
+                  "page": 44
+                },
+                {
+                  "title": "V. Place du nom complément",
+                  "page": 45
+                },
+                {
+                  "title": "VI. Plusieurs compléments",
+                  "page": 46
+                },
+                {
+                  "title": "VII. Infinitif complément",
+                  "page": 47
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Chapitre VII: Manière d’exprimer le souhait, l’admiration, l’interjection. [sic] Degrès de signification.",
+          "page": 47,
+          "sections": [
+            {
+              "title": "I. Le souhait",
+              "page": 47
+            },
+            {
+              "title": "II. L’admiration",
+              "page": 48
+            },
+            {
+              "title": "III. L’interrogation",
+              "page": 48
+            },
+            {
+              "title": "IV. Degrés de signification",
+              "page": 49
+            }
+          ]
+        },
+        {
+          "title": "Chapitre VIII: Traduction et analyse",
+          "page": 51,
+          "sections": [
+            {
+              "title": "Joseph se fait reconnaître par ses frères",
+              "page": 51,
+              "sections": [
+                {
+                  "title": "Yusuf hamélô nă bopa’m fă dôm u bây",
+                  "page": 51
+                },
+                {
+                  "title": "Analyse",
+                  "page": 53
+                }
+              ]
+            },
+            {
+              "title": "Dictionnaire Français Volof (pp. 43– 627)",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "title": "Printer’s and Editor’s seal",
+          "page": 640
+        }
+      ]
+    }
+  ]
+}

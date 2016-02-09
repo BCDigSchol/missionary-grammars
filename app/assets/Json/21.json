@@ -1,0 +1,204 @@
+{
+    "sections": [
+        {
+            "title": "Cover",
+            "page": 0
+        },
+        {
+            "title": "Title page",
+            "page": 0
+        },
+        {
+            "title": "Sango Commercial",
+            "page": 0,
+            "sections": [
+                {
+                    "title": "Lecture",
+                    "page": 0,
+                    "sections": [
+                        {
+                            "title": "Consonnes",
+                            "page": 0
+                        },
+                        {
+                            "title": "Voyelles",
+                            "page": 0
+                        },
+                        {
+                            "title": "Semi-voyelle",
+                            "page": 0
+                        }
+                    ]
+                },
+                {
+                    "title": "Remarques Grammaticales",
+                    "page": 0,
+                    "sections": [
+                        {
+                            "title": "Article",
+                            "page": 0
+                        },
+                        {
+                            "title": "Substantif",
+                            "page": 0,
+                            "sections": [
+                                {
+                                    "title": "Genre",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Nombre",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Particule de relation",
+                                    "page": 0
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Adjectif",
+                            "page": 0,
+                            "sections": [
+                                {
+                                    "title": "Adjectif qualificatif",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Comparatif",
+                                    "page": 0,
+                                    "sections": [
+                                        {
+                                            "title": "De supériorité",
+                                            "page": 0
+                                        },
+                                        {
+                                            "title": "D’infériorité",
+                                            "page": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Superlatif",
+                                    "page": 0,
+                                    "sections": [
+                                        {
+                                            "title": "Relatif",
+                                            "page": 0
+                                        },
+                                        {
+                                            "title": "Absolu",
+                                            "page": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Adjectif numeral",
+                                    "page": 0,
+                                    "sections": [
+                                        {
+                                            "title": "Cardinal",
+                                            "page": 0
+                                        },
+                                        {
+                                            "title": "Ordinal",
+                                            "page": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Adjectif démonstratif",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Adjectif possessif",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Adjectif interrogatif",
+                                    "page": 0
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Pronom",
+                            "page": 0,
+                            "sections": [
+                                {
+                                    "title": "Pronom personnel",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Pronom possessif",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Pronom démonstratif",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Pronom relatif",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Pronom interrogatif",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Pronom indéfini",
+                                    "page": 0
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Verbe",
+                            "page": 0,
+                            "sections": [
+                                {
+                                    "title": "Présent actuel",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Passé",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Futur",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Infinitif",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Forme passive",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Verbe être",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Verbe avoir",
+                                    "page": 0
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Vocabulaire Français–Sango",
+                            "page": 0
+                        }
+                    ]
+                },
+                {
+                    "title": "Vocabulaire Sango–Français",
+                    "page": 0
+                }
+            ]
+        },
+        {
+            "title": "",
+            "page": 0
+        }
+    ]
+}

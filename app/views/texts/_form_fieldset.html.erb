@@ -1,0 +1,7 @@
+<fieldset>
+  <legend><%= fieldset_label %></legend>
+  <%= form.fields_for field do |subform| %>
+      <dt><%= subform.label form_element %></dt>
+      <dd><%= subform.text_field form_element %></dd>
+  <% end %>
+</fieldset>

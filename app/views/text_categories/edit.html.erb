@@ -1,0 +1,9 @@
+<div class="text">
+  <div class="metadata">
+    <h3>Text category</h3>
+    <%= simple_form_for @text_category do |f| %>
+        <%= f.input :name, :as => :string %>
+        <%= f.submit 'Save' %>
+    <% end %>
+  </div>
+</div>

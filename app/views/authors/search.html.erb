@@ -1,0 +1,5 @@
+<ul>
+  <% @authors.each do |author| %>
+      <li><a href="/authors/<%= author.id %>"><%= author.full_name %></a></li>
+  <% end %>
+</ul>

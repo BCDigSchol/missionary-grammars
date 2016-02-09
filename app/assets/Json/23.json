@@ -1,0 +1,208 @@
+{
+    "sections": [
+        {
+            "title": "Cover",
+            "page": 0
+        },
+        {
+            "title": "Title page",
+            "page": 0
+        },
+        {
+            "title": "Ouvrages du même auteur",
+            "page": 0
+        },
+        {
+            "title": "Introduction",
+            "page": 0
+        },
+        {
+            "title": "Alphabet",
+            "page": 0,
+            "sections": [
+                {
+                    "title": "1. Consonnes",
+                    "page": 0
+                },
+                {
+                    "title": "2. Semi-voyelles",
+                    "page": 0
+                },
+                {
+                    "title": "3. Voyelles",
+                    "page": 0
+                },
+                {
+                    "title": "Sons Intermédiares",
+                    "page": 0
+                },
+                {
+                    "title": "Classe du Gmbwaga",
+                    "page": 0
+                },
+                {
+                    "title": "Accentuation",
+                    "page": 0
+                },
+                {
+                    "title": "Accent Tonique",
+                    "page": 0
+                },
+                {
+                    "title": "Accent de Hauteur",
+                    "page": 0
+                }
+            ]
+        },
+        {
+            "title": "Article",
+            "page": 0
+        },
+        {
+            "title": "Substantif",
+            "page": 0
+        },
+        {
+            "title": "Genre",
+            "page": 0
+        },
+        {
+            "title": "Sexe",
+            "page": 0
+        },
+        {
+            "title": "Nombre",
+            "page": 0
+        },
+        {
+            "title": "Relation de deux noms",
+            "page": 0
+        },
+        {
+            "title": "Adjectif",
+            "page": 0
+        },
+        {
+            "title": "Adjectifs qualificatifs",
+            "page": 0
+        },
+        {
+            "title": "Substantifs employés comme adjectifs",
+            "page": 0,
+            "sections": [
+                {
+                    "title": "Verbes employés comme adjectifs",
+                    "page": 0
+                },
+                {
+                    "title": "Comparatif",
+                    "page": 0,
+                    "sections": [
+                        {
+                            "title": "Comparatif d’égalité",
+                            "page": 0
+                        },
+                        {
+                            "title": "Comparatif de supériorité",
+                            "page": 0
+                        },
+                        {
+                            "title": "Comparatif d’infériorité",
+                            "page": 0
+                        }
+                    ]
+                },
+                {
+                    "title": "Superlatif",
+                    "page": 0,
+                    "sections": [
+                        {
+                            "title": "Superlatif relatif",
+                            "page": 0
+                        },
+                        {
+                            "title": "Superlatif absolu",
+                            "page": 0
+                        }
+                    ]
+                },
+                {
+                    "title": "Adjectifs numéraux",
+                    "page": 0,
+                    "sections": [
+                        {
+                            "title": "Adjectifs distributifs",
+                            "page": 0
+                        }
+                    ]
+                },
+                {
+                    "title": "Pronom démonstratif",
+                    "page": 0
+                },
+                {
+                    "title": "Pronoms relatifs ou conjonctifs",
+                    "page": 0
+                },
+                {
+                    "title": "Adjectifs démonstratifs",
+                    "page": 0
+                },
+                {
+                    "title": "Pronoms relatifs interrogatifs",
+                    "page": 0
+                },
+                {
+                    "title": "Pronoms personnels",
+                    "page": 0
+                },
+                {
+                    "title": "Adjectifs possessifs",
+                    "page": 0
+                },
+                {
+                    "title": "Pronoms possessifs",
+                    "page": 0
+                },
+                {
+                    "title": "Verbe",
+                    "page": 0,
+                    "sections": [
+                        {
+                            "title": "Sortes de verbes– Formes de verbes",
+                            "page": 0
+                        },
+                        {
+                            "title": "Conjugaison négative",
+                            "page": 0
+                        },
+                        {
+                            "title": "Conjugaison interrogative",
+                            "page": 0
+                        },
+                        {
+                            "title": "Verbe “être”",
+                            "page": 0
+                        },
+                        {
+                            "title": "Verbe “avoir”",
+                            "page": 0
+                        },
+                        {
+                            "title": "Adverbes",
+                            "page": 0
+                        }
+                    ]
+                },
+                {
+                    "title": "Vocabulaire (pp. [30]–204)",
+                    "page": 0
+                }
+            ]
+        },
+        {
+            "title": "",
+            "page": 0
+        }
+    ]
+}

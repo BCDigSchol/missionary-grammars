@@ -1,0 +1,16 @@
+<h1>Languages</h1>
+
+<ul>
+  <% @languages.each do |language| %>
+      <li><%= link_to language.designation, language_path(language) %>
+      <% if logged_in? %>
+          <%= link_to 'delete', language_path(language.id), :method => :delete, :class => 'delete', :confirm => 'Are you sure ?' %>
+      <% end %>
+      </li>
+  <% end %>
+</ul>
+
+
+<% if logged_in? %>
+    <%= link_to '+ New language', :controller => :languages, :action => :new %>
+<% end %>

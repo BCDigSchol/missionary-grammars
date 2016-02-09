@@ -1,0 +1,666 @@
+{
+    "sections": [
+        {
+            "title": "Cover",
+            "page": 0
+        },
+        {
+            "title": "Half title",
+            "page": 0
+        },
+        {
+            "title": "Permis d’imprimer",
+            "page": 0
+        },
+        {
+            "title": "Title page",
+            "page": 0
+        },
+        {
+            "title": "Préface",
+            "page": 0
+        },
+        {
+            "title": "Grammaire Ibo",
+            "page": 0,
+            "sections": [
+                {
+                    "title": "Division",
+                    "page": 0
+                },
+                {
+                    "title": "Première partie",
+                    "page": 0,
+                    "sections": [
+                        {
+                            "title": "Notions genérales",
+                            "page": 0,
+                            "sections": [
+                                {
+                                    "title": "§ I. Phonétique",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "§ II. Alphabet et prononciation",
+                                    "page": 0,
+                                    "sections": [
+                                        {
+                                            "title": "Voyelles",
+                                            "page": 0
+                                        },
+                                        {
+                                            "title": "Demi-Consonnes",
+                                            "page": 0
+                                        },
+                                        {
+                                            "title": "Consonnes",
+                                            "page": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "§ III. Mots racines ou racines verbales",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "§ IV.Préfixes",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "§ V.Suffixes",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "§ VI.Mots simples et mots composés",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "§ VII.De l’élision",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "§ VIII.Accent grammatical et accent tonique",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "§ IX. Sens positif, négatif et interrogatif",
+                                    "page": 0
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Deuxième partie",
+                            "page": 0
+                        },
+                        {
+                            "title": "Étude du mot",
+                            "page": 0
+                        },
+                        {
+                            "title": "Chapitre I.– Le substantif",
+                            "page": 0,
+                            "sections": [
+                                {
+                                    "title": "Notions genérales",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "§ I. Régime du substantif",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "§ II. Du genre",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "§ III. Du nombre",
+                                    "page": 0
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Chapitre II.– L’Adjectif",
+                            "page": 0,
+                            "sections": [
+                                {
+                                    "title": "Notions genérales",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Art. I.– Des adjectifs qualificatifs",
+                                    "page": 0,
+                                    "sections": [
+                                        {
+                                            "title": "§ I. Comparatif d’infériorité",
+                                            "page": 0
+                                        },
+                                        {
+                                            "title": "§ II. Comparatif d’égalité",
+                                            "page": 0
+                                        },
+                                        {
+                                            "title": "§ III. Comparatif de supériorité",
+                                            "page": 0
+                                        },
+                                        {
+                                            "title": "§ IV. Du superlatif",
+                                            "page": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Art. I.– Des adjectifs déterminatifs",
+                                    "page": 0,
+                                    "sections": [
+                                        {
+                                            "title": "§ I. De l’adjectif démonstratif",
+                                            "page": 0
+                                        },
+                                        {
+                                            "title": "§ II. De l’adjectif possessif",
+                                            "page": 0
+                                        },
+                                        {
+                                            "title": "§ III. De l’adjectif numéral",
+                                            "page": 0,
+                                            "sections": [
+                                                {
+                                                    "title": "1. Adjectifs numéraux cardinaux",
+                                                    "page": 0
+                                                },
+                                                {
+                                                    "title": "1. Adjectifs numéraux ordinaux",
+                                                    "page": 0
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "title": "§ IV. De l’adjectif indéfini",
+                                            "page": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Chapitre III.– Le pronom",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Notions genérales",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Art. I.– Pronom personnel",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Art. II.– Pronom possessif",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Art. III.– Pronom démonstratif",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Art. IV.– Pronom interrogatif",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Art. V.– Pronom relatif",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Art. VI.– Pronom indéfini",
+                                    "page": 0
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Chapitre IV.– Le verbe",
+                            "page": 0,
+                            "sections": [
+                                {
+                                    "title": "Notions genérales",
+                                    "page": 0
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Art. I.– Verbes en A ou E",
+                            "page": 0,
+                            "sections": [
+                                {
+                                    "title": "Art. II.– Verbes multipersonnels",
+                                    "page": 0,
+                                    "sections": [
+                                        {
+                                            "title": "§ I. Verbes auxiliares",
+                                            "page": 0
+                                        },
+                                        {
+                                            "title": "§ II. Verbes actifs",
+                                            "page": 0,
+                                            "sections": [
+                                                {
+                                                    "title": "Conjugaison",
+                                                    "page": 0,
+                                                    "sections": [
+                                                        {
+                                                            "title": "1. Forme affirmative",
+                                                            "page": 0
+                                                        },
+                                                        {
+                                                            "title": "2. Forme négative",
+                                                            "page": 0
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "title": "Art. III.– Verbes unipersonnels",
+                                                    "page": 0
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "title": "§ I. Verbes passifs",
+                                            "page": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "1. Forme affirmative",
+                                    "page": 0,
+                                    "sections": [
+                                        {
+                                            "title": "2. Forme négative",
+                                            "page": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "§ II. Verbes neutres",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Art. IV.– Verbes réduplicatifs",
+                                    "page": 0
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Chapitre V.– La préposition",
+                            "page": 0,
+                            "sections": [
+                                {
+                                    "title": "I. Des prépositions simples",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "II. Des prépositions composées",
+                                    "page": 0
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Chapitre VI.– L’Adverbe",
+                            "page": 0,
+                            "sections": [
+                                {
+                                    "title": "Adverbes de lieu",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Adverbes de temps",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Adverbes de manière",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Adverbes de quantité",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Adverbes d’affirmation, négation, doute",
+                                    "page": 0
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Chapitre VII.– La conjonction",
+                            "page": 0
+                        },
+                        {
+                            "title": "Chapitre VIII.– L’Interjection",
+                            "page": 0
+                        },
+                        {
+                            "title": "Exercice sur la grammaire Ibo (pp. [90]–111)",
+                            "page": 0,
+                            "sections": [
+                                {
+                                    "title": "Exercices I–XXXII",
+                                    "page": 0
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Troisième partie",
+                            "page": 0
+                        },
+                        {
+                            "title": "Syntaxe, ou étude des mots réunis en phrases",
+                            "page": 0
+                        },
+                        {
+                            "title": "Section I.– La préposition",
+                            "page": 0,
+                            "sections": [
+                                {
+                                    "title": "§ I.– Analyse grammaticale",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "§ II.– Analyse logique",
+                                    "page": 0
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Section II.– Le mot dans la phrase",
+                            "page": 0,
+                            "sections": [
+                                {
+                                    "title": "Chapitre I.– Le substantif",
+                                    "page": 0,
+                                    "sections": [
+                                        {
+                                            "title": "I. – Noms abstraits",
+                                            "page": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "II. – Noms d’arbres",
+                                    "page": 0
+                                }
+                            ]
+                        },
+                        {
+                            "title": "III. – Noms désignant le métier ou l’origine",
+                            "page": 0
+                        }
+                    ]
+                },
+                {
+                    "title": "IV. – Noms formés par une particule préfixe",
+                    "page": 0
+                }
+            ]
+        },
+        {
+            "title": "V. – Noms d’origine étrangère",
+            "page": 0
+        },
+        {
+            "title": "Chapitre II.– L’Adjectif",
+            "page": 0,
+            "sections": [
+                {
+                    "title": "[sic] II. Place des adjectifs dans la phrase",
+                    "page": 0
+                }
+            ]
+        },
+        {
+            "title": "Chapitre II.– Le pronom",
+            "page": 0,
+            "sections": [
+                {
+                    "title": "I. Emploi du pronom personnel",
+                    "page": 0
+                }
+            ]
+        },
+        {
+            "title": "I.– Sujet",
+            "page": 0,
+            "sections": [
+                {
+                    "title": "II.– Compléments directs et indirects",
+                    "page": 0
+                }
+            ]
+        },
+        {
+            "title": "II. Emploi des autres pronoms",
+            "page": 0
+        },
+        {
+            "title": "Chapitre III.– Le verbe",
+            "page": 0,
+            "sections": [
+                {
+                    "title": "I. Emploi du verbe être",
+                    "page": 0
+                },
+                {
+                    "title": "II. Différentes sortes de verbes",
+                    "page": 0
+                },
+                {
+                    "title": "III. Valeur des temps",
+                    "page": 0
+                },
+                {
+                    "title": "IV. Remarque sur les verbes avec A ou E préfixes",
+                    "page": 0
+                },
+                {
+                    "title": "V. Remarque sur les verbes qui prennent A ou E suffixes",
+                    "page": 0
+                }
+            ]
+        },
+        {
+            "title": "Section III.– Idiotismes",
+            "page": 0,
+            "sections": [
+                {
+                    "title": "Chapitre I.– Manière d’unir les phrases",
+                    "page": 0
+                }
+            ]
+        },
+        {
+            "title": "Chapitre II.– Formules de politesse",
+            "page": 0
+        },
+        {
+            "title": "Chapitre III.– Des termes employés pour désigner le temps",
+            "page": 0,
+            "sections": [
+                {
+                    "title": "Exercices de récapitulation (pp. 141–147)",
+                    "page": 0,
+                    "sections": [
+                        {
+                            "title": "Versions I–XII",
+                            "page": 0
+                        }
+                    ]
+                },
+                {
+                    "title": "Supplément",
+                    "page": 0
+                },
+                {
+                    "title": "Lexique Français–Ibó (pp.148–170)",
+                    "page": 0,
+                    "sections": [
+                        {
+                            "title": "Dieu, le ciel, la religion",
+                            "page": 0
+                        },
+                        {
+                            "title": "Le démon, l’enfer, l’irréligion",
+                            "page": 0
+                        },
+                        {
+                            "title": "L’homme, la famille, la race",
+                            "page": 0
+                        },
+                        {
+                            "title": "La terre, le ciel, les éléments",
+                            "page": 0
+                        },
+                        {
+                            "title": "L’habitation, le nécessaire",
+                            "page": 0
+                        },
+                        {
+                            "title": "Le corps, les membres",
+                            "page": 0
+                        },
+                        {
+                            "title": "Les aliments",
+                            "page": 0
+                        },
+                        {
+                            "title": "Le marché",
+                            "page": 0
+                        },
+                        {
+                            "title": "Le pays et les environs",
+                            "page": 0
+                        },
+                        {
+                            "title": "Le sol, les arbres",
+                            "page": 0
+                        },
+                        {
+                            "title": "Les animaux, les insectes, les oiseaux",
+                            "page": 0
+                        },
+                        {
+                            "title": "Les choses, les ustensiles",
+                            "page": 0
+                        },
+                        {
+                            "title": "Les métiers, les professions",
+                            "page": 0
+                        },
+                        {
+                            "title": "Les noms abstraits",
+                            "page": 0
+                        },
+                        {
+                            "title": "Adjectifs qualificatifs",
+                            "page": 0
+                        },
+                        {
+                            "title": "Adjectifs déterminatifs",
+                            "page": 0
+                        },
+                        {
+                            "title": "Pronoms",
+                            "page": 0
+                        },
+                        {
+                            "title": "Verbes",
+                            "page": 0
+                        },
+                        {
+                            "title": "Prépositions",
+                            "page": 0
+                        },
+                        {
+                            "title": "Adverbes",
+                            "page": 0
+                        },
+                        {
+                            "title": "Conjonctions",
+                            "page": 0
+                        },
+                        {
+                            "title": "Interjections",
+                            "page": 0
+                        }
+                    ]
+                },
+                {
+                    "title": "Lexique Ibó–Français (pp.171–203)",
+                    "page": 0,
+                    "sections": [
+                        {
+                            "title": "Le substantif– Noms simples",
+                            "page": 0
+                        },
+                        {
+                            "title": "Noms composés",
+                            "page": 0
+                        },
+                        {
+                            "title": "Adjectifs qualificatifs simples",
+                            "page": 0
+                        },
+                        {
+                            "title": "Adjectifs qualificatifs composés",
+                            "page": 0
+                        },
+                        {
+                            "title": "Adjectifs déterminatifs",
+                            "page": 0
+                        },
+                        {
+                            "title": "Pronoms",
+                            "page": 0
+                        },
+                        {
+                            "title": "Verbes",
+                            "page": 0
+                        },
+                        {
+                            "title": "Prépositions",
+                            "page": 0
+                        },
+                        {
+                            "title": "Adverbes",
+                            "page": 0
+                        },
+                        {
+                            "title": "Conjonctions",
+                            "page": 0
+                        },
+                        {
+                            "title": "Interjections",
+                            "page": 0
+                        }
+                    ]
+                },
+                {
+                    "title": "Noms propres",
+                    "page": 0,
+                    "sections": [
+                        {
+                            "title": "Noms propres d’hommes",
+                            "page": 0
+                        },
+                        {
+                            "title": "Noms propres de femmes",
+                            "page": 0
+                        }
+                    ]
+                },
+                {
+                    "title": "Table alphabetique des matières",
+                    "page": 0
+                }
+            ]
+        },
+        {
+            "title": "",
+            "page": 0
+        }
+    ]
+}

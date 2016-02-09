@@ -1,0 +1,324 @@
+{
+    "sections": [
+        {
+            "title": "Half title page",
+            "page": 0
+        },
+        {
+            "title": "Page d’imprimeur",
+            "page": 0
+        },
+        {
+            "title": "Title page",
+            "page": 0
+        },
+        {
+            "title": "Préface",
+            "page": 0
+        },
+        {
+            "title": "Grammaire de la langue pongouée parlée au Gabon (Guinée)",
+            "page": 0,
+            "sections": [
+                {
+                    "title": "Chapitre I. De l’orthographe et de la prononciation",
+                    "page": 0
+                },
+                {
+                    "title": "Chapitre II. Du nom",
+                    "page": 0,
+                    "sections": [
+                        {
+                            "title": "§ I. – Du genre",
+                            "page": 0
+                        },
+                        {
+                            "title": "§ II. – De la formation du pluriel",
+                            "page": 0
+                        },
+                        {
+                            "title": "§ III. – Noms irréguliers",
+                            "page": 0
+                        }
+                    ]
+                },
+                {
+                    "title": "Chapitre III. Du relatif",
+                    "page": 0,
+                    "sections": [
+                        {
+                            "title": "§ I. – Accord du relatif avec le nom",
+                            "page": 0
+                        },
+                        {
+                            "title": "§ II. – Signification des relatifs",
+                            "page": 0
+                        }
+                    ]
+                },
+                {
+                    "title": "Chapitre IV. De l’adjectif",
+                    "page": 0,
+                    "sections": [
+                        {
+                            "title": "Première section: des adjectifs qualificatifs",
+                            "page": 0,
+                            "sections": [
+                                {
+                                    "title": "§ I. – Première classe d’adjectifs qualificatifs",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "§ II. – Deuxième classe d’adjectifs qualificatifs",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "§ III. – Troisième classe d’adjectifs qualificatifs",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "§ IV. – Quatrième classe d’adjectifs qualificatifs",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "§ V. – Des adjectifs verbaux",
+                                    "page": 0
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Deuxième section: des adjectifs déterminatifs",
+                            "page": 0,
+                            "sections": [
+                                {
+                                    "title": "§ I. – Des adjectifs numéraux",
+                                    "page": 0,
+                                    "sections": [
+                                        {
+                                            "title": "1º Nombres cardinaux",
+                                            "page": 0
+                                        },
+                                        {
+                                            "title": "2º Nombres ordinaux",
+                                            "page": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "§ II. – Des adjectifs démonstratifs",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "§ III. – Des adjectifs possessifs",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "§ IV. – Des adjectifs indéfinis",
+                                    "page": 0
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Chapitre V. Du pronom",
+                            "page": 0
+                        },
+                        {
+                            "title": "§ I. – Des pronoms personnels",
+                            "page": 0
+                        },
+                        {
+                            "title": "§ II. – Des pronoms démonstratifs",
+                            "page": 0
+                        },
+                        {
+                            "title": "§ III. – Des pronoms possessifs",
+                            "page": 0
+                        },
+                        {
+                            "title": "§ IV. – Des pronoms relatifs",
+                            "page": 0
+                        },
+                        {
+                            "title": "§ V. – Des pronoms indéfinis",
+                            "page": 0
+                        }
+                    ]
+                },
+                {
+                    "title": "Chapitre VI. Du verbe",
+                    "page": 0,
+                    "sections": [
+                        {
+                            "title": "§ I. – Notions préliminaires",
+                            "page": 0
+                        },
+                        {
+                            "title": "§ II. – Conjugaisons avec leurs formes les plus usitées",
+                            "page": 0,
+                            "sections": [
+                                {
+                                    "title": "Première conjugaison",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Deuxième conjugaison",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Troisième conjugaison",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Quatrième conjugaison",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Cinquième conjugaison",
+                                    "page": 0,
+                                    "sections": [
+                                        {
+                                            "title": "Sixième conjugaison",
+                                            "page": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "§ III. – Verbes pronominaux",
+                                    "page": 0
+                                }
+                            ]
+                        },
+                        {
+                            "title": "§ IV. – Verbes irréguliers",
+                            "page": 0
+                        },
+                        {
+                            "title": "§ V. – Verbes négatifs",
+                            "page": 0,
+                            "sections": [
+                                {
+                                    "title": "Première conjugaison négative",
+                                    "page": 0
+                                }
+                            ]
+                        },
+                        {
+                            "title": "§ VI. – Verbes dont l’action ou l’action se répètent",
+                            "page": 0
+                        }
+                    ]
+                },
+                {
+                    "title": "Chapitre VII. Du participe",
+                    "page": 0
+                },
+                {
+                    "title": "§ I. – Participe présent",
+                    "page": 0,
+                    "sections": [
+                        {
+                            "title": "§ II. – Participe passé",
+                            "page": 0
+                        }
+                    ]
+                },
+                {
+                    "title": "Chapitre VIII. De l’adverbe",
+                    "page": 0,
+                    "sections": [
+                        {
+                            "title": "Adverbes les plus usités",
+                            "page": 0
+                        }
+                    ]
+                },
+                {
+                    "title": "Chapitre IX. De la préposition",
+                    "page": 0,
+                    "sections": [
+                        {
+                            "title": "Prépositions les plus usitées",
+                            "page": 0
+                        }
+                    ]
+                },
+                {
+                    "title": "Chapitre X. De la conjonction",
+                    "page": 0,
+                    "sections": [
+                        {
+                            "title": "Conjonction les plus usitées",
+                            "page": 0
+                        }
+                    ]
+                },
+                {
+                    "title": "Chapitre XI. De l’interjection",
+                    "page": 0,
+                    "sections": [
+                        {
+                            "title": "Interjections et locutions interjectives les plus usitées",
+                            "page": 0
+                        }
+                    ]
+                },
+                {
+                    "title": "Chapitre XII. Notions complémentaires",
+                    "page": 0,
+                    "sections": [
+                        {
+                            "title": "§ I. – Substantifs verbaux",
+                            "page": 0,
+                            "sections": [
+                                {
+                                    "title": "Première espèce de substantifs verbaux",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Deuxième espèce de substantifs verbaux",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Troisième espèce de substantifs verbaux",
+                                    "page": 0
+                                },
+                                {
+                                    "title": "Quatrième espèce de substantifs verbaux",
+                                    "page": 0
+                                }
+                            ]
+                        },
+                        {
+                            "title": "§ II. – Des degrés de signification dans les adjectifs",
+                            "page": 0
+                        },
+                        {
+                            "title": "§ III. – Du verbe",
+                            "page": 0
+                        },
+                        {
+                            "title": "§ IV. – De l’adverbe",
+                            "page": 0
+                        },
+                        {
+                            "title": "§ V. – De l’élision, de l’euphonie",
+                            "page": 0
+                        },
+                        {
+                            "title": "§ VI. – Formules de salutations les plus usitées en Pongoué",
+                            "page": 0
+                        }
+                    ]
+                },
+                {
+                    "title": "Table des matières",
+                    "page": 0
+                }
+            ]
+        },
+        {
+            "title": "",
+            "page": 0
+        }
+    ]
+}

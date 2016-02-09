@@ -1,0 +1,10 @@
+<h1>Authors</h1>
+
+<ul>
+  <% @authors.each do |author| %>
+      <li><%= link_to author.full_name, controller: "authors", action: "edit", id: author.id %>
+        <%= link_to 'delete', author_path(author.id), :method => :delete, :class => 'delete', :confirm => 'Are you sure ?' %>
+      </li>
+  <% end %>
+</ul>
+<%= link_to '+ New author', :controller => :authors, :action => "new" %>

@@ -1,0 +1,10 @@
+<h2>Publishers</h2>
+<ul>
+  <% @publishers.each do |publisher| %>
+      <li>
+        <%= link_to publisher.name, controller: "publishers", action: "edit", id: publisher.id %>
+        <%= link_to 'delete', publisher_path(publisher.id), :method => :delete, :class => 'delete', :confirm => 'Are you sure ?' %>
+      </li>
+  <% end %>
+</ul>
+<%= link_to '+ New publisher', :controller => :publishers, :action => :new %>

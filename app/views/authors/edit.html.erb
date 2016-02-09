@@ -1,0 +1,17 @@
+<div class="text">
+  <div class="metadata">
+
+    <h3>Author</h3>
+    <%= form_for @author do |f| %>
+        <dl>
+          <dt>Last</dt>
+          <dd><%= f.text_field(:last) %></dd>
+
+          <dt>First</dt>
+          <dd><%= f.text_field(:first) %></dd>
+
+        </dl>
+        <%= submit_tag("Update") %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<h1>Orthographies</h1>
+<ul>
+  <% @orthographies.each do |orthography| %>
+      <li><%= link_to orthography.name, controller: 'orthographies', action: 'edit', id: orthography %>
+        <%= link_to 'delete', orthography_path(orthography.id), :method => :delete, :class => 'delete', :confirm => 'Are you sure ?' %>
+      </li>
+  <% end %>
+</ul>
+
+<%= link_to '+ New orthography', :controller => :orthographies, :action => :new %>

@@ -1,0 +1,11 @@
+<h1>Groups</h1>
+<ul>
+  <% @groups.each do |group| %>
+      <li>
+        <%= link_to group.name, controller: "missionary_groups", action: "edit", id: group.id %>
+        <%= link_to 'delete', missionary_group_path(group.id), :method => :delete, :class => 'delete', :confirm => 'Are you sure ?' %>
+      </li>
+  <% end %>
+</ul>
+
+<%= link_to '+ New group', :controller => :missionary_groups, :action => :new %>

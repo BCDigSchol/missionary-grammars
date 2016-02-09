@@ -1,0 +1,73 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  missionary_group: 
+  publication_year: 1
+  edition_node: MyText
+  publication_place: MyString
+  publisher: 
+  holding_library: MyString
+  holding_details: MyString
+  digital_copy_url: MyString
+  hathi_url: MyString
+  google_url: MyString
+  text_category: 
+  by_same_author_flag: false
+  preface_flag: false
+  foreward_flag: false
+  table_of_prefixes_flag: false
+  introduction_flag: false
+  alphabet_flag: false
+  orthography_flag: false
+  notize_flag: false
+  prounciation_flag: false
+  orthography_and_pronunciation_flag: false
+  observations_flag: false
+  grammatical_sketch_flag: false
+  grammar_summary_flag: false
+  rules_of_language_flag: false
+  phrase_collection_flag: false
+  signs_and_abbreviations_flag: false
+  abbreviations_flag: false
+  sodality_flag: false
+  bulletin_flag: false
+  proper_names_flag: false
+  appendix_flag: false
+  addenda_flag: false
+  contents_flag: false
+
+two:
+  missionary_group: 
+  publication_year: 1
+  edition_node: MyText
+  publication_place: MyString
+  publisher: 
+  holding_library: MyString
+  holding_details: MyString
+  digital_copy_url: MyString
+  hathi_url: MyString
+  google_url: MyString
+  text_category: 
+  by_same_author_flag: false
+  preface_flag: false
+  foreward_flag: false
+  table_of_prefixes_flag: false
+  introduction_flag: false
+  alphabet_flag: false
+  orthography_flag: false
+  notize_flag: false
+  prounciation_flag: false
+  orthography_and_pronunciation_flag: false
+  observations_flag: false
+  grammatical_sketch_flag: false
+  grammar_summary_flag: false
+  rules_of_language_flag: false
+  phrase_collection_flag: false
+  signs_and_abbreviations_flag: false
+  abbreviations_flag: false
+  sodality_flag: false
+  bulletin_flag: false
+  proper_names_flag: false
+  appendix_flag: false
+  addenda_flag: false
+  contents_flag: false

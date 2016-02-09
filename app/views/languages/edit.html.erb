@@ -1,0 +1,23 @@
+<div class="text">
+  <div class="metadata">
+    <%= simple_form_for @language do |f| %>
+        <%= f.input :designation, :as => :string %>
+        <div class="input">
+          <%= f.label :alternate_designations %>
+          <%= collection_select :language, :alternate_designation_ids, AlternateDesignation.order('designation ASC'), :id, :designation, {:selected => @language.alternate_designation_ids}, {:multiple => true, :name => 'language[alternate_designation_ids][]'} -%>
+        </div>
+        <%= f.input :location %>
+        <%= f.input :iso, :as => :string %>
+        <%= f.input :status, :as => :string %>
+        <div class="input">
+          <%= f.label :orthographies %>
+          <%= collection_select :language, :orthography_ids, Orthography.order('name ASC'), :id, :name, {:selected => @language.orthography_ids}, {:multiple => true, :name => 'language[orthography_ids][]'} -%>
+        </div>
+        <%= f.input :macro_classification, :as => :string %>
+        <%= f.input :glottocode, :as => :string %>
+        <%= f.input :latitude, :as => :string %>
+        <%= f.input :longitude, :as => :string %>
+        <%= f.button :submit %>
+    <% end %>
+  </div>
+</div>

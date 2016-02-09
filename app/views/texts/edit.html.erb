@@ -1,0 +1,58 @@
+<h2><cite><%= @text.title %></cite></h2>
+
+<% if @text.id == 13 %>
+    <a href="/texts/13/read/">read</a>
+<% end %>
+
+<div class="text">
+  <div class="metadata">
+    <%= simple_form_for @text do |f| %>
+        <%= f.input :title, :as => :text %>
+
+        <div class="input">
+          <label>Languages</label>
+          <%= collection_select :text, :language_ids, Language.order('designation ASC'), :id, :designation, {:selected => @text.language_ids}, {:multiple => true, :name => 'text[language_ids][]'} -%>
+        </div>
+
+        <div class="input">
+          <label>Authors</label>
+          <%= collection_select :text, :author_ids, Author.order('last ASC'), :id, :full_name, {:selected => @text.author_ids}, {:multiple => true, :name => 'text[author_ids][]'} -%>
+        </div>
+
+        <%= f.association :missionary_group, label_method: :name %>
+        <%= f.association :publishers, collection: Publisher.order('name ASC'), label_method: :name %>
+        <%= f.input :publication_year, :as => :string %>
+        <%= f.input :publication_place, :as => :string %>
+        <%= f.input :edition_note %>
+        <%= f.input :holding_library, :as => :string %>
+        <%= f.input :holding_details, :as => :string %>
+        <%= f.input :digital_copy_url, :as => :string %>
+        <%= f.input :google_url, :as => :string %>
+        <%= f.input :hathi_url, :as => :string %>
+
+        <%= f.association :text_category, collection: TextCategory.order('name ASC'), label_method: :name %>
+
+
+        <h3 class="flags">Flags</h3>
+
+        <% @flags.each do |attr_name| %>
+            <% if attr_name.include? '_flag' %>
+                <%= f.input attr_name %>
+            <% end %>
+        <% end %>
+
+        <%= f.submit 'Save' %>
+
+    <% end %>
+  </div>
+
+  <div class="languages">
+    <h3>Languages</h3>
+    <ul>
+      <% @text.languages.each do |language| %>
+          <li><%= link_to language.designation, language_path(language) %></li>
+      <% end %>
+    </ul>
+  </div>
+
+</div>

@@ -1,0 +1,17 @@
+<%= form_for @language do |f| %>
+    <p>
+      <%= f.label :designation %><br>
+      <%= f.text_field :designation %>
+    </p>
+    <input type="text" list="browsers" />
+    <datalist id="browsers">
+      <option value="Internet Explorer">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>
+    <p>
+      <%= f.submit %>
+    </p>
+<% end %>

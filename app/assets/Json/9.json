@@ -1,0 +1,246 @@
+{
+  "sections": [
+    {
+      "title": "Cover",
+      "page": 1
+    },
+    {
+      "title": "Title page",
+      "page": 5
+    },
+    {
+      "title": "Half title page",
+      "page": 7
+    },
+    {
+      "title": "Principes de la langue Soso",
+      "page": 9,
+      "sections": [
+        {
+          "title": "Chapitre I.De l’orthographe et de la prononciation",
+          "page": 9
+        },
+        {
+          "title": "Chapitre II.Du nom ou substantif",
+          "page": 10
+        },
+        {
+          "title": "Chapitre III.De l’adjectif",
+          "page": 11,
+          "sections": [
+            {
+              "title": "§ 1.  – Des adjectifs qualificatifs",
+              "page": 11
+            },
+            {
+              "title": "§ 2. – Des adjectifs numéraux",
+              "page": 12
+            },
+            {
+              "title": "§ 3. – Des adjectifs démonstratifs",
+              "page": 15
+            },
+            {
+              "title": "§ 4. – Des adjectifs possessifs",
+              "page": 15
+            },
+            {
+              "title": "§ 5. – Des adjectifs interrogatifs",
+              "page": 16
+            },
+            {
+              "title": "§ 6. – Des adjectifs indéfinis",
+              "page": 17
+            }
+          ]
+        },
+        {
+          "title": "Chapitre IV.Des pronoms",
+          "page": 17,
+          "sections": [
+            {
+              "title": "§ 1.  – Des pronoms personnels",
+              "page": 17
+            },
+            {
+              "title": "§ 2. – Des pronoms possessifs",
+              "page": 18
+            },
+            {
+              "title": "§ 3. – Des pronoms démonstratifs",
+              "page": 19
+            },
+            {
+              "title": "§ 4. – Des pronoms relatifs",
+              "page": 19
+            },
+            {
+              "title": "§ 5. – Des pronoms interrogatifs",
+              "page": 19
+            },
+            {
+              "title": "§ [sic] 4. – Des pronoms indéfinis",
+              "page": 19
+            }
+          ]
+        },
+        {
+          "title": "Chapitre V.Des verbes",
+          "page": 20,
+          "sections": [
+            {
+              "title": "Verbe ÊTRE, na et ra",
+              "page": 21
+            },
+            {
+              "title": "Verbe AVOIR",
+              "page": 23
+            },
+            {
+              "title": "FA, VENIR",
+              "page": 23
+            }
+          ]
+        },
+        {
+          "title": "Chapitre VI.De l’adverbe",
+          "page": 25
+        },
+        {
+          "title": "Chapitre VII.De la préposition",
+          "page": 27
+        },
+        {
+          "title": "Chapitre VIII.De la conjonction",
+          "page": 28
+        },
+        {
+          "title": "Chapitre IX.De l’interjection",
+          "page": 28
+        },
+        {
+          "title": "Chapitre X.Règles diverses",
+          "page": 29,
+          "sections": [
+            {
+              "title": "Différences",
+              "page": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recueil de phrases usuelles",
+      "page": 33,
+      "sections": [
+        {
+          "title": "I.  – Saluts de rencontre",
+          "page": 33
+        },
+        {
+          "title": "II. – Pour questionner, répondre",
+          "page": 35
+        },
+        {
+          "title": "III. – Pour offrir",
+          "page": 36
+        },
+        {
+          "title": "IV. – Pour demander",
+          "page": 36
+        },
+        {
+          "title": "V. – Pour accorder",
+          "page": 37
+        },
+        {
+          "title": "VI. – Pour refuser, s’excuser",
+          "page": 37
+        },
+        {
+          "title": "[sic] VI. – Pour remercier",
+          "page": 38
+        },
+        {
+          "title": "VII. – Pour consulter",
+          "page": 39
+        },
+        {
+          "title": "VIII. – La probabilité",
+          "page": 40
+        },
+        {
+          "title": "IX. – Le doute, la surprise",
+          "page": 40
+        },
+        {
+          "title": "X. – Les reproches",
+          "page": 41
+        },
+        {
+          "title": "XI. – Une visite",
+          "page": 41
+        },
+        {
+          "title": "XII. – Le temps",
+          "page": 43
+        },
+        {
+          "title": "XIII. – Blanchisseuses",
+          "page": 43
+        },
+        {
+          "title": "XIV. – Achats",
+          "page": 44
+        },
+        {
+          "title": "XV. – Caravane",
+          "page": 45
+        },
+        {
+          "title": "XVI. – Voyage sur terre",
+          "page": 46
+        },
+        {
+          "title": "XVII. – Voyage sur eau",
+          "page": 51
+        },
+        {
+          "title": "XVIII. – Domestique, cuisinier",
+          "page": 52
+        },
+        {
+          "title": "XIX. – Sujets religieux",
+          "page": 53
+        }
+      ]
+    },
+    {
+      "title": "Dictionnaire Français–Soso",
+      "page": 57
+    },
+    {
+      "title": "Dictionnaire Sos–Français",
+      "page": 121
+    },
+    {
+      "title": "Liste des principaux noms propres en usage chez les Sosos",
+      "page": 0,
+      "sections": [
+        {
+          "title": "Noms d’hommes",
+          "page": 171
+        },
+        {
+          "title": "Noms de femmes",
+          "page": 172
+        }
+      ]
+    },
+    {
+      "title": "Errata",
+      "page": 0
+    }
+  ]
+}

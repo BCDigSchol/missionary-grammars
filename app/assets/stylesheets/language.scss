@@ -1,0 +1,56 @@
+// Place all the styles related to the language controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+dl {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+  margin: 0
+}
+
+dt {
+  float: left;
+  width: 20%;
+  padding: 0;
+  margin: 0 0 1em 0;
+  color: #727272;
+  clear: left;
+  font-size: .9em;
+  font: $accent_font;
+}
+
+.language .metadata {
+  @extend .main-content;
+  margin-right: 2%;
+}
+
+.language .texts {
+  @extend .sub-content;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-bottom: .5em;
+      font-style: italic;
+    }
+  }
+}
+
+dd {
+  float: left;
+  width: 80%;
+  padding: 0 0 0 1em;
+  margin: 0 0 1em 0;
+
+  ul {
+    -webkit-margin-before: 0;
+    -webkit-padding-start: 0;
+    list-style: none;
+  }
+
+}

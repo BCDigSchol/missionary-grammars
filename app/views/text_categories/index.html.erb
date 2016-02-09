@@ -1,0 +1,10 @@
+<h2>Text categories</h2>
+<ul>
+  <% @categories.each do |category| %>
+      <li><%= link_to category.name, controller: "text_categories", action: "edit", id: category.id %>
+        <%= link_to 'delete', text_category_path(category.id), :method => :delete, :class => 'delete', :confirm => 'Are you sure ?' %>
+      </li>
+  <% end %>
+</ul>
+
+<%= link_to '+ New category', :controller => :text_categories, :action => :new %>

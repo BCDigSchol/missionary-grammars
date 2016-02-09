@@ -1,0 +1,9 @@
+<h2><%= @author.full_name %></h2>
+<% if logged_in? %>
+    <%= link_to_if(logged_in?, "Edit", [:edit, @author]) %>
+<% end %>
+<ul>
+  <% @author.texts.each do |text| %>
+      <li><%= link_to text.title, text_path(text) %></li>
+  <% end %>
+</ul>

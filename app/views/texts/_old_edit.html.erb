@@ -1,0 +1,69 @@
+<h2><cite><%= @text.title %></cite></h2>
+
+<% if @text.id == 13 %>
+    <a href="/texts/13/read/">read</a>
+<% end %>
+
+<div class="text">
+  <div class="metadata">
+
+    <%= form_for @text do |f| %>
+
+        <h3>Metadata</h3>
+
+        <%= form_line(f, :title, 'text_area') %>
+
+        <dt>Authors</dt>
+        <dd>
+          <%= collection_select :text, :author_ids, Author.order('last ASC'), :id, :full_name, {:selected => @text.author_ids}, {:multiple => true, :name => 'text[author_ids][]'} -%>
+        </dd>
+
+        <dt>Missionary group</dt>
+        <dd>
+          <%= collection_select :text, :group_ids, MissionaryGroup.order('name ASC'), :id, :name, {:selected => @text.missionary_group_id}, {:multiple => false, :name => 'text[missionary_group_id]'} -%>
+        </dd>
+
+        <dt>Publishers</dt>
+        <dd>
+          <%= collection_select :text, :publisher_ids, Publisher.order('name ASC'), :id, :name, {:selected => @text.publisher_ids}, {:multiple => true, :name => 'text[publisher_ids][]'} -%>
+        </dd>
+
+        <%= form_line(f, :publication_year, 'text_field') %>
+        <%= form_line(f, :publication_place, 'text_field') %>
+        <%= form_line(f, :edition_note, 'text_area') %>
+
+
+
+        <fieldset>
+          <legend>Holdings</legend>
+          <%= form_line(f, :holding_library, 'text_field') %>
+          <%= form_line(f, :holding_details, 'text_field') %>
+          <%= form_line(f, :digital_copy_url, 'text_field') %>
+          <%= form_line(f, :google_url, 'text_field') %>
+          <%= form_line(f, :hathi_url, 'text_field') %>
+        </fieldset>
+
+        <fieldset>
+          <legend>Flags</legend>
+          <% @flags.each do |attr_name| %>
+              <% if attr_name.include? '_flag' %>
+                  <%= form_line(f, attr_name, 'check_box') %>
+              <% end %>
+          <% end %>
+        </fieldset>
+
+          <%= submit_tag("Update") %>
+
+    <% end %>
+  </div>
+  <div class="languages">
+    <h3>Languages</h3>
+    <ul>
+      <% @text.languages.each do |language| %>
+          <li><%= link_to language.designation, language_path(language) %></li>
+      <% end %>
+    </ul>
+
+  </div>
+
+</div>

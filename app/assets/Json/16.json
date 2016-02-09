@@ -1,0 +1,82 @@
+{
+  "sections": [
+    {
+      "title": "Cover",
+      "page": 1
+    },
+    {
+      "title": "Title page",
+      "page": 5
+    },
+    {
+      "title": "Printer’s page",
+      "page": 7
+    },
+    {
+      "title": "Préface",
+      "page": 9
+    },
+    {
+      "title": "Avis: pour l’usage du Dictionnaire Volof-Français",
+      "page": 11,
+      "sections": [
+        {
+          "title": "L’alphabet volof",
+          "page": 11
+        },
+        {
+          "title": "Observations",
+          "page": 12,
+          "sections": [
+            {
+              "title": "I. Contractions",
+              "page": 13
+            },
+            {
+              "title": "II. Élisions",
+              "page": 13
+            },
+            {
+              "title": "III. Lettres euphoniques",
+              "page": 14
+            },
+            {
+              "title": "Abbréviations volofes",
+              "page": 14
+            },
+            {
+              "title": "Abbréviations françaises",
+              "page": 15
+            }
+          ]
+        },
+        {
+          "title": "[Dictionnaire Volof-Français]",
+          "page": 17
+        }
+      ]
+    },
+    {
+      "title": "Table des principaux noms propres en usage chez les Volofs",
+      "page": 397,
+      "sections": [
+        {
+          "title": "Noms propres d’hommes",
+          "page": 397
+        },
+        {
+          "title": "Noms propres de femmes",
+          "page": 398
+        },
+        {
+          "title": "Noms de famille (santa)",
+          "page": 399
+        }
+      ]
+    },
+    {
+      "title": "Printer’s and Editors’ seal",
+      "page": 401
+    }
+  ]
+}

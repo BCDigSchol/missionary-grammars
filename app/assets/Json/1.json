@@ -1,0 +1,52 @@
+{
+  "sections": [
+    {
+      "title": "Half title page",
+      "pages": {
+        "from": 7,
+        "to": 7
+      },
+      "page": 7
+    },
+    {
+      "title": "Title page",
+      "pages": {
+        "from": 9,
+        "to": 9
+      },
+      "page": 9
+    },
+    {
+      "title": "[Ouvrages] du même auteur",
+      "pages": {
+        "from": 10,
+        "to": 10
+      },
+      "page": 10
+    },
+    {
+      "title": "Préface",
+      "pages": {
+        "from": 11,
+        "to": 15
+      },
+      "page": 11
+    },
+    {
+      "title": "Alphabet",
+      "pages": {
+        "from": 17,
+        "to": 24
+      },
+      "page": 17
+    },
+    {
+      "title": "Dictionnaire chaouia–arabe, kabyle–français",
+      "pages": {
+        "from": 25,
+        "to": 603
+      },
+      "page": 25
+    }
+  ]
+}

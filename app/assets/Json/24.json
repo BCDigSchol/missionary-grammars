@@ -1,0 +1,378 @@
+{
+    "sections": [
+        {
+            "title": "Title page",
+            "page": 0
+        },
+        {
+            "title": "Ouvrages du même auteur",
+            "page": 0
+        },
+        {
+            "title": "Préface",
+            "page": 0
+        },
+        {
+            "title": "Table de préfixes, pronoms, et adjectifs",
+            "page": 0
+        },
+        {
+            "title": "Introduction",
+            "page": 0
+        },
+        {
+            "title": "Alphabet",
+            "page": 0
+        },
+        {
+            "title": "1. Consonnes",
+            "page": 0
+        },
+        {
+            "title": "2. Semi-voyelles",
+            "page": 0
+        },
+        {
+            "title": "3. Voyelles",
+            "page": 0,
+            "sections": [
+                {
+                    "title": "Accent tonique",
+                    "page": 0
+                },
+                {
+                    "title": "Euphonie",
+                    "page": 0
+                },
+                {
+                    "title": "Mots génériques",
+                    "page": 0
+                },
+                {
+                    "title": "Construction de la phrase",
+                    "page": 0
+                },
+                {
+                    "title": "Principales différences entre l’Ifumu et l’Isi-Bana",
+                    "page": 0
+                },
+                {
+                    "title": "Principales différences entre l’Ifumu et l’Itéo",
+                    "page": 0
+                }
+            ]
+        },
+        {
+            "title": "Première partie",
+            "page": 0,
+            "sections": [
+                {
+                    "title": "Chapitre I. Du nom",
+                    "page": 0,
+                    "sections": [
+                        {
+                            "title": "§ I. Du genre",
+                            "page": 0
+                        }
+                    ]
+                },
+                {
+                    "title": "§ II. Du nombre",
+                    "page": 0
+                }
+            ]
+        },
+        {
+            "title": "§ III. Des classes de noms",
+            "page": 0,
+            "sections": [
+                {
+                    "title": "1re Classe",
+                    "page": 0
+                },
+                {
+                    "title": "2me Classe",
+                    "page": 0
+                },
+                {
+                    "title": "3me Classe",
+                    "page": 0
+                },
+                {
+                    "title": "4me Classe",
+                    "page": 0
+                },
+                {
+                    "title": "5me Classe",
+                    "page": 0
+                },
+                {
+                    "title": "6me Classe",
+                    "page": 0
+                },
+                {
+                    "title": "7me Classe",
+                    "page": 0
+                }
+            ]
+        },
+        {
+            "title": "Principales exceptions",
+            "page": 0
+        },
+        {
+            "title": "Relation de deux noms. Particules de relation. Relation d’un nom et d’un pronom personnel. Relation d’un pronom démonstratif et d’un pronom personnel. Relation d’un pronom démonstratif et d’un nom.",
+            "page": 0,
+            "sections": [
+                {
+                    "title": "Chapitre II. De l’adjectif",
+                    "page": 0,
+                    "sections": [
+                        {
+                            "title": "§ I. De l’adjectif qualificatif",
+                            "page": 0,
+                            "sections": [
+                                {
+                                    "title": "Des adjectifs numéraux",
+                                    "page": 0,
+                                    "sections": [
+                                        {
+                                            "title": "Des adjectifs numéraux cardinaux",
+                                            "page": 0
+                                        },
+                                        {
+                                            "title": "Accord des adjectifs numéraux cardinaux",
+                                            "page": 0
+                                        },
+                                        {
+                                            "title": "Place des adjectifs numéraux cardinaux",
+                                            "page": 0
+                                        },
+                                        {
+                                            "title": "Des adjectifs numéraux ordinaux",
+                                            "page": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Chapitre III. Du pronom",
+                                    "page": 0
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Adjectifs-pronoms",
+                            "page": 0
+                        }
+                    ]
+                },
+                {
+                    "title": "Des adjectifs-pronoms démonstratifs",
+                    "page": 0
+                },
+                {
+                    "title": "Des pronoms personnels",
+                    "page": 0
+                },
+                {
+                    "title": "Adjectifs et pronoms possessifs",
+                    "page": 0
+                },
+                {
+                    "title": "Des pronoms relatifs ou conjonctifs",
+                    "page": 0
+                },
+                {
+                    "title": "Des pronoms relatifs ou conjonctifs interrogatifs",
+                    "page": 0
+                },
+                {
+                    "title": "Des adjectifs-pronoms indéfinis",
+                    "page": 0
+                }
+            ]
+        },
+        {
+            "title": "Chapitre IV. Du verbe",
+            "page": 0,
+            "sections": [
+                {
+                    "title": "Conjugaison",
+                    "page": 0
+                },
+                {
+                    "title": "Modes",
+                    "page": 0
+                },
+                {
+                    "title": "Temps",
+                    "page": 0
+                },
+                {
+                    "title": "Des verbes irréguliers",
+                    "page": 0
+                },
+                {
+                    "title": "Accord des verbes",
+                    "page": 0
+                },
+                {
+                    "title": "Conjugaison affirmative",
+                    "page": 0
+                },
+                {
+                    "title": "Conjugaison négative",
+                    "page": 0
+                },
+                {
+                    "title": "Conjugaison interrogative",
+                    "page": 0
+                },
+                {
+                    "title": "Du verbe “Être”",
+                    "page": 0
+                },
+                {
+                    "title": "Du verbe avoir",
+                    "page": 0
+                }
+            ]
+        },
+        {
+            "title": "Chapitre V. De l’adverbe",
+            "page": 0,
+            "sections": [
+                {
+                    "title": "§ I. Adverbes de lieu",
+                    "page": 0,
+                    "sections": [
+                        {
+                            "title": "Adverbes de lieu et locutions adverbiales",
+                            "page": 0
+                        }
+                    ]
+                },
+                {
+                    "title": "§ II. Adverbes de temps",
+                    "page": 0,
+                    "sections": [
+                        {
+                            "title": "Adverbes de temps et locutions adverbiales",
+                            "page": 0
+                        }
+                    ]
+                },
+                {
+                    "title": "§ III. Adverbes de quantité",
+                    "page": 0
+                },
+                {
+                    "title": "§ IV. Adverbes d’affirmation",
+                    "page": 0
+                },
+                {
+                    "title": "§ V. Adverbes de négation",
+                    "page": 0
+                },
+                {
+                    "title": "§ VI. Adverbes de doute",
+                    "page": 0
+                },
+                {
+                    "title": "§ VII. Adverbes d’intérrogation",
+                    "page": 0
+                },
+                {
+                    "title": "§ VIII. Adverbes de manière",
+                    "page": 0
+                }
+            ]
+        },
+        {
+            "title": "Chapitre VI. Prépositions et conjonctions",
+            "page": 0
+        },
+        {
+            "title": "Chapitre VII. Interjections & locutions interjectives",
+            "page": 0,
+            "sections": [
+                {
+                    "title": "Sorte de locutions interjectives",
+                    "page": 0
+                }
+            ]
+        },
+        {
+            "title": "Deuxième partie",
+            "page": 0,
+            "sections": [
+                {
+                    "title": "Syntaxe",
+                    "page": 0,
+                    "sections": [
+                        {
+                            "title": "De l’article",
+                            "page": 0
+                        },
+                        {
+                            "title": "Du nom",
+                            "page": 0
+                        },
+                        {
+                            "title": "Du diminutif",
+                            "page": 0
+                        },
+                        {
+                            "title": "De l’adjectif",
+                            "page": 0
+                        },
+                        {
+                            "title": "Pronoms relatifs ou conjonctions interrogatifs",
+                            "page": 0
+                        },
+                        {
+                            "title": "Verbe",
+                            "page": 0
+                        },
+                        {
+                            "title": "Pronoms conjoints",
+                            "page": 0
+                        },
+                        {
+                            "title": "Verbe “Être”",
+                            "page": 0
+                        },
+                        {
+                            "title": "Verbes désinences",
+                            "page": 0
+                        },
+                        {
+                            "title": "Particule réduplicative française",
+                            "page": 0
+                        },
+                        {
+                            "title": "Particules négatives ou privatives",
+                            "page": 0
+                        },
+                        {
+                            "title": "Expressions françaises rendues en ifumu",
+                            "page": 0
+                        },
+                        {
+                            "title": "Syntaxe des prépositions",
+                            "page": 0
+                        }
+                    ]
+                },
+                {
+                    "title": "Vocabulaire",
+                    "page": 0
+                }
+            ]
+        },
+        {
+            "title": "",
+            "page": 0
+        }
+    ]
+}

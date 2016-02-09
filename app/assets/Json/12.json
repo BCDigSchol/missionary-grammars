@@ -1,0 +1,28 @@
+{
+    "sections": [
+        {
+            "title": "Cover",
+            "page": 1
+        },
+        {
+            "title": "Title page",
+            "page": 5
+        },
+        {
+            "title": "Publication and sales",
+            "page": 6
+        },
+        {
+            "title": "Préface",
+            "page": 7
+        },
+        {
+            "title": "Abréviations",
+            "page": 9
+        },
+        {
+            "title": "Dictionnaire français–wolof",
+            "page": 11
+        }
+    ]
+}

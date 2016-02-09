@@ -1,0 +1,26 @@
+{
+    "sections": [
+        {
+            "title": "Title page",
+            "page": 7
+        },
+        {
+            "title": "Avertissement",
+            "page": 9,
+            "sections": [
+                {
+                    "title": "Observations préliminaires",
+                    "page": 10
+                },
+                {
+                    "title": "Abréviations",
+                    "page": 12
+                }
+            ]
+        },
+        {
+            "title": "Dictionnaire Français–Kabyle",
+            "page": 13
+        }
+    ]
+}

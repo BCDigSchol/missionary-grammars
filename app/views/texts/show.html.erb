@@ -1,0 +1,125 @@
+<h2><cite><%= @text.title %></cite></h2>
+
+<a href="/texts/<%= @text.id %>/read">Read</a>
+
+<div class="text">
+  <div class="metadata">
+    <h3>Metadata</h3>
+    <% if logged_in? %>
+        <%= link_to_if(logged_in?, "Edit", [:edit, @text]) %>
+    <% end %>
+    <dl>
+      <dt>Author(s)</dt>
+      <dd>
+        <ul>
+          <% @text.authors.each do |author| %>
+              <li><%= author.full_name %></li>
+          <% end %>
+        </ul>
+      </dd>
+      <dt>Missionary group</dt>
+      <dd>
+        <% if @text.missionary_group %>
+            <%= @text.missionary_group.name %>
+        <% end %>
+      </dd>
+      <dt>Publication year</dt>
+      <dd><%= @text.publication_year %></dd>
+      <dt>Edition note</dt>
+      <dd><%= @text.edition_note %></dd>
+      <dt>Place of publication</dt>
+      <dd><%= @text.publication_place %>
+      <dt>Publisher</dt>
+      <dd>
+        <ul>
+          <% @text.publishers.each do |publisher| %>
+              <li><%= publisher.name %></li>
+          <% end %>
+        </ul>
+      </dd>
+      <dt>Holding library</dt>
+      <dd><%= @text.holding_library %>
+      <dt>Holding details</dt>
+      <dd><%= @text.holding_details %>
+      <dt>Digital copy</dt>
+      <dd><a href="<%= @text.digital_copy_url %>"><%= @text.digital_copy_url %></a></dd>
+      <dt>HathiTrust</dt>
+      <dd>
+        <% if @text.hathi_output_url %>
+            <a href="<%= @text.hathi_url %>"><%= @text.hathi_output_url %></a>
+        <% end %>
+      </dd>
+      <dt>Google Books</dt>
+      <dd>
+        <% if @text.google_books_output_url %>
+            <a href="<%= @text.google_url %>"><%= @text.google_url %></a>
+        <% end %>
+      </dd>
+      <dt>Text category</dt>
+      <dd>
+        <% if @text.text_category %>
+            <%= @text.text_category.name %>
+        <% end %></dd>
+    </dl>
+
+    <h3>Flags</h3>
+    <dl>
+      <dt>ouvrages du même auteur</dt>
+      <dd><%= @text.by_same_author_flag %>
+      <dt>préface</dt>
+      <dd><%= @text.preface_flag %>
+      <dt>avertissement</dt>
+      <dd><%= @text.foreward_flag %>
+      <dt>table des préfixes et des accords</dt>
+      <dd><%= @text.table_of_prefixes_flag %>
+      <dt>introduction</dt>
+      <dd><%= @text.introduction_flag %>
+      <dt>alphabet</dt>
+      <dd><%= @text.alphabet_flag %>
+      <dt>orthographe</dt>
+      <dd><%= @text.orthography_flag %>
+      <dt>notize</dt>
+      <dd><%= @text.notize_flag %>
+      <dt>sa pronunciation</dt>
+      <dd><%= @text.prounciation_flag %>
+      <dt>orthographe et pronunciation</dt>
+      <dd><%= @text.orthography_and_pronunciation_flag %>
+      <dt>observations</dt>
+      <dd><%= @text.observations_flag %>
+      <dt>essai de grammaire</dt>
+      <dd><%= @text.grammatical_sketch_flag %>
+      <dt>abrégé de grammaire</dt>
+      <dd><%= @text.grammar_summary_flag %>
+      <dt>principes de la langue</dt>
+      <dd><%= @text.rules_of_language_flag %>
+      <dt>recueil de phrases usuelles</dt>
+      <dd><%= @text.phrase_collection_flag %>
+      <dt>signes et abbréviations du dictionnaire</dt>
+      <dd><%= @text.signs_and_abbreviations_flag %>
+      <dt>abbreviations</dt>
+      <dd><%= @text.abbreviations_flag %>
+      <dt>notes on the sodality</dt>
+      <dd><%= @text.sodality_flag %>
+      <dt>bulletin</dt>
+      <dd><%= @text.bulletin_flag %>
+      <dt>liste of principaux noms propers</dt>
+      <dd><%= @text.proper_names_flag %>
+      <dt>appendice</dt>
+      <dd><%= @text.appendix_flag %>
+      <dt>addenda/errata</dt>
+      <dd><%= @text.addenda_flag %>
+      <dt>table de matières</dt>
+      <dd><%= @text.contents_flag %>
+    </dl>
+  </div>
+  <div class="languages">
+    <h3>Languages</h3>
+    <ul>
+      <% @text.languages.each do |language| %>
+          <li><%= link_to language.designation, language_path(language) %></li>
+      <% end %>
+    </ul>
+
+  </div>
+
+</div>

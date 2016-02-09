@@ -1,0 +1,144 @@
+// Place all the styles related to the texts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.metadata {
+  padding: .5em;
+  background-color: $primary-color-light;
+  color: $primary-text-color;
+  font-size: .9em;
+  height: 50%;
+}
+
+.text .languages {
+  @extend .sub-content;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-bottom: .5em;
+    }
+  }
+}
+
+.flags {
+}
+
+.input label {
+  float: left;
+  width: 18%;
+}
+
+
+.search-pane {
+  @extend .sub-content;
+}
+
+.search-results {
+  @extend .main-content;
+  margin-left: 2%;
+  background-color: #fff;
+  -webkit-transition: width 300ms ease-in-out, height 300ms ease-in-out;
+  -moz-transition: width 300ms ease-in-out, height 300ms ease-in-out;
+  -o-transition: width 300ms ease-in-out, height 300ms ease-in-out;
+  transition: width 300ms ease-in-out, height 300ms ease-in-out;
+}
+
+.search-page {
+  label {
+    display: block;
+  }
+  select, input {
+    margin-bottom: .5em;
+  }
+}
+
+.read-page, .read-pane {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+}
+
+.structure-pane {
+  width: 30%;
+  padding-left: 1em;
+  font-size: .9em;
+  background-color: white;
+
+  ul {
+    list-style: none;
+    padding-left: 1em;
+    margin-top: .5em;
+
+    li {
+      font-weight: normal;
+      margin-bottom: .5em;
+    }
+
+  }
+
+  > ul {
+
+    > li {
+      font-weight: bold;
+
+      > ul {
+        font-style: italic;
+        > li > ul {
+          font-style: normal;
+        }
+      }
+    }
+    padding-left: 0;
+  }
+
+  a {
+    cursor: pointer;
+  }
+}
+
+.read-pane {
+  padding: 0;
+  width: 70%;
+  position: relative;
+
+  background-color: inherit;
+
+  text-align: center;
+
+  .read-viewer {
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  #img-holder {
+    position: relative;
+    height: 650px;
+    width: 700px;
+    overflow: auto; /*this gives us our scroll bar when the content is longer than the div*/
+
+    img {
+      width: 600px;
+      margin: 0 auto;
+    }
+  }
+
+  .prev-page, .next-page {
+    width: 5%;
+    cursor: pointer;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    line-height: 100%;
+    vertical-align: center;
+  }
+
+  .next-page {
+    text-align: right;
+  }
+
+  .prev-page {
+    text-align: left;
+  }
+}

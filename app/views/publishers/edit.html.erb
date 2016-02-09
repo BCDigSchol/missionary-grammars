@@ -1,0 +1,9 @@
+<div class="text">
+  <div class="metadata">
+    <h2>Publisher</h2>
+    <%= simple_form_for @publisher do |f| %>
+        <%= f.input :name, :as => :string %>
+        <%= f.submit 'Save' %>
+    <% end %>
+  </div>
+</div>

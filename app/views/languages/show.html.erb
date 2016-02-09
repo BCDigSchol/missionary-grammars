@@ -1,0 +1,48 @@
+<h2><%= @language.designation %></h2>
+<div class="language">
+  <div class="metadata">
+    <h3>Metadata</h3>
+    <% if logged_in? %>
+        <%= link_to_if(logged_in?, "Edit", [:edit, @language]) %>
+    <% end %>
+    <dl>
+      <dt>Alternate designations</dt>
+      <dd>
+        <ul>
+          <% @language.alternate_designations.each do |alt| %>
+              <li><%= alt.designation %></li>
+          <% end %>
+        </ul>
+      </dd>
+      <dt>Location</dt>
+      <dd><%= @language.location %></dd>
+      <dt>ISO 639-3</dt>
+      <dd><%= @language.iso %></dd>
+      <dt>Status</dt>
+      <dd><%= @language.status %></dd>
+      <dt>Orthography</dt>
+      <dd>
+        <ul>
+          <% @language.orthographies.each do |orth| %>
+              <li><%= orth.name %></li>
+          <% end %>
+        </ul>
+      </dd>
+      <dt>Macro-Classification</dt>
+      <dd><%= @language.macro_classification %></dd>
+      <dt>Glottolog designation (Glottocode)</dt>
+      <dd><%= @language.glottocode %></dd>
+      <dt>Coordinates (Lat., Lon.)</dt>
+      <dd><%= @language.latitude %>, <%= @language.longitude %></dd>
+    </dl>
+  </div>
+
+  <div class="texts">
+    <h3>Texts</h3>
+    <ul>
+      <% @language.texts.each do |text| %>
+          <li><cite><%= link_to text.title, text_path(text) %></cite></li>
+      <% end %>
+    </ul>
+  </div>
+</div>
