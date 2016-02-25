@@ -1,6 +1,15 @@
 // Place all the styles related to the texts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#reader-body {
+  background-color: #000;
+
+  main {
+    max-width: none;
+    width: 100%;
+  }
+}
+
 .metadata {
   padding: .5em;
   background-color: $primary-color-light;
@@ -58,13 +67,15 @@
 .read-page, .read-pane {
   display: -webkit-flex; /* Safari */
   display: flex;
+  height: 100%;
 }
 
 .structure-pane {
-  width: 30%;
-  padding-left: 1em;
+  width: 35%;
+  padding-left: 2em;
   font-size: .9em;
   background-color: white;
+  overflow: scroll;
 
   ul {
     list-style: none;
@@ -98,47 +109,64 @@
   }
 }
 
+#reader {
+  width: 100%;
+  height: 100vh;
+}
+
 .read-pane {
   padding: 0;
-  width: 70%;
+  width: 65%;
+  height: 100%;
   position: relative;
 
-  background-color: inherit;
+  background-color: black;
 
   text-align: center;
 
   .read-viewer {
     margin: 0 auto;
     width: 75%;
+    height: 100%;
   }
 
   #img-holder {
     position: relative;
-    height: 650px;
-    width: 700px;
+    height: 100%;
+    width: 80%;
     overflow: auto; /*this gives us our scroll bar when the content is longer than the div*/
 
     img {
-      width: 600px;
+      padding-top: 3%;
+      height: 100%;
       margin: 0 auto;
     }
   }
 
   .prev-page, .next-page {
-    width: 5%;
+    width: 10%;
     cursor: pointer;
-    background-color: white;
-    padding: 0;
+    background-color: transparent;
+    color: #d1d2d1;
+    font-size: 64px;
+    padding-top: 5em;
     margin: 0;
     line-height: 100%;
     vertical-align: center;
+
+    &:hover {
+      color: #fefdff;
+      background-color: rgba(200,201,198,.2);
+    }
   }
 
   .next-page {
+    padding-right: .3em;
     text-align: right;
   }
 
   .prev-page {
+    padding-left: .3em;
     text-align: left;
   }
 }

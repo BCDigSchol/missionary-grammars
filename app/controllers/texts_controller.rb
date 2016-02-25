@@ -1,6 +1,8 @@
 require 'set'
 
 class TextsController < ApplicationController
+  layout "read", only: [:read]
+
   def index
     @texts = build_text_results
   end
@@ -39,6 +41,7 @@ class TextsController < ApplicationController
 
   def read
     @text = Text.find(params[:id])
+    @text_json = {:title => @text.title, :authors => @text.authors}.to_json.html_safe
   end
 
   def structure

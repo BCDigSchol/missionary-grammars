@@ -48,6 +48,7 @@ var ReadPage = React.createClass({
         return (
             <div className="read-page">
                 <div className="structure-pane">
+                    <h2>{this.props.textTitle.title}</h2>
                     <TextStructure structure={this.state.structure} handleUpdate={this.handleUpdate}/>
                 </div>
                 <div className="read-pane">
@@ -113,9 +114,10 @@ var ReadBox = React.createClass({
     }
 });
 
-if (window.location.href.indexOf("read") > -1) {
+var reader_render = function (title, authors) {
+    console.log(title, authors);
     ReactDOM.render(
-        <ReadPage></ReadPage>,
+        <ReadPage textTitle={title}></ReadPage>,
         document.getElementById('reader')
     );
-}
+};
