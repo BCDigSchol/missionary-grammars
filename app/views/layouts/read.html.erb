@@ -5,10 +5,7 @@
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body id="reader-body"
-      <% if logged_in? %>class="logged-in"
-      <% end %>>
-
+<body id="reader-body" class="<%= body_class %>">
 <% flash.each do |message_type, message| %>
     <div class="alert alert-<%= message_type %>"><%= message %></div>
 <% end %>

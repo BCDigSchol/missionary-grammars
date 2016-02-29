@@ -5,9 +5,7 @@
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body
-<% if logged_in? %>class="logged-in"
-<% end %>>
+<body class="<%= body_class %>">
 
 <header>
   <div class="headwrap">
