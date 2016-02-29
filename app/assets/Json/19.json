@@ -1,0 +1,312 @@
+{
+  "sections": [
+    {
+      "title": "Plat (de devant)",
+      "page": 0
+    },
+    {
+      "title": "Grand-Titre",
+      "page": 0
+    },
+    {
+      "title": "Préface",
+      "page": 0
+    },
+    {
+      "title": "Grammaire Fiote, ou grammaire de la langue du Congo",
+      "page": 0,
+      "sections": [
+        {
+          "title": "Prononciation",
+          "page": 0
+        },
+        {
+          "title": "Première partie: Des différentes espèces de mots",
+          "page": 0,
+          "sections": [
+            {
+              "title": "Chapitre premier: De l’article",
+              "page": 0,
+              "sections": [
+                {
+                  "title": "I.– Emploi de l’article défini",
+                  "page": 0
+                },
+                {
+                  "title": "II.– Répétition de l’article défini di",
+                  "page": 0
+                }
+              ]
+            },
+            {
+              "title": "Chapitre II: Du signe numérique",
+              "page": 0,
+              "sections": [
+                {
+                  "title": "I.– Formation du pluriel dans les signes numériques",
+                  "page": 0
+                },
+                {
+                  "title": "II.– Répétition des signes numériques",
+                  "page": 0
+                },
+                {
+                  "title": "III.– Emploi des signes numériques",
+                  "page": 0
+                },
+                {
+                  "title": "IV.– Emploi simultané des articles et des signes numériques",
+                  "page": 0
+                }
+              ]
+            },
+            {
+              "title": "Chapitre III: Du substantif",
+              "page": 0
+            },
+            {
+              "title": "Chapitre IV: De l’adjectif",
+              "page": 0,
+              "sections": [
+                {
+                  "title": "I.– Des adjectifs qualificatifs",
+                  "page": 0
+                },
+                {
+                  "title": "II.– Des adjectifs déterminatifs",
+                  "page": 0,
+                  "sections": [
+                    {
+                      "title": "I.– Des adjectifs démonstratifs",
+                      "page": 0
+                    },
+                    {
+                      "title": "II.– Des adjectifs possessifs",
+                      "page": 0
+                    },
+                    {
+                      "title": "III.– Des adjectifs indéfinis",
+                      "page": 0
+                    },
+                    {
+                      "title": "IV.– Des adjectifs numéraux",
+                      "page": 0
+                    },
+                    {
+                      "title": "Supplément aux adjectifs",
+                      "page": 0
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Chapitre V: Du pronom",
+              "page": 0,
+              "sections": [
+                {
+                  "title": "I.– Des pronoms personnels",
+                  "page": 0
+                },
+                {
+                  "title": "II.– Des pronoms démonstratifs",
+                  "page": 0
+                },
+                {
+                  "title": "III.– Des pronoms possessifs",
+                  "page": 0
+                },
+                {
+                  "title": "IV.– Des pronoms relatifs",
+                  "page": 0
+                },
+                {
+                  "title": "V.– Des pronoms indéfinis",
+                  "page": 0
+                }
+              ]
+            },
+            {
+              "title": "Chapitre VI: Du verbe",
+              "page": 0,
+              "sections": [
+                {
+                  "title": "Conjugaison du verbe kala",
+                  "page": 0
+                },
+                {
+                  "title": "Verbe ina",
+                  "page": 0
+                },
+                {
+                  "title": "Première conjugaison en i",
+                  "page": 0
+                },
+                {
+                  "title": "Conjugaison d’un verbe avec négation",
+                  "page": 0
+                },
+                {
+                  "title": "Conjugaison de deux verbes avec négation",
+                  "page": 0
+                },
+                {
+                  "title": "Deuxième conjugaison en e",
+                  "page": 0
+                },
+                {
+                  "title": "Du verbe passif",
+                  "page": 0,
+                  "sections": [
+                    {
+                      "title": "Première conjugaison en o",
+                      "page": 0
+                    },
+                    {
+                      "title": "Deuxième conjugaison en ou",
+                      "page": 0
+                    }
+                  ]
+                },
+                {
+                  "title": "Du verbe neutre",
+                  "page": 0,
+                  "sections": [
+                    {
+                      "title": "Première conjugaison en i",
+                      "page": 0
+                    },
+                    {
+                      "title": "Deuxième conjugaison en e",
+                      "page": 0
+                    }
+                  ]
+                },
+                {
+                  "title": "Verbe pronominal",
+                  "page": 0,
+                  "sections": [
+                    {
+                      "title": "Première conjugaison en i",
+                      "page": 0
+                    },
+                    {
+                      "title": "Deuxième conjugaison en e",
+                      "page": 0
+                    }
+                  ]
+                },
+                {
+                  "title": "Verbe unipersonnel",
+                  "page": 0,
+                  "sections": [
+                    {
+                      "title": "Première conjugaison en i",
+                      "page": 0
+                    },
+                    {
+                      "title": "Deuxième conjugaison en e",
+                      "page": 0
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Chapitre VII: De l’adverbe",
+              "page": 0,
+              "sections": [
+                {
+                  "title": "Liste des principaux adverbes",
+                  "page": 0
+                }
+              ]
+            },
+            {
+              "title": "Chapitre VIII: De la prépositon",
+              "page": 0,
+              "sections": [
+                {
+                  "title": "Liste des principales prépositons",
+                  "page": 0
+                }
+              ]
+            },
+            {
+              "title": "Chapitre IX: De la conjonction",
+              "page": 0,
+              "sections": [
+                {
+                  "title": "Liste des principales conjonctions",
+                  "page": 0
+                }
+              ]
+            },
+            {
+              "title": "Chapitre X: De l’interjection",
+              "page": 0,
+              "sections": [
+                {
+                  "title": "Liste des principales interjections",
+                  "page": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Deuxième partie: De la syntaxe",
+          "page": 0,
+          "sections": [
+            {
+              "title": "I.– Syntaxe des noms",
+              "page": 0
+            },
+            {
+              "title": "II.– Syntaxe des adjectifs",
+              "page": 0
+            },
+            {
+              "title": "III.– Syntaxe des verbes",
+              "page": 0
+            },
+            {
+              "title": "IV.– Syntaxe des pronoms",
+              "page": 0,
+              "sections": [
+                {
+                  "title": "I.– Des pronoms relatifs",
+                  "page": 0
+                },
+                {
+                  "title": "II.– Qui interrogatif",
+                  "page": 0
+                },
+                {
+                  "title": "III.– Que interrogatif",
+                  "page": 0
+                }
+              ]
+            },
+            {
+              "title": "V.– Syntaxe des prépositions",
+              "page": 0
+            },
+            {
+              "title": "VI.– Syntaxe des adverbes",
+              "page": 0
+            },
+            {
+              "title": "VII.– Syntaxe des conjonctions",
+              "page": 0
+            }
+          ]
+        },
+        {
+          "title": "Troisème partie: Méthode, ou manière de rendre en français les principaux idiotismes fiots",
+          "page": 0
+        }
+      ]
+    }
+  ]
+}

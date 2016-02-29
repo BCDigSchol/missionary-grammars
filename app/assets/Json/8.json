@@ -2,203 +2,203 @@
   "sections": [
     {
       "title": "Cover",
-      "page": 3
+      "page": 1
     },
     {
       "title": "Half title page",
-      "page": 7
+      "page": 5
     },
     {
       "title": "Autres ouvrages en Mandé",
-      "page": 8
+      "page": 6
     },
     {
       "title": "Title page",
-      "page": 9
+      "page": 7
     },
     {
       "title": "Préface",
-      "page": 11
+      "page": 9
     },
     {
       "title": "Orthographe",
-      "page": 13,
+      "page": 11,
       "sections": [
         {
           "title": "Voyelles Nasales",
-          "page": 14
+          "page": 12
         }
       ]
     },
     {
       "title": "Abrégé de Grammaire Malinkée",
-      "page": 15,
+      "page": 13,
       "sections": [
         {
           "title": "Chapitre I: Nom ou substantif",
-          "page": 15,
+          "page": 13,
           "sections": [
             {
               "title": "Article I: Genre. — Nombre",
-              "page": 15
+              "page": 13
             },
             {
               "title": "Article II: Noms dérivés",
-              "page": 16,
+              "page": 14,
               "sections": [
                 {
                   "title": "§ I. Noms dérivés de verbes",
-                  "page": 16
+                  "page": 14
                 },
                 {
                   "title": "§ II. Noms dérivés d’autres noms",
-                  "page": 16
+                  "page": 14
                 },
                 {
                   "title": "§ III. Noms dérivés d’adjectifs",
-                  "page": 17
+                  "page": 15
                 }
               ]
             },
             {
               "title": "Article III: Noms composés, noms propres, noms diminutifs",
-              "page": 17
+              "page": 15
             },
             {
               "title": "Article IV: Nom compellatif",
-              "page": 18
+              "page": 16
             },
             {
               "title": "Article V: Relation entre deux noms",
-              "page": 19
+              "page": 17
             }
           ]
         },
         {
           "title": "Chapitre II: Adjectif",
-          "page": 20,
+          "page": 18,
           "sections": [
             {
               "title": "Article I: Adjectif qualificatif",
-              "page": 20,
+              "page": 18,
               "sections": [
                 {
                   "title": "Dérivation des adjectifs",
-                  "page": 20
+                  "page": 18
                 },
                 {
                   "title": "Degrés de comparaison",
-                  "page": 21
+                  "page": 19
                 }
               ]
             },
             {
               "title": "Article II: Adjectif numeral",
-              "page": 22,
+              "page": 20,
               "sections": [
                 {
                   "title": "Adjectif numeral ordinal",
-                  "page": 22
+                  "page": 20
                 },
                 {
                   "title": "Nombres distributifs, périodiques, etc.",
-                  "page": 23
+                  "page": 21
                 }
               ]
             },
             {
               "title": "Article III: Adjectif possessif",
-              "page": 23
+              "page": 21
             },
             {
               "title": "Article IV: Adjectif démonstratif",
-              "page": 24
+              "page": 22
             },
             {
               "title": "Article V: Adjectif indéfini",
-              "page": 24
+              "page": 22
             }
           ]
         },
         {
           "title": "Chapitre III: Pronom",
-          "page": 25,
+          "page": 23,
           "sections": [
             {
               "title": "Article I: Pronom personnel",
-              "page": 25
+              "page": 23
             },
             {
               "title": "Article II: Pronom possesif",
-              "page": 25
+              "page": 23
             },
             {
               "title": "Article III: Pronom démonstratif",
-              "page": 26
+              "page": 24
             },
             {
               "title": "Article IV: Pronom relatif",
-              "page": 26
+              "page": 24
             },
             {
               "title": "Article V: Pronom et adjectif interrogatifs",
-              "page": 27
+              "page": 25
             },
             {
               "title": "Article VI: Pronom indéfini",
-              "page": 27
+              "page": 25
             }
           ]
         },
         {
           "title": "Chapitre IV: Du verbe",
-          "page": 28,
+          "page": 26,
           "sections": [
             {
               "title": "Article I: Verbe être",
-              "page": 28,
+              "page": 26,
               "sections": [
                 {
                   "title": "1º Être",
-                  "page": 29
+                  "page": 27
                 },
                 {
                   "title": "2º Être à, dans, en, de",
-                  "page": 30
+                  "page": 28
                 },
                 {
                   "title": "3º Être à",
-                  "page": 31
+                  "page": 29
                 },
                 {
                   "title": "4º Être",
-                  "page": 32
+                  "page": 30
                 },
                 {
                   "title": "5º Il est",
-                  "page": 36
+                  "page": 34
                 }
               ]
             },
             {
               "title": "Article II: Verbe avoir",
-              "page": 36
+              "page": 34
             },
             {
               "title": "Article [sic] IV: Verbes actifs, neutres, et passifs",
-              "page": 37,
+              "page": 35,
               "sections": [
                 {
                   "title": "Verbes dérivés",
-                  "page": 40,
+                  "page": 38,
                   "sections": [
                     {
                       "title": "1º Verbes à préfixe",
-                      "page": 41
+                      "page": 39
                     },
                     {
                       "title": "2º Verbes à suffixe",
-                      "page": 41
+                      "page": 39
                     }
                   ]
                 }
@@ -206,23 +206,23 @@
             },
             {
               "title": "Chapitre V: De la phrase",
-              "page": 41
+              "page": 39
             },
             {
               "title": "Chapitre VI:",
-              "page": 43,
+              "page": 41,
               "sections": [
                 {
                   "title": "I. Salutations",
-                  "page": 43
+                  "page": 41
                 },
                 {
                   "title": "II. Poésie­–Fables",
-                  "page": 43
+                  "page": 41
                 },
                 {
                   "title": "III. Division du temps",
-                  "page": 48
+                  "page": 46
                 }
               ]
             }
@@ -230,17 +230,17 @@
         },
         {
           "title": "Signes et abbreviations du dictionnaire",
-          "page": 51
+          "page": 49
         }
       ]
     },
     {
       "title": "Dictionnaire Français–Malinké",
-      "page": 53
+      "page": 51
     },
     {
       "title": "Dictionnaire Malinké–Français",
-      "page": 155
+      "page": 135
     }
   ]
 }

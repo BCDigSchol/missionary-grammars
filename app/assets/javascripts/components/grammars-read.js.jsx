@@ -7,7 +7,6 @@ var ReadPage = React.createClass({
     fetch: function (url) {
         url = '/texts/' + getTextNumber() + '/structure';
         $.get(url, {}, function (response) {
-            console.log('here');
             if (this.isMounted()) {
                 this.setState({
                     structure: response.sections
@@ -19,7 +18,6 @@ var ReadPage = React.createClass({
         this.fetch(this.props.source);
     },
     handleUpdate: function (page) {
-        console.log(page);
         this.setState(
             {
                 page: page
@@ -109,7 +107,10 @@ var ReadBox = React.createClass({
         }
 
         var img_src = "/img/texts/" + getTextNumber() + "/" + pad(this.props.page, 4) + ".jpg";
-        var imgdiv = <div id="img-holder" onScroll={this.handleScroll} ref="imgholder"><img src={img_src}/></div>;
+        var imgdiv = <div id="img-holder" onScroll={this.handleScroll} ref="imgholder">
+            <img src={img_src}/>
+            <div className="img-page-num">{this.props.page}</div>
+        </div>;
         return imgdiv;
     }
 });

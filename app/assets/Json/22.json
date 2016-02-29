@@ -2,23 +2,23 @@
     "sections": [
         {
             "title": "Cover",
-            "page": 0
+            "page": 1
         },
         {
             "title": "Title page",
-            "page": 0
+            "page": 5
         },
         {
             "title": "Nya vevieawo",
-            "page": 0
+            "page": 6
         },
         {
             "title": "Préface",
-            "page": 0
+            "page": 7
         },
         {
             "title": "[Vocabulary] (arranged alphabetically A–Z, pp. 5–399)",
-            "page": 0
+            "page": 9
         }
     ]
 }

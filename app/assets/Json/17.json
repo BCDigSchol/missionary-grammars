@@ -1,50 +1,50 @@
 {
-    "sections": [
+  "sections": [
+    {
+      "title": "Title Page",
+      "page": 5
+    },
+    {
+      "title": "Notize on [sic] Igbo pronunciation",
+      "page": 7,
+      "sections": [
         {
-            "title": "Title Page",
-            "page": 0
+          "title": "I. [omissions]",
+          "page": 7
         },
         {
-            "title": "Notize on [sic] Igbo pronunciation",
-            "page": 0,
-            "sections": [
-                {
-                    "title": "I. [omissions]",
-                    "page": 0
-                },
-                {
-                    "title": "II. Vowels",
-                    "page": 0
-                },
-                {
-                    "title": "III. Consonants",
-                    "page": 0
-                },
-                {
-                    "title": "IV. Compound Consonants",
-                    "page": 0
-                },
-                {
-                    "title": "V. Nasal Sounds",
-                    "page": 0
-                },
-                {
-                    "title": "VI. Elision",
-                    "page": 0
-                }
-            ]
+          "title": "II. Vowels",
+          "page": 7
         },
         {
-            "title": "English – [sic] Igbo – French Dictionary",
-            "page": 0
+          "title": "III. Consonants",
+          "page": 7
         },
         {
-            "title": "Notes sur la Société de St. Pierre Claver | Notes upon the Sodality of St. Peter Claver",
-            "page": 0
+          "title": "IV. Compound Consonants",
+          "page": 7
         },
         {
-            "title": "Echo d’Afrique: Bulletin illustré mensuel en faveur des Missions catholiques d’Afrique",
-            "page": 0
+          "title": "V. Nasal Sounds",
+          "page": 8
+        },
+        {
+          "title": "VI. Elision",
+          "page": 8
         }
-    ]
+      ]
+    },
+    {
+      "title": "English – [sic] Igbo – French Dictionary",
+      "page": 9
+    },
+    {
+      "title": "Notes sur la Société de St. Pierre Claver | Notes upon the Sodality of St. Peter Claver",
+      "page": 313
+    },
+    {
+      "title": "Echo d’Afrique: Bulletin illustré mensuel en faveur des Missions catholiques d’Afrique",
+      "page": 315
+    }
+  ]
 }

@@ -5,13 +5,16 @@
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body
+<% if logged_in? %>class="logged-in"
+<% end %>>
 
 <header>
   <div class="headwrap">
     <h1>Missionary Grammars project</h1>
     <nav>
-      <% if logged_in? %> <a href="/edit">Edit</a> | <% end %> <a href="/texts">Texts</a> | <a href="/languages">Languages</a>
+      <% if logged_in? %> <a href="/edit">Edit</a> |
+      <% end %> <a href="/texts">Texts</a> | <a href="/languages">Languages</a>
     </nav>
   </div>
 </header>

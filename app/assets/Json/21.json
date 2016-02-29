@@ -1,204 +1,200 @@
 {
-    "sections": [
+  "sections": [
+    {
+      "title": "Cover",
+      "page": 1
+    },
+    {
+      "title": "Title page",
+      "page": 5
+    },
+    {
+      "title": "Sango Commercial",
+      "page": 7,
+      "sections": [
         {
-            "title": "Cover",
-            "page": 0
+          "title": "Lecture",
+          "page": 7,
+          "sections": [
+            {
+              "title": "Consonnes",
+              "page": 7
+            },
+            {
+              "title": "Voyelles",
+              "page": 7
+            },
+            {
+              "title": "Semi-voyelle",
+              "page": 7
+            }
+          ]
         },
         {
-            "title": "Title page",
-            "page": 0
-        },
-        {
-            "title": "Sango Commercial",
-            "page": 0,
-            "sections": [
+          "title": "Remarques Grammaticales",
+          "page": 8,
+          "sections": [
+            {
+              "title": "Article",
+              "page": 8
+            },
+            {
+              "title": "Substantif",
+              "page": 8,
+              "sections": [
                 {
-                    "title": "Lecture",
-                    "page": 0,
-                    "sections": [
-                        {
-                            "title": "Consonnes",
-                            "page": 0
-                        },
-                        {
-                            "title": "Voyelles",
-                            "page": 0
-                        },
-                        {
-                            "title": "Semi-voyelle",
-                            "page": 0
-                        }
-                    ]
+                  "title": "Genre",
+                  "page": 8
                 },
                 {
-                    "title": "Remarques Grammaticales",
-                    "page": 0,
-                    "sections": [
-                        {
-                            "title": "Article",
-                            "page": 0
-                        },
-                        {
-                            "title": "Substantif",
-                            "page": 0,
-                            "sections": [
-                                {
-                                    "title": "Genre",
-                                    "page": 0
-                                },
-                                {
-                                    "title": "Nombre",
-                                    "page": 0
-                                },
-                                {
-                                    "title": "Particule de relation",
-                                    "page": 0
-                                }
-                            ]
-                        },
-                        {
-                            "title": "Adjectif",
-                            "page": 0,
-                            "sections": [
-                                {
-                                    "title": "Adjectif qualificatif",
-                                    "page": 0
-                                },
-                                {
-                                    "title": "Comparatif",
-                                    "page": 0,
-                                    "sections": [
-                                        {
-                                            "title": "De supériorité",
-                                            "page": 0
-                                        },
-                                        {
-                                            "title": "D’infériorité",
-                                            "page": 0
-                                        }
-                                    ]
-                                },
-                                {
-                                    "title": "Superlatif",
-                                    "page": 0,
-                                    "sections": [
-                                        {
-                                            "title": "Relatif",
-                                            "page": 0
-                                        },
-                                        {
-                                            "title": "Absolu",
-                                            "page": 0
-                                        }
-                                    ]
-                                },
-                                {
-                                    "title": "Adjectif numeral",
-                                    "page": 0,
-                                    "sections": [
-                                        {
-                                            "title": "Cardinal",
-                                            "page": 0
-                                        },
-                                        {
-                                            "title": "Ordinal",
-                                            "page": 0
-                                        }
-                                    ]
-                                },
-                                {
-                                    "title": "Adjectif démonstratif",
-                                    "page": 0
-                                },
-                                {
-                                    "title": "Adjectif possessif",
-                                    "page": 0
-                                },
-                                {
-                                    "title": "Adjectif interrogatif",
-                                    "page": 0
-                                }
-                            ]
-                        },
-                        {
-                            "title": "Pronom",
-                            "page": 0,
-                            "sections": [
-                                {
-                                    "title": "Pronom personnel",
-                                    "page": 0
-                                },
-                                {
-                                    "title": "Pronom possessif",
-                                    "page": 0
-                                },
-                                {
-                                    "title": "Pronom démonstratif",
-                                    "page": 0
-                                },
-                                {
-                                    "title": "Pronom relatif",
-                                    "page": 0
-                                },
-                                {
-                                    "title": "Pronom interrogatif",
-                                    "page": 0
-                                },
-                                {
-                                    "title": "Pronom indéfini",
-                                    "page": 0
-                                }
-                            ]
-                        },
-                        {
-                            "title": "Verbe",
-                            "page": 0,
-                            "sections": [
-                                {
-                                    "title": "Présent actuel",
-                                    "page": 0
-                                },
-                                {
-                                    "title": "Passé",
-                                    "page": 0
-                                },
-                                {
-                                    "title": "Futur",
-                                    "page": 0
-                                },
-                                {
-                                    "title": "Infinitif",
-                                    "page": 0
-                                },
-                                {
-                                    "title": "Forme passive",
-                                    "page": 0
-                                },
-                                {
-                                    "title": "Verbe être",
-                                    "page": 0
-                                },
-                                {
-                                    "title": "Verbe avoir",
-                                    "page": 0
-                                }
-                            ]
-                        },
-                        {
-                            "title": "Vocabulaire Français–Sango",
-                            "page": 0
-                        }
-                    ]
+                  "title": "Nombre",
+                  "page": 8
                 },
                 {
-                    "title": "Vocabulaire Sango–Français",
-                    "page": 0
+                  "title": "Particule de relation",
+                  "page": 8
                 }
-            ]
-        },
-        {
-            "title": "",
-            "page": 0
+              ]
+            },
+            {
+              "title": "Adjectif",
+              "page": 8,
+              "sections": [
+                {
+                  "title": "Adjectif qualificatif",
+                  "page": 9
+                },
+                {
+                  "title": "Comparatif",
+                  "page": 9,
+                  "sections": [
+                    {
+                      "title": "De supériorité",
+                      "page": 9
+                    },
+                    {
+                      "title": "D’infériorité",
+                      "page": 9
+                    }
+                  ]
+                },
+                {
+                  "title": "Superlatif",
+                  "page": 9,
+                  "sections": [
+                    {
+                      "title": "Relatif",
+                      "page": 9
+                    },
+                    {
+                      "title": "Absolu",
+                      "page": 10
+                    }
+                  ]
+                },
+                {
+                  "title": "Adjectif numeral",
+                  "page": 10,
+                  "sections": [
+                    {
+                      "title": "Cardinal",
+                      "page": 10
+                    },
+                    {
+                      "title": "Ordinal",
+                      "page": 10
+                    }
+                  ]
+                },
+                {
+                  "title": "Adjectif démonstratif",
+                  "page": 11
+                },
+                {
+                  "title": "Adjectif possessif",
+                  "page": 11
+                },
+                {
+                  "title": "Adjectif interrogatif",
+                  "page": 11
+                }
+              ]
+            },
+            {
+              "title": "Pronom",
+              "page": 11,
+              "sections": [
+                {
+                  "title": "Pronom personnel",
+                  "page": 11
+                },
+                {
+                  "title": "Pronom possessif",
+                  "page": 11
+                },
+                {
+                  "title": "Pronom démonstratif",
+                  "page": 11
+                },
+                {
+                  "title": "Pronom relatif",
+                  "page": 11
+                },
+                {
+                  "title": "Pronom interrogatif",
+                  "page": 11
+                },
+                {
+                  "title": "Pronom indéfini",
+                  "page": 12
+                }
+              ]
+            },
+            {
+              "title": "Verbe",
+              "page": 12,
+              "sections": [
+                {
+                  "title": "Présent actuel",
+                  "page": 12
+                },
+                {
+                  "title": "Passé",
+                  "page": 12
+                },
+                {
+                  "title": "Futur",
+                  "page": 13
+                },
+                {
+                  "title": "Infinitif",
+                  "page": 13
+                },
+                {
+                  "title": "Forme passive",
+                  "page": 13
+                },
+                {
+                  "title": "Verbe être",
+                  "page": 14
+                },
+                {
+                  "title": "Verbe avoir",
+                  "page": 14
+                }
+              ]
+            }
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "title": "Vocabulaire Français–Sango",
+      "page": 15
+    },
+    {
+      "title": "Vocabulaire Sango–Français",
+      "page": 95
+    }
+  ]
 }
