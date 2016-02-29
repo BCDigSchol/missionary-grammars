@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  from: 1
+  to: 1
+  text_section_id: 
+
+two:
+  title: MyString
+  from: 1
+  to: 1
+  text_section_id: 

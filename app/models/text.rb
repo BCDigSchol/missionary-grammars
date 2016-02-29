@@ -5,6 +5,7 @@ class Text < ActiveRecord::Base
   belongs_to :text_category
   has_many :languages_texts
   has_many :languages, through: :languages_texts
+  has_many :text_sections
 
   accepts_nested_attributes_for :authors, allow_destroy: true
   accepts_nested_attributes_for :missionary_group, allow_destroy: true

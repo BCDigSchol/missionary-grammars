@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160122035554) do
+ActiveRecord::Schema.define(version: 20160229173135) do
 
   create_table "alternate_designations", force: :cascade do |t|
     t.string   "designation"
@@ -103,6 +103,20 @@ ActiveRecord::Schema.define(version: 20160122035554) do
     t.datetime "updated_at", null: false
     t.string   "name"
   end
+
+  create_table "text_sections", force: :cascade do |t|
+    t.string   "title"
+    t.integer  "from"
+    t.integer  "to"
+    t.integer  "ordinal"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "parent_id"
+    t.integer  "text_id"
+  end
+
+  add_index "text_sections", ["parent_id"], name: "index_text_sections_on_parent_id"
+  add_index "text_sections", ["text_id"], name: "index_text_sections_on_text_id"
 
   create_table "texts", force: :cascade do |t|
     t.integer  "missionary_group_id"
