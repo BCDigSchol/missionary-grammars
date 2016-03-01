@@ -96,9 +96,6 @@ var ReadBox = React.createClass({
     componentDidMount: function () {
         document.documentElement.addEventListener('scroll', this.handleScroll);
     },
-    handleScroll: function (event) {
-        //this.refs.nav.getDOMNode().style.top = document.documentElement.scrollTop + 'px';
-    },
     render: function () {
         function pad(num, size) {
             var s = num + "";
