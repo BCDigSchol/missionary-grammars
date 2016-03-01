@@ -24,10 +24,11 @@ class TextSection < ActiveRecord::Base
       this_rendered['id'] = self.id
     end
 
-    this_rendered['sections'] = []
-
-    self.children.each do |child|
-      this_rendered['sections'] << child.get_json_renderable
+    unless self.children.empty?
+      this_rendered['sections'] = []
+      self.children.each do |child|
+        this_rendered['sections'] << child.get_json_renderable
+      end
     end
 
     this_rendered

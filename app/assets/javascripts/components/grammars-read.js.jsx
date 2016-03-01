@@ -65,13 +65,15 @@ var TextStructure = React.createClass({
         var sections = this.props.structure.map(function (field) {
             var key = field.title + "p" + field.page;
             var subsections = '';
+            var open_box = '';
             if (field.sections) {
+                open_box = <div className="open-subsection-control">+</div>
                 subsections =
                     <TextStructure structure={field.sections} handleUpdate={this_pane.props.handleUpdate}/>;
             }
 
             return <li key={key}>
-                <TextSectionTitle handleClick={this_pane.props.handleUpdate} page={field.page} title={field.title}/>
+                <TextSectionTitle handleClick={this_pane.props.handleUpdate} page={field.page} title={field.title}/>{open_box}
                 {subsections}
             </li>
         });
