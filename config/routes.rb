@@ -21,9 +21,7 @@ Rails.application.routes.draw do
   get 'edit' => 'edit#index'
 
   resources :languages
-  resources :texts do
-    resources :sections
-  end
+  resources :texts
   resources :authors
   resources :orthographies
   resources :text_categories, :path => '/categories'

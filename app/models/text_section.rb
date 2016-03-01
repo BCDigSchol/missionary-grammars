@@ -1,6 +1,6 @@
 class TextSection < ActiveRecord::Base
   belongs_to :parent, class_name: 'TextSection', foreign_key: 'parent_id'
-  has_many :children, class_name: 'TextSection'
+  has_many :children, class_name: 'TextSection', foreign_key: 'parent_id'
   belongs_to :text
 
   def self.base_section(text)
@@ -14,5 +14,22 @@ class TextSection < ActiveRecord::Base
       top_node.save
     end
     top_node
+  end
+
+  def get_json_renderable
+    this_rendered = {}
+    unless self.parent.nil?
+      this_rendered['title'] = self.title
+      this_rendered['page'] = self.from
+      this_rendered['id'] = self.id
+    end
+
+    this_rendered['sections'] = []
+
+    self.children.each do |child|
+      this_rendered['sections'] << child.get_json_renderable
+    end
+
+    this_rendered
   end
 end

@@ -45,9 +45,8 @@ class TextsController < ApplicationController
   end
 
   def structure
-    render :file => "#{Rails.root}/app/assets/Json/#{params[:id]}.json",
-           :content_type => 'application/json',
-           :layout => false
+    @text = Text.find(params[:id])
+    render json: @text.structure
   end
 
   def update

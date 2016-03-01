@@ -33,4 +33,8 @@ class Text < ActiveRecord::Base
       return false
     end
   end
+
+  def structure
+    self.text_sections.where('parent_id IS NULL').first.get_json_renderable
+  end
 end
