@@ -52,3 +52,6 @@ bower.json
 
 # Ignore databases
 *.sqlite
+
+# Ignore node vendor stuff
+/client/node_modules
