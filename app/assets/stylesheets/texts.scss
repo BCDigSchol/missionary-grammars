@@ -80,6 +80,8 @@
   font-size: .9em;
   background-color: white;
   overflow: scroll;
+  font-family: $accent_font;
+
 
   @media screen and (max-width: $break-medium) {
     flex: 0 0 100%;
@@ -113,9 +115,16 @@
       font-weight: bold;
 
       > ul {
-        font-style: italic;
         > li > ul {
-          font-style: normal;
+          font-size: .95em;
+
+          > li > ul {
+            color: #666;
+
+            > li > ulq {
+              font-size: .9em;
+            }
+          }
         }
       }
     }
