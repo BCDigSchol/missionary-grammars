@@ -199,11 +199,20 @@
 .logged-in .img-page-num {
   position: absolute;
   color: white;
-  font-family: Lato;
+  font-family: $accent_font;
   font-size: 48px;
-  position: top;
   top: 1em;
-  right:1em;
-  background: rgba(255,255,255,.3);
+  right: 1em;
+  background: rgba(255, 255, 255, .3);
   padding: .2em;
+}
+
+.open-subsection-control {
+  display: inline;
+  margin-left: .5em;
+  cursor: pointer;
+}
+
+li.closed-section > ul {
+  display: none;
 }

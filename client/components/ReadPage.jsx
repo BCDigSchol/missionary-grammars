@@ -11,7 +11,7 @@ export default class ReadPage extends React.Component {
 
     constructor() {
         super();
-        this.state = {structure: [], page: 1, title: '', authors: []};
+        this.state = {structure: [], page: 1, title: '', authors: [], open_sections: []};
         this.fetched = false;
         me = this;
     }
@@ -35,6 +35,24 @@ export default class ReadPage extends React.Component {
         this.setState(
             {
                 page: page
+            }
+        );
+    }
+
+    toggleSectionDisplay(section_id) {
+        let open_sections = me.state.open_sections;
+        let index = open_sections.indexOf(section_id);
+
+        if (index === -1) {
+            open_sections.push(section_id);
+            console.log('opening');
+        } else {
+            open_sections.splice(index);
+            console.log('closing');
+        }
+        me.setState(
+            {
+                open_sections: open_sections
             }
         );
     }
@@ -65,7 +83,10 @@ export default class ReadPage extends React.Component {
                         {this.state.authors.map((author) => (<li ref='a'>{author.first} {author.last}</li>))}
                     </ul>
                     <div className="text-structure">
-                        <TextStructure structure={this.state.structure} handleUpdate={this.handleUpdate}/>
+                        <TextStructure structure={this.state.structure}
+                                       handleUpdate={this.handleUpdate}
+                                       toggleSectionDisplay={this.toggleSectionDisplay}
+                                       open_sections={this.state.open_sections}/>
                     </div>
                 </div>
                 <div className="read-pane">
