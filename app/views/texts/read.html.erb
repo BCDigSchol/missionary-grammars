@@ -1,11 +1,3 @@
 <div class="center-content">
-
-  <div id="reader" data-id="<%= @text.id %>"></div>
-
-
-  <script type="text/javascript">
-    window.onload = function () {
-      reader_render(<%= @text_json %>);
-    }
-  </script>
-</div>>
+  <div id="reader" data-react-props="<%= @text.id %>"></div>
+</div>

@@ -55,3 +55,6 @@ bower.json
 
 # Ignore node vendor stuff
 /client/node_modules
+
+# Ignore rendered JS
+/public/js

@@ -1,18 +1,16 @@
-/**
- * Launch application
- */
 import React from "react";
-import ReactDOM from "react-dom";
+import { render } from 'react-dom';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import ReadPage from "./components/ReadPage.jsx";
+import { missionaryGrammarsApp } from './reducers';
+import { nextPage, prevPage, openSection, closeSection } from './actions';
 
-const runApp = () => {
-    ReactDOM.render(
-        <div />,
-        document.getElementById("app")
-    );
-};
+let store = createStore(missionaryGrammarsApp);
 
-if (window.addEventListener) {
-    window.addEventListener('DOMContentLoaded', runApp);
-} else {
-    window.attachEvent('onload', runApp);
-}
+let initial_data = document.getElementById('reader').getAttribute('data-react-props');
+
+render(
+    <ReadPage text_id={initial_data}></ReadPage>,
+    document.getElementById("reader")
+);
