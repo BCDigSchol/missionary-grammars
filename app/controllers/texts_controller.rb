@@ -46,7 +46,7 @@ class TextsController < ApplicationController
 
   def structure
     @text = Text.find(params[:id])
-    render json: @text.structure
+    render json: {:title => @text.title, :authors => @text.authors, :structure => @text.structure}
   end
 
   def update

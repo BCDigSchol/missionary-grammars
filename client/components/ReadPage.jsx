@@ -11,7 +11,7 @@ export default class ReadPage extends React.Component {
 
     constructor() {
         super();
-        this.state = {structure: [], page: 1};
+        this.state = {structure: [], page: 1, title: '', authors: []};
         this.fetched = false;
         me = this;
     }
@@ -20,14 +20,13 @@ export default class ReadPage extends React.Component {
         this.fetched = true;
         var url = '/texts/' + id + '/structure';
         $.get(url, {}, function (response) {
+            console.log(response);
             this.setState({
-                structure: response.sections
+                structure: response.structure.sections,
+                text_title: response.title,
+                authors: response.authors
             });
         }.bind(this), 'json');
-    }
-
-    handleTitleClick(event) {
-        console.log(event.target);
     }
 
     handleUpdate(page) {
@@ -61,8 +60,13 @@ export default class ReadPage extends React.Component {
         return (
             <div className="read-page">
                 <div className="structure-pane">
-                    <h2>TITLE HERE</h2>
-                    <TextStructure structure={this.state.structure} handleUpdate={this.handleUpdate}/>
+                    <h2>{this.state.text_title}</h2>
+                    <ul className="author-list">
+                        {this.state.authors.map((author) => (<li ref='a'>{author.first} {author.last}</li>))}
+                    </ul>
+                    <div className="text-structure">
+                        <TextStructure structure={this.state.structure} handleUpdate={this.handleUpdate}/>
+                    </div>
                 </div>
                 <div className="read-pane">
                     {prevlink}
