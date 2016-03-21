@@ -1,1 +1,1 @@
-@TODO Add documentation for installation and usage
+@TODO Add documentation for installation
