@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<!--
+	Embedded visualization using Cartodb.js
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Helios by HTML5 UP</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>CartoDB.js Map</title>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<link rel="shortcut icon" href="http://cartodb.com/assets/favicon.ico" />
+	<style>
+		html, body, #map {
+			height: 95%;
+			padding: 1.5em;
+			margin: 0;
+		}
+	</style>
+
+	<link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+	<body class="homepage">
+		<div id="page-wrapper">
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li>
+						<a href="#">Menu</a>
+						<ul>
+							<li>
+								<a href="#">Explore the Corpus</a>
+								<ul>
+									<li><a href="http://grammars.lutralib.org/texts">Texts</a></li>
+									<li><a href="http://grammars.lutralib.org/languages">Languages</a></li>
+									<li><a href="http://mlib.bc.edu/grammars/personography.html">Authors</a></li>
+									<li><a href="http://mlib.bc.edu/grammars/orgography.html">Missionary Organizations</a></li>
+								<li><a href="http://mlib.bc.edu/grammars/gazateer.html">Places of Publication</a></li>
+							</ul>
+							<li><a href="http://mlib.bc.edu/grammars/map.html">Map</a></li>
+								<li>
+							<a href="#">About the Project</a>
+								<ul>
+							<li><a href="http://mlib.bc.edu/grammars/overview.html">Project Overview</a></li>
+							<li><a href="http://mlib.bc.edu/grammars/praxis.html">Project Praxis</a></li>
+							<li><a href="http://mlib.bc.edu/grammars/CV.html">Project CV</a></li>
+							<li><a href="http://mlib.bc.edu/grammars/acknowledgements.html">Acknowledgements</a></li>
+						</ul>
+							<li><a href="http://mlib.bc.edu/grammars/bibliography.html">Bibliography</a></li>
+							<li>
+	<a href="http://mlib.bc.edu/grammars/contact.html">Contact Us</a>
+					</ul>
+				</nav>
+
+		</div>
+
+
+<!-- Banner -->
+	<section id="banner">
+		<header>
+			<h2>Map</h2>
+</header>
+<p>This map allows the corpus to be explored geographically. It organizes metadata for the texts into two information layers. Blue plots the various places of publication, and associates each point with the text(s) published at that location. Red plots the loci of the different target language speech communities represented in the corpus, and associates each point with the text(s) that comment on that language. </p>
+<p>The purpose of this map visualization is to allow the researcher or user to explore the corpus through space; no static image can ever fully capture the shifting political landscape of colonial Africa. For a more thorough representation of Africa’s shifting political borders, conflicts, and demographics, between 1879–2002, please consult the Animated Atlas of African History; or, for a period of map of missionary activity in Africa, the Carte des Missions Catholique en Afrique (1889).
+</p>
+<br>
+<br>
+		</section>
+
+	<div id="map"></div>
+
+	<!-- include cartodb.js library -->
+	<script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+
+	<script>
+		function main() {
+			cartodb.createVis('map', 'https://calhound.cartodb.com/api/v2/viz/6131a10c-bae6-11e5-8960-0ef24382571b/viz.json', {
+					shareable: true,
+					title: true,
+					description: true,
+					search: false,
+					tiles_loader: true,
+					center_lat: 6.79,
+					center_lon: 20.17,
+					zoom: 5
+			})
+			.done(function(vis, layers) {
+				// layer 0 is the base layer, layer 1 is cartodb layer
+				// setInteraction is disabled by default
+				layers[1].setInteraction(true);
+				layers[1].on('featureOver', function(e, latlng, pos, data) {
+					cartodb.log.log(e, latlng, pos, data);
+				});
+				// you can get the native map to work with it
+				var map = vis.getNativeMap();
+				// now, perform any operations you need
+				// map.setZoom(3);
+				// map.panTo([50.5, 30.5]);
+			})
+			.error(function(err) {
+				console.log(err);
+			});
+		}
+		window.onload = main;
+	</script>
+
+	<!-- Footer -->
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+
+	<!-- Copyright -->
+	<div class="copyright">
+		<ul class="menu">
+			<li><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a></li>
+			<li>
+			<br /><h3>This project was developed in partnership with Boston College University Libraries. </h3></br><h4>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</h4>
+			<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+		</li>
+		</ul>
+
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.onvisible.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
+
+</body>
+</html>

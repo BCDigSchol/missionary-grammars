@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'about' => 'pages#show', :page => 'about'
-
+  get 'map' => 'pages#show', :page => 'map'
 
   get 'sessions/new'
   get 'sessions/create'
@@ -30,6 +29,8 @@ Rails.application.routes.draw do
   resources :text_categories, :path => '/categories'
   resources :missionary_groups, :path => '/groups'
   resources :publishers
+
+  root :to => 'pages#home'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
