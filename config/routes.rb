@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
   get 'map' => 'pages#show', :page => 'map'
+  get 'bibliography' => 'pages#show', :page => 'bibliography'
+  get 'contact' => 'pages#show', :page => 'contact'
+
 
   get 'sessions/new'
   get 'sessions/create'
