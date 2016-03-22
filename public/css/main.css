@@ -3466,3 +3466,25 @@ article a:link {
 article a:visited {
     color: #0000EE;
 }
+
+/* home page scrollbar */
+.reel .image img {
+    width: initial;
+    height: 350px;
+    margin: 1em auto 0 auto;
+}
+
+.carousel article {
+    max-width: 300px;
+    vertical-align: top;
+    height: 500px;
+}
+
+
+.carousel article .image {
+    margin-bottom: 2em;
+}
+
+.carousel article h3 {
+    font-size: .9em;
+}
