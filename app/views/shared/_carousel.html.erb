@@ -1,0 +1,17 @@
+<section class="carousel">
+  <header>
+    <h2>Source Texts</h2>
+  </header>
+  <div class="reel">
+    <% @texts.each do |text| %>
+        <article>
+          <a href="/texts/<%= text.id %>/read" class="image featured">
+            <img src="/img/texts/<%= text.id %>/<%= text.cover_image %>.jpg" alt="cover of <%= text.title %>"/>
+          </a>
+          <header>
+            <h3><a href="/texts/<%= text.id %>/read"><%= text.title %></a></h3>
+          </header>
+        </article>
+    <% end %>
+  </div>
+</section>

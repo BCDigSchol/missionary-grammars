@@ -37,9 +37,13 @@
             <a href="#banner" class="button circled scrolly">Intro</a>
           </footer>
         </div>
+
+        <!-- see /views/shared/_menu.html.erb -->
         <%= render 'shared/menu' %>
       </div>
   <% else %>
+
+      <!-- see /views/shared/_menu.html.erb -->
       <%= render 'shared/menu' %>
   <% end %>
 </div>
@@ -58,6 +62,11 @@
     <%= yield %>
   </article>
 </div>
+
+<% if current_page?(root_path) %>
+    <!-- Carousel for home page (see /views/shared/_carousel.html.erb) -->
+    <%= render 'shared/carousel' %>
+<% end %>
 
 <!-- Footer -->
 <div id="footer">
