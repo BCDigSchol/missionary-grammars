@@ -82,7 +82,6 @@
   overflow: scroll;
   font-family: $accent_font;
 
-
   @media screen and (max-width: $break-medium) {
     flex: 0 0 100%;
   }
@@ -224,4 +223,31 @@
 
 li.closed-section > ul {
   display: none;
+}
+
+.text-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-list li {
+  width: 200px;
+  list-style: none outside none;
+  padding: .5em 1em;
+  margin:  1em 1em 1em;
+  font-family: $accent_font;
+  font-size: .9em;
+  background-color: #d1d2d0;
+
+  img {
+    display: block;
+    margin: 0 auto .5em auto;
+    height: 200px;
+  }
+
+  cite {
+    display: block;
+    width: 100%;
+    background-color: #eeefec;
+  }
 }

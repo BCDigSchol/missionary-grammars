@@ -1,8 +1,11 @@
 <h1>Texts</h1>
-<ul>
+<ul class="text-list">
   <% @texts.each do |text| %>
       <li>
-        <cite><%= link_to text.title, read_text_path(text) %></cite>
+        <%= link_to read_text_path(text) do %>
+            <img src="/img/texts/<%= text.id %>/<%= text.cover_image %>.jpg" alt="cover image">
+            <cite><%= text.title %></cite>
+        <% end %>
         <% if logged_in? %>
             <%= link_to 'delete', text_path(text.id), :method => :delete, :class => 'delete', :confirm => 'Are you sure ?' %>
         <% end %>
