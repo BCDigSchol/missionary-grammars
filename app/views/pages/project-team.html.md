@@ -4,10 +4,10 @@ Project Team
 
 ### Project Team 
 
-Primary Investigator: Doyle Calhoun
-Project Manager: Anna Kijas
-Web Developer: Benjamin Florin
-Faculty Advisor: Margaret Thomas (Department of Linguistics)
+*Primary Investigator: Doyle Calhoun
+*Project Manager: Anna Kijas
+*Web Developer: Benjamin Florin
+*Faculty Advisor: Margaret Thomas (Department of Linguistics)
 
 ### Content 
 
