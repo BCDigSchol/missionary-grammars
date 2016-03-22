@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   get 'praxis' => 'pages#show', :page => 'praxis'
   get 'preface' => 'pages#show', :page => 'preface'
   get 'contact' => 'pages#show', :page => 'contact'
-  get 'contact' => 'pages#show', :page => 'contact'
+  get 'project-team' => 'pages#show', :page => 'project-team'
 
   get 'sessions/new'
   get 'sessions/create'
