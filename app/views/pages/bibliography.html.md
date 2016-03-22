@@ -17,3 +17,14 @@ Selected Bibliography
   opportunities. *Historiographia Linguistica* 39.185–242.
 * Zwartjes, Otto et al. ed. 2014. Missionary linguistics V: Translation theories and practices. Amsterdam &
   Philadelphia: Benjamins.
+
+### How to cite
+
+If you are citing the project, please use the following:
+
+
+<cite style="margin-left: 1em">Language, mission, and Africa</cite>. CC-BY-NC \[http://<%= request.domain %>].
+
+If you are citing one of the texts, please use the following as a guide:
+
+<span style="margin-left: 1em;display:block">Visseq, Alexandre. 1889. <cite>Dictionnaire Fiot-Français</cite>. Paris: Maison-mère. http://grammars.lutralib.org/texts/2/read. Accessed on 2016 March 22.</span>
