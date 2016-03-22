@@ -1,9 +1,19 @@
 Rails.application.routes.draw do
 
-  get 'map' => 'pages#show', :page => 'map'
+  get 'acknowledgements' => 'pages#show', :page => 'acknowledgements'
   get 'bibliography' => 'pages#show', :page => 'bibliography'
   get 'contact' => 'pages#show', :page => 'contact'
-
+  get 'cv' => 'pages#show', :page => 'cv'
+  get 'dictionary' => 'pages#show', :page => 'dictionarys'
+  get 'gazetteer' => 'pages#show', :page => 'gazetteer'
+  get 'map' => 'pages#show', :page => 'map'
+  get 'orgography' => 'pages#show', :page => 'orgography'
+  get 'overview' => 'pages#show', :page => 'overview'
+  get 'personography' => 'pages#show', :page => 'personography'
+  get 'praxis' => 'pages#show', :page => 'praxis'
+  get 'preface' => 'pages#show', :page => 'preface'
+  get 'contact' => 'pages#show', :page => 'contact'
+  get 'contact' => 'pages#show', :page => 'contact'
 
   get 'sessions/new'
   get 'sessions/create'

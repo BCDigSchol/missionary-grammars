@@ -6,6 +6,7 @@ class PagesController < ApplicationController
   end
 
   def show
+    @page = params[:page]
     render template: "pages/#{params[:page]}"
   end
 

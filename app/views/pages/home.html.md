@@ -1,26 +1,39 @@
-<section id="banner">
-  <header>
-    <h2>Introduction</h2>
-  </header>
+<%= content_for :header do %>Introduction<% end %>
 
-  <p>This database organizes and presents digitized linguistic analyses of the languages of continental Africa and
-    Madagascar; all were compiled by French missionaries in the late 19th and early 20th centuries. These texts— which
-    take the form of dictionaries, grammars, and vocabularies— are important historico-cultural artifacts and valuable
-    sources of knowledge about the role played by missionaries in collecting and circulating ethnolinguistic information
-    about non-Indo-European languages. They are also highly problematic works of linguistic analysis, insofar as they
-    were harnessed to, and legitimized, a larger ideological project of conversion and missionization.
-    However heterogenous, and at times uncomfortable, the legacy of missionary linguistic activity in colonial Africa,
-    the documents that result from the missionary enterprise are undoubtedly inscribed in the history of Western
-    language science.</p>
+The project Language, mission, and Africa presents in digital form a variety of linguistic
+analyses of languages of continental Africa and Madagascar, compiled by French Catholic
+missionaries between the late 19th and early 20th centuries. The <%= link_to 'corpus', texts_path %> is comprised of
+multi-lingual (and multi-directional) dictionaries, descriptive grammars, vocabularies,
+and various hybridizations of these genres. In addition to the catalogue of titles, the
+corpus can be explored, filtered, and searched along several parameters, including: the
+target language documented, author(s), missionary organization(s), and place of
+publication. An interactive period map allows the texts to be explored geographically, by
+place of publication and target language locus.
 
-  <p>This database aims to present (in some cases, previously unavailable) missionary linguistic texts in such a way
-    that renders them accessible and navigable, while contextualizing them with pertinent bibliographic and
-    ethnolinguistic metadata. Reading missionary linguistic texts makes significant demands on the modern linguist, but
-    insofar as it alerts us to the reality that the contours of the history of linguistic are discontinuous, irregular,
-    and in flux, reading these texts helps us to cultivate hermeneutic and interpersonal openness.
-  </p>
+For each text, we have aimed to present the digitized text-object in a way that renders it
+easily navigable, by reconstructing the organizational hierarchies in each text, and
+coordinating this clickable structure with the e-text reader. We supply bibliographic and
+ethnolinguistic metadata for each text, and supplement this information with
+database-external resources, like [Ethnologue](https://www.ethnologue.com/) and missionary archival records. Furthermore,
+the database is interoperable with TEI files in the [TAPAS](http://tapasproject.org/) repository that encode
+information about the texts’ authors, (mission) affiliation, and place of publication. For
+more information about the principles adopted and methodologies used, see <%= link_to 'Project Praxis', praxis_path %>.
 
-</section>
+The (in some cases previously unavailable) texts presented in this database are important
+historico-cultural artifacts and valuable sources of knowledge about the role played by
+missionaries in collecting and circulating ethnolinguistic information about
+non-Indo-European languages. They are also highly problematic works of linguistic
+analysis, insofar as they were harnessed to, and legitimized, a larger ideological project
+of conversion and missionization. However heterogenous, and at times uncomfortable, the
+legacy of missionary linguistic activity in colonial Africa, the documents that result
+from the missionary enterprise are undoubtedly inscribed in the history of Western
+language science, and warrant scholarly attention. For a brief summary of the field of
+missionary linguistics and its relevance to the study of the history of linguistics, see
+<%= link_to 'Project Overview', overview_path %>. Reading missionary linguistic texts makes significant demands on the
+modern linguist, but insofar as it alerts us to the reality that the contours of the
+history of linguistic are discontinuous, irregular, and in flux, reading these texts can
+help us to cultivate hermeneutic and intercultural openness.
+
 
 <!-- Carousel -->
 <section class="carousel">
@@ -107,7 +120,7 @@
       </header>
       <p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
     </article>
-
   </div>
+
 </section>
 

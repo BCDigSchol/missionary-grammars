@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Helios by HTML5 UP</title>
+  <title><%= yield :header %> | Missionary Grammars</title>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
   <title>CartoDB.js Map</title>
   <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-  <link rel="shortcut icon" href="http://cartodb.com/assets/favicon.ico"/>
+  <link rel="shortcut icon" href="git http://cartodb.com/assets/favicon.ico"/>
   <style>
     html, body, #map {
       height: 95%;
@@ -42,10 +42,22 @@
   <% else %>
       <%= render 'shared/menu' %>
   <% end %>
-
 </div>
 
-<%= yield %>
+<!-- Banner -->
+<section id="banner">
+  <header></header>
+</section>
+
+<!-- Main -->
+<div class="wrapper style2">
+  <article id="main" class="container special <%= @page %>-page">
+    <header>
+      <h2><%= yield :header %></h2>
+    </header>
+    <%= yield %>
+  </article>
+</div>
 
 <!-- Footer -->
 <div id="footer">
@@ -73,8 +85,6 @@
 
     </div>
   </div>
-</div>
-
 </div>
 
 <!-- Scripts -->

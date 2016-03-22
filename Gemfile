@@ -50,3 +50,6 @@ end
 gem 'react-rails', '~> 1.4.0'
 
 gem 'simple_form'
+
+# Markdown support
+gem 'redcarpet'
