@@ -1,7 +1,7 @@
 require 'set'
 
 class TextsController < ApplicationController
-  layout "read", only: [:read]
+  layout 'read', only: [:read]
 
   def index
     @texts = build_text_results

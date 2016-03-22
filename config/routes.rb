@@ -27,7 +27,7 @@ Rails.application.routes.draw do
   post 'texts/search' => 'texts#search'
 
   get 'texts/:id/structure' => 'texts#structure'
-  get 'texts/:id/read' => 'texts#read'
+  #get 'texts/:id/read' => 'texts#read'
 
   get 'login' => 'sessions#new'
   post 'login' => 'sessions#create'
@@ -36,7 +36,9 @@ Rails.application.routes.draw do
   get 'edit' => 'edit#index'
 
   resources :languages
-  resources :texts
+  resources :texts do
+    get 'read', on: :member
+  end
   resources :authors
   resources :orthographies
   resources :text_categories, :path => '/categories'

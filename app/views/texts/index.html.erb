@@ -2,7 +2,7 @@
 <ul>
   <% @texts.each do |text| %>
       <li>
-        <cite><%= link_to text.title, text_path(text) %></cite>
+        <cite><%= link_to text.title, read_text_path(text) %></cite>
         <% if logged_in? %>
             <%= link_to 'delete', text_path(text.id), :method => :delete, :class => 'delete', :confirm => 'Are you sure ?' %>
         <% end %>
