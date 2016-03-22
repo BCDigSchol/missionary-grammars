@@ -1,5 +1,5 @@
 <%= content_for :header do %>
-Bibliography
+Selected Bibliography
 <% end %>
 
 * Dobrin, L. & Good, J. 2009. Practical language development: Whose mission?. *Language* 85(3): 619–629.
@@ -8,8 +8,8 @@ Bibliography
 * Handman, Courtney. 2009. Language ideologies, endangered-language linguistics, and Christianization.
   *Language* 85(3): 635–639.
 * Olson, Kenneth. 2009. SIL International: An emic view. *Language* 85(3): 646–652.
-* Ridruejo, Emilio. 2014. Constantes y variables en la Lingü.stica Misionera hispánica. Métodos y resultados
-  actuales en Historiografía de la Lingü.stica [...] , ed. by María Luisa Calero et al., 617–641. Münster:
+* Ridruejo, Emilio. 2014. Constantes y variables en la Lingüística Misionera hispánica. Métodos y resultados
+  actuales en Historiografía de la Lingüística [...] , ed. by María Luisa Calero et al., 617–641. Münster:
   Nodus.
 * Svelmoe, William. 2009. ‘We do not want to masquerade as linguists’: A short history of SIL and the academy.
   *Language* 85(3): 629–635.
