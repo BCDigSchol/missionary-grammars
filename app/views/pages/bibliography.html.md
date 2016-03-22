@@ -23,7 +23,7 @@ Selected Bibliography
 If you are citing the project, please use the following:
 
 
-<cite style="margin-left: 1em">Language, mission, and Africa</cite>. CC-BY-NC \[http://<%= request.domain %>].
+<cite style="margin-left: 1em">Language, mission, and Africa</cite>. CC-BY-NC http://<%= request.domain %>.
 
 If you are citing one of the texts, please use the following as a guide:
 
