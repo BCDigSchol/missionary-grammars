@@ -31,14 +31,14 @@ the nexus of sociocultural, political, and ideological infrastructures
 in which they were produced. Understanding missionary linguistic work is
 no less crucial today, since academic linguists often work alongside
 linguists from missionary organizations, but with very different, and
-sometimes divergent, goals.<sup>1</sup>
+sometimes divergent, goals.<sup><a href="#fn1" id="ref1">1</a></sup>
 
 ### Why _go digital_?
 
 In the past decade, the study of missionary and colonial linguistics has
 developed into one of the most active subfields within the history of
-linguistics and linguistic-historiographical research.<sup>2</sup> With the growth
-of the field, scholars increasingly recognize the need for an
+linguistics and linguistic-historiographical research.<sup><a href="#fn2" id="ref2">2</a></sup>
+With the growth of the field, scholars increasingly recognize the need for an
 interdisciplinary and collaborative approach that incorporates
 methodologies from the digital humanities to make missionary linguistic
 texts digitally available. Moreover, an approach is needed that
@@ -47,7 +47,7 @@ compatible with other digital corpora, and which renders the digitized
 texts searchable along various parameters: namely, ‘specific
 meta-language, language described, author, period, religious order,
 country, region, grammatical terminology, or references to other
-sources’.<sup>3</sup>
+sources’.<sup><a href="#fn3" id="ref3">3</a></sup>
 
 ### Goals of the current project
 
