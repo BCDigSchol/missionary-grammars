@@ -1548,6 +1548,7 @@ body {
 
 article p, article li {
     font-family: 'Lora', serif;
+    font-size: 18px;
 }
 
 .bibliography-page li {
@@ -1610,7 +1611,7 @@ article a:link {
 }
 
 article a:visited {
-    color: #0000EE;
+    color: #2B68A8;
 }
 
 /* home page scrollbar */
