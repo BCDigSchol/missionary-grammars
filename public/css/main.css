@@ -680,7 +680,7 @@ header .icon.circled {
 }
 
 body.homepage #header {
-    height: 90vh;
+    height: 85vh;
     min-height: 40em;
 }
 
@@ -1606,7 +1606,7 @@ cite {
 }
 
 article a:link {
-    color: #0000EE;
+    color: #2B68A8;
 }
 
 article a:visited {
