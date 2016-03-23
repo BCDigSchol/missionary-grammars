@@ -77,7 +77,7 @@ College), and named in honor of his father. It contains over 10,000
 volumes that document the history, life, and culture of the people of
 Jamaica and Africa.
 
-### Selected Bibliography 
+### Selected Bibliography
 
 * Dobrin, L. & Good, J. 2009. Practical language development: Whose mission?. *Language* 85(3): 619–629.
 * Epps, P. & Ladley, H. 2009. Syntax, souls, or speakers? On SIL and community language development.
@@ -86,7 +86,7 @@ Jamaica and Africa.
   *Language* 85(3): 635–639.
 * Olson, Kenneth. 2009. SIL International: An emic view. *Language* 85(3): 646–652.
 * Ridruejo, Emilio. 2014. Constantes y variables en la Lingüística Misionera hispánica. Métodos y resultados
-  actuales en Historiografía de la Lingüística [...] , ed. by María Luisa Calero et al., 617–641. Münster:
+  actuales en Historiografía de la Lingüística [...] , ed. by María Luisa Calero et al., 617–641. Münster:
   Nodus.
 * Svelmoe, William. 2009. ‘We do not want to masquerade as linguists’: A short history of SIL and the academy.
   *Language* 85(3): 629–635.
@@ -94,6 +94,17 @@ Jamaica and Africa.
   opportunities. *Historiographia Linguistica* 39.185–242.
 * Zwartjes, Otto et al. ed. 2014. Missionary linguistics V: Translation theories and practices. Amsterdam &
   Philadelphia: Benjamins.
+
+### How to cite
+
+If you are citing the project, please use the following:
+
+<cite style="margin-left: 1em">Language, mission, and Africa</cite>. CC-BY-NC http://<%= request.domain %>.
+
+If you are citing one of the texts, please use the following as a guide:
+
+<span style="margin-left: 1em;display:block">Visseq, Alexandre. 1889. <cite>Dictionnaire Fiot-Français</cite>. Paris: Maison-mère. http://grammars.lutralib.org/texts/2/read. Accessed on 2016 March 22.</span>
+
 
 <ul class="footnote-list">
 <li id="fn1">1. For a collection of papers examining the relationship between missionary linguistic
