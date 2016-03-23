@@ -1597,12 +1597,12 @@ cite {
     margin-top: 1.5em;
 }
 
-.footnote-list {
-    font-size: .7em;
+#main .footnote-list {
     line-height: 1.75;
 }
 
-.footnote-list li {
+#main .footnote-list li {
+    font-size: .7em;
     margin-bottom: 1em;
 }
 
