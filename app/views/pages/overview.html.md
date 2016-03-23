@@ -33,7 +33,7 @@ no less crucial today, since academic linguists often work alongside
 linguists from missionary organizations, but with very different, and
 sometimes divergent, goals.<sup>1</sup>
 
-### Why 'go digital'?
+### Why _go digital_?
 
 In the past decade, the study of missionary and colonial linguistics has
 developed into one of the most active subfields within the history of
@@ -86,7 +86,7 @@ Jamaica and Africa.
   *Language* 85(3): 635–639.
 * Olson, Kenneth. 2009. SIL International: An emic view. *Language* 85(3): 646–652.
 * Ridruejo, Emilio. 2014. Constantes y variables en la Lingüística Misionera hispánica. Métodos y resultados
-  actuales en Historiografía de la Lingüística [...] , ed. by María Luisa Calero et al., 617–641. Münster:
+  actuales en Historiografía de la Lingüística [...] , ed. by María Luisa Calero et al., 617–641. Münster:
   Nodus.
 * Svelmoe, William. 2009. ‘We do not want to masquerade as linguists’: A short history of SIL and the academy.
   *Language* 85(3): 629–635.
