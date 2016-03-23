@@ -69,7 +69,7 @@ shaping.
 ### About the source texts
 
 The 24 original source texts belong to
-the <cite>Nicholas M. Williams Ethnological Collection</cite> of the the John J.
+the [<cite>Nicholas M. Williams Ethnological Collection</cite>](http://www.bc.edu/libraries/collections/collinfo/a-zlist/rarebooks.html) of the the John J.
 Burns Library at Boston College (Chestnut Hill, MA). This collection was
 assembled and donated by Joseph J. Williams, S.J., a Jesuit missionary
 and ethnologist (and former Professor of Cultural Anthropology at Boston
