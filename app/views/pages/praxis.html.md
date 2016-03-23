@@ -2,26 +2,27 @@
 
 ### Technical infrastructure
 
-#### Software
+  *Applications*: Ruby on Rails, JavaScript
+  
+  *Languages*: HTML, CSS, Markdown, XML (TEI)
+  
+  *Theme*: Helios HTML5up
 
-#### Theme
-
-#### Plugins
+  *Additional software*: CartoDB 
+  
+  *Code is available on [GitHub](https://github.com/BCDigSchol/missionary-grammars)* 
 
 ### Content development and methodology
 
 Prior to digitization, content development, and design, corpus texts were selected from
-the <cite>Nicholas M. Williams Ethnological Collection</cite> of the the John J. Burns Library at
+the [<cite>Nicholas M. Williams Ethnological Collection</cite>](http://www.bc.edu/libraries/collections/collinfo/a-zlist/rarebooks.html) of the the John J. Burns Library at
 Boston College according to the following constraints: (1) the text is authored by a
 French missionary (rather than a government official or layperson); (2) the text comments
 on a language (or languages) of continental Africa or Madagascar (in this case,
 languages of the Niger-Congo, Afro-Asiatic, or Austronesian families); and (3) the text
 clearly represents a linguistic endeavour (i.e. is a lexicographic or grammatical analysis
 rather than, for instance, a collection of transcribed folk tales or catechisms, though the text *may include* such
-elements). The selected texts were then examined for their physical condition, and five
-were submitted to conservation work including rebacking, and repairing brittle text blocks
-and warped boards. Conservation took place at the John. J. Burns Library, digitization at the Boston
-Public Library.
+elements). The staff of the Boston College Libraries provided support for this endeavor throughout. Burns Library staff assisted in identifying relevant texts. The Libraries further supported the task by digitizing and making the full texts available online, a process which includes copyright review, conservation, and digitization.
 
 We assembled metadata for each text in two major categories *bibliographic metadata*
 (including authorship, publication information, and holding details) and *target language
@@ -71,7 +72,7 @@ grammatical framework. Moreover, this technique of keying a clickable hierarchy 
 avoids the disadvantages of ‘excerpting’— by which the digital text-object is partitioned
 into individual files corresponding to its subsections— which can create a truncated reader experience and distorts the source text. The clickable hierarchies are also collapsible into several levels, meaning the researcher can navigate the structure of each text with varying degrees of detail.
 
-We created a number of XML support files that digest, organize, and encode some of the
+We created a number of TEI XML support files that digest, organize, and encode some of the
 assembled metadata, using Oxygen XML Editor and TEI standards. These include an
 authorography (i.e. prosopography), which encodes information about each missionary represented in the corpus;
 an orgography, which encodes information about the missionary orders or organizations;
@@ -79,8 +80,7 @@ represented in the corpus; and a publication gazateer, which associates each tex
 place of publication. We also encoded the preface and a dictionary entry from the (1855)
 <cite>Dictionnaire Français–Wolof et Wolof–Français</cite>, as ‘proofs-of-concept’, to demonstrate a
 technique that might be extended over the entirety of the corpus texts in the frame of a
-longer project, and further to model XML rendering of older linguistic documentation. We
-housed these files in the TAPAS repository, which we incorporate into our database through the use of an i-frame viewer. Because the TAPAS project is still in its beta stage, and resources occasionally become unavailable during maintenance periods, we have also made the XML files available for download directly. 
+longer project, and further to model XML rendering of older linguistic documentation. All of the TEI files are housed in the TAPAS [repository](http://beta.tapasproject.org/documenting-indigenous-languages/documenting-indigenous-languages), but are also directly accessible on this site.
 
 The location intelligence and visualization engine CartoDB was used to convert the data
 contained in the publication gazateer and the target language metadata fields into an

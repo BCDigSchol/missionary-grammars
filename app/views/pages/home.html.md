@@ -15,7 +15,7 @@ easily navigable, by reconstructing the organizational hierarchies in each text,
 coordinating this clickable structure with the e-text reader. We supply bibliographic and
 ethnolinguistic metadata for each text, and supplement this information with
 database-external resources, like [Ethnologue](https://www.ethnologue.com/) and missionary archival records. Furthermore,
-the database incorporates TEI files from the [TAPAS](http://tapasproject.org/) repository that encode
+the database incorporates TEI files from the [TAPAS](http://beta.tapasproject.org/) repository that encode
 information about the texts’ authors, (mission) affiliation, and place of publication. For
 more information about the principles adopted and methodologies used, see <%= link_to 'Project Praxis', praxis_path %>.
 

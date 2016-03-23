@@ -9,20 +9,9 @@ Project Team
 * Web Developer: Benjamin Florin
 * Faculty Advisor: Margaret Thomas (Department of Linguistics)
 
-### Content 
-* Doyle Calhoun (subject matter, visualization, TEI, metadata)
-* Anna Kijas (TEI, metadata)
-* Nina Bogdanovsky (metadata) 
-
-### Development and Design 
-* Ben Florin
-* Anna Kijas
-* Doyle Calhoun
 
 ### Promotion and Outreach 
 * Carli Spina 
 * Patrick Goncalves
 
-#### With support from
-* Boston College Digital Libraries, John J. Burns Library, and Boston Public Library (digitization and conservation)
-* Boston College Libraries Systems (hosting/server)
+With support from Nina Bogdanovsky, Digital Library Programs, Burns Library, and Library Systems at Boston College, as well as Ben Doyle and the staff at TAPAS/Northeastern University.
