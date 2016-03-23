@@ -1635,3 +1635,9 @@ article a:visited {
 .carousel article h3 {
     font-size: .9em;
 }
+
+#header .button {
+    border-radius: 2px;
+    line-height: 1.75;
+    height: 1.75em;
+}
