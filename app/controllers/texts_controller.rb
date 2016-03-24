@@ -37,6 +37,16 @@ class TextsController < ApplicationController
 
   def show
     @text = Text.find(params[:id])
+    render :json => @text,
+           :include => {:missionary_group => {:only => [:name, :id]},
+                        :text_category => {:only => [:name, :id]},
+                        :publishers => {:only => [:name, :id]},
+                        :authors => {
+                            :only => [:last, :first]
+                        },
+                        :languages => {:only => [:designation, :id]}
+           },
+           :except => [:digital_copy_url, :missionary_group_id, :google_url, :hathi_url, :created_at, :updated_at, :holding_library, :holding_details]
   end
 
   def read
@@ -46,7 +56,41 @@ class TextsController < ApplicationController
 
   def structure
     @text = Text.find(params[:id])
-    render json: {:title => @text.title, :authors => @text.authors, :structure => @text.structure}
+    render json: {
+        :title => @text.title,
+        :category => @text.text_category,
+        :authors => @text.authors,
+        :year => @text.publication_year,
+        :place => @text.publication_place,
+        :publisher => @text.publishers,
+        :languages => @text.languages,
+        :flags => {
+            :by_same_author => @text.by_same_author_flag,
+            :preface => @text.preface_flag,
+            :foreward => @text.foreward_flag,
+            :table_of_prefixes => @text.table_of_prefixes_flag,
+            :introduction => @text.introduction_flag,
+            :alphabet => @text.alphabet_flag,
+            :orthography => @text.orthography_flag,
+            :notize => @text.notize_flag,
+            :prounciation => @text.prounciation_flag,
+            :orthography_and_pronunciation => @text.orthography_and_pronunciation_flag,
+            :observations => @text.observations_flag,
+            :grammatical_sketch => @text.grammatical_sketch_flag,
+            :grammar_summary => @text.grammar_summary_flag,
+            :rules_of_language => @text.rules_of_language_flag,
+            :phrase_collection => @text.phrase_collection_flag,
+            :signs_and_abbreviations => @text.signs_and_abbreviations_flag,
+            :abbreviations => @text.abbreviations_flag,
+            :sodality => @text.sodality_flag,
+            :bulletin => @text.bulletin_flag,
+            :proper_names => @text.proper_names_flag,
+            :appendix => @text.appendix_flag,
+            :addenda => @text.addenda_flag,
+            :contents => @text.contents_flag
+        },
+        :structure => @text.structure
+    }
   end
 
   def update
