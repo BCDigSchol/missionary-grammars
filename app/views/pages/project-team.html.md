@@ -2,7 +2,6 @@
 Project Team
 <% end %>
 
-### Project Team 
 
 * Primary Investigator: Doyle Calhoun
 * Project Manager: Anna Kijas
