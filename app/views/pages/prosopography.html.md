@@ -6,3 +6,6 @@ This file assigns each of the missionary authors represented in the corpus a uni
 ### Missionary organizations:
 This file provides a succinct overview of the provenance of the various missionary organizations represented in the corpus.
 All information is assembled from the missionary orders’ official websites.
+
+## Places of Publication
+This file organizes texts in the corpus according to their place of publication. 
