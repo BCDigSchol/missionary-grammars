@@ -102,13 +102,17 @@
 
   }
 
+  .hidden {
+    display: none;
+  }
+
   .author-list {
     margin-top: 0;
     padding-left: 0;
     font-family: $accent_font;
   }
 
-  .text-structure > ul {
+  #text-structure > ul {
 
     > li {
       font-weight: bold;
@@ -256,6 +260,18 @@ li.closed-section > ul {
   display: inline-block;
   cursor: pointer;
   font-size: .9em;
+
+  &.selected {
+    font-weight: bold;
+  }
+
+  &.not-selected {
+    color: #999;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .tabs li:nth-child(2) {
@@ -267,7 +283,7 @@ li.closed-section > ul {
   padding-left: 0;
 }
 
-.text-metadata {
+#text-metadata {
   dl {
     overflow: hidden;
     position: relative;

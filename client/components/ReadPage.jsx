@@ -20,8 +20,9 @@ export default class ReadPage extends React.Component {
                 authors: [],
                 title: '',
                 publisher: [],
-                languages: []
+                languages: [],
             },
+            tab: 'text-structure',
             page: 1,
             open_sections: []
         };
@@ -76,10 +77,17 @@ export default class ReadPage extends React.Component {
             this.fetch(this.props.text_id);
         }
         this.handleUpdate = this.handleUpdate.bind(this);
-        var prevlink = <div className="prev-page">&nbsp;</div>;
+
+        let prevlink = <div className="prev-page">&nbsp;</div>;
         if (this.state && this.state.page > 0) {
             prevlink = <div onClick={this.decrementPage} className="prev-page">&lt;</div>;
         }
+
+        let nextlink = <div onClick={this.incrementPage} className="next-page">&gt;</div>;
+
+        console.log('state');
+        console.log(this.state.tab);
+
 
         return (
             <div className="read-page">
@@ -87,23 +95,29 @@ export default class ReadPage extends React.Component {
                     <h2>{this.state.text.title}</h2>
 
                     <ul className="tabs">
-                        <li>Structure</li>
-                        <li>Metadata</li>
+                        <li onClick={() => {this.setState({ tab: 'text-structure'});}}
+                            className={this.state.tab === 'text-structure' ? 'selected' :'not-selected' }>
+                            Structure
+                        </li>
+                        <li onClick={() => {this.setState({ tab: 'text-metadata'});}}
+                            className={this.state.tab === 'text-metadata' ? 'selected' :'not-selected' }>
+                            Metadata
+                        </li>
                     </ul>
-                    <div className="text-structure">
+                    <div className={this.state.tab === 'text-structure' ? 'show' :'hidden' } id="text-structure">
                         <TextStructure structure={this.state.text.structure.sections}
                                        handleUpdate={this.handleUpdate}
                                        toggleSectionDisplay={this.toggleSectionDisplay}
                                        open_sections={this.state.open_sections}/>
                     </div>
-                    <div className="text-metadata">
-                        <Metadata text={this.state.text} />
+                    <div className={this.state.tab === 'text-metadata' ? 'show' :'hidden' } id="text-metadata">
+                        <Metadata text={this.state.text}/>
                     </div>
                 </div>
                 <div className="read-pane">
                     {prevlink}
                     <ReadBox page={this.state.page} text_id={this.props.text_id}/>
-                    <div onClick={this.incrementPage} className="next-page">&gt;</div>
+                    {nextlink}
                 </div>
             </div>
         );
