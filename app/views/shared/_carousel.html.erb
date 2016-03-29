@@ -6,11 +6,11 @@
   <div class="reel">
     <% @texts.each do |text| %>
         <article>
-          <a href="/texts/<%= text.id %>/read" class="image featured">
+          <a href="/texts/<%= text.id %>" class="image featured">
             <img src="/img/texts/<%= text.id %>/cover-medium.jpg" alt="cover of <%= text.title %>"/>
           </a>
           <header>
-            <h3><a href="/texts/<%= text.id %>/read"><%= text.title %></a></h3>
+            <h3><a href="/texts/<%= text.id %>"><%= text.title %></a></h3>
           </header>
         </article>
     <% end %>

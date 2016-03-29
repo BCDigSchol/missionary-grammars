@@ -1,7 +1,7 @@
 require 'set'
 
 class TextsController < ApplicationController
-  layout 'read', only: [:read]
+  layout 'read', only: [:show]
 
   def index
     @texts = build_text_results
@@ -36,6 +36,15 @@ class TextsController < ApplicationController
   end
 
   def show
+    @text = Text.find(params[:id])
+    respond_to do |format|
+      format.html {}
+      format.json {self.structure}
+    end
+
+  end
+
+  def show_json
     @text = Text.find(params[:id])
     render :json => @text,
            :include => {:missionary_group => {:only => [:name, :id]},

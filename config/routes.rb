@@ -27,7 +27,6 @@ Rails.application.routes.draw do
   post 'texts/search' => 'texts#search'
 
   get 'texts/:id/structure' => 'texts#structure'
-  #get 'texts/:id/read' => 'texts#read'
 
   get 'login' => 'sessions#new'
   post 'login' => 'sessions#create'

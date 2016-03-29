@@ -2,7 +2,7 @@
 <ul class="text-list">
   <% @texts.each do |text| %>
       <li>
-        <%= link_to read_text_path(text) do %>
+        <%= link_to text do %>
             <img src="/img/texts/<%= text.id %>/<%= text.cover_image %>.jpg" alt="cover image">
             <cite><%= text.title %></cite>
         <% end %>
