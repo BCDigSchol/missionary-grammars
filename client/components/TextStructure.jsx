@@ -22,8 +22,6 @@ export const TextStructure = (props) => {
                 />;
         }
 
-        console.log(props.open_sections);
-
         return (
             <li key={key} className={props.open_sections.indexOf(field.id) > -1 ? 'open-section' : 'closed-section'}>
                 <TextSectionTitle

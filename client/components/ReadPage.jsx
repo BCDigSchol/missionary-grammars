@@ -1,6 +1,7 @@
 import React from "react";
 
 import { TextStructure } from "./TextStructure.jsx";
+import { Metadata } from "./Metadata.jsx";
 import { ReadBox } from "./ReadBox.jsx";
 
 // Horrible kludge until I understand why ES6 objects sometimes kill 'this'.
@@ -11,7 +12,19 @@ export default class ReadPage extends React.Component {
 
     constructor() {
         super();
-        this.state = {structure: [], page: 1, title: '', authors: [], open_sections: []};
+        this.state = {
+            text: {
+                structure: {
+                    sections: []
+                },
+                authors: [],
+                title: '',
+                publisher: [],
+                languages: []
+            },
+            page: 1,
+            open_sections: []
+        };
         this.fetched = false;
         me = this;
     }
@@ -20,18 +33,13 @@ export default class ReadPage extends React.Component {
         this.fetched = true;
         var url = '/texts/' + id + '/structure';
         $.get(url, {}, function (response) {
-            console.log(response);
             this.setState({
-                structure: response.structure.sections,
-                text_title: response.title,
-                authors: response.authors
+                text: response
             });
         }.bind(this), 'json');
     }
 
     handleUpdate(page) {
-        console.log('here');
-        console.log(page);
         this.setState(
             {
                 page: page
@@ -45,10 +53,8 @@ export default class ReadPage extends React.Component {
 
         if (index === -1) {
             open_sections.push(section_id);
-            console.log('opening');
         } else {
             open_sections.splice(index);
-            console.log('closing');
         }
         me.setState(
             {
@@ -78,15 +84,20 @@ export default class ReadPage extends React.Component {
         return (
             <div className="read-page">
                 <div className="structure-pane">
-                    <h2>{this.state.text_title}</h2>
-                    <ul className="author-list">
-                        {this.state.authors.map((author) => (<li ref='a'>{author.first} {author.last}</li>))}
+                    <h2>{this.state.text.title}</h2>
+
+                    <ul className="tabs">
+                        <li>Structure</li>
+                        <li>Metadata</li>
                     </ul>
                     <div className="text-structure">
-                        <TextStructure structure={this.state.structure}
+                        <TextStructure structure={this.state.text.structure.sections}
                                        handleUpdate={this.handleUpdate}
                                        toggleSectionDisplay={this.toggleSectionDisplay}
                                        open_sections={this.state.open_sections}/>
+                    </div>
+                    <div className="text-metadata">
+                        <Metadata text={this.state.text} />
                     </div>
                 </div>
                 <div className="read-pane">

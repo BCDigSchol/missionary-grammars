@@ -234,7 +234,7 @@ li.closed-section > ul {
   width: 200px;
   list-style: none outside none;
   padding: .5em 1em;
-  margin:  1em 1em 1em;
+  margin: 1em 1em 1em;
   font-family: $accent_font;
   font-size: .9em;
   background-color: #d1d2d0;
@@ -249,5 +249,40 @@ li.closed-section > ul {
     display: block;
     width: 100%;
     background-color: #eeefec;
+  }
+}
+
+.tabs li {
+  display: inline-block;
+  cursor: pointer;
+  font-size: .9em;
+}
+
+.tabs li:nth-child(2) {
+  margin-left: 1em;
+}
+
+.structure-pane .tabs {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.text-metadata {
+  dl {
+    overflow: hidden;
+    position: relative;
+  }
+  dt {
+    float: left;
+    width: 20%;
+    clear: both;
+    padding: 0;
+    position: relative;
+    font-size: 1em;
+  }
+  dd {
+    float: right;
+    width: 80%;
+    padding: 0
   }
 }
