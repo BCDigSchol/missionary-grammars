@@ -2,9 +2,11 @@
 
 ### Technical infrastructure
 
-  *Applications*: Ruby on Rails, JavaScript
+  *Frameworks*: Ruby on Rails, React
   
-  *Languages*: HTML, CSS, Markdown, XML (TEI)
+  *Database*: PostgreSQL
+  
+  *Languages*: HTML, CSS, JavaScript, Markdown, XML (TEI)
   
   *Theme*: Helios HTML5up
 
@@ -87,4 +89,4 @@ contained in the publication gazateer and the target language metadata fields in
 interactive map that plots the places of publication for each text in the corpus, as well
 as the loci of target language speech communities. We used MapWarper to georectify a
 period (1892) map from the from the University of Illinois at [Urbana-Champaign Maps of
-Africa to 1900](http://imagesearchnew.library.illinois.edu/cdm/landingpage/collection/africanmaps) collection, which we used as a base-layer. This resource was then embedded directly into the database. 
+Africa to 1900](http://imagesearchnew.library.illinois.edu/cdm/landingpage/collection/africanmaps) collection, which we used as a base-layer. This resource was then embedded directly into the project site. 
