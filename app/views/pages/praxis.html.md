@@ -47,7 +47,7 @@ Target languages were identified by the name provided by the missionary author i
 modern-day designation(s); alternate designations, including spelling variants, were
 recorded. The naming or glossonomy of indigenous languages by missionaries represents a
 highly charged, contested, and problematic endeavour. Given the text-based nature of the
-*<cite>Language, mission, and Africa</cite>* project, we have privileged the glossonym attested in the
+*<cite>Corpus de textes linguistiques missionnaires</cite>*, we have privileged the glossonym attested in the
 primary text. However, we recognize that the very urge to <cite>name</cite> a language (a move that is always
 in contradistinction to other languages) and our modern-day adoption, circulation, or
 refusal, of those names, would benefit greatly from a sensitive and detailed scholarly
