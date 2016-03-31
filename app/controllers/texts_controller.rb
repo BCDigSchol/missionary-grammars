@@ -4,6 +4,7 @@ class TextsController < ApplicationController
   layout 'read', only: [:show]
 
   def index
+    @page = 'texts'
     @texts = build_text_results
   end
 

@@ -1,9 +1,12 @@
-<h1>Texts</h1>
+<%= content_for :header do %>Texts<% end %>
+
 <ul class="text-list">
   <% @texts.each do |text| %>
       <li>
         <%= link_to text do %>
-            <img src="/img/texts/<%= text.id %>/<%= text.cover_image %>.jpg" alt="cover image">
+            <div class="cover-holder">
+              <img src="/img/texts/<%= text.id %>/<%= text.cover_image %>.jpg" alt="cover image">
+            </div>
             <cite><%= text.title %></cite>
         <% end %>
         <% if logged_in? %>

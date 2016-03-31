@@ -1627,7 +1627,6 @@ article a:visited {
     height: 500px;
 }
 
-
 .carousel article .image {
     margin-bottom: 2em;
 }
@@ -1645,4 +1644,59 @@ article a:visited {
 /* Cover image opacity */
 body.homepage #header:after {
     opacity: .25;
+}
+
+/* Texts page */
+article#main.texts-page {
+    max-width: 1100px;
+}
+
+article#main.texts-page .text-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 1100px;
+    justify-content: space-between;
+}
+
+article#main.texts-page .text-list li a {
+    border: none;
+}
+
+article#main.texts-page .text-list li {
+    width: 150px;
+    margin: 1em;
+    text-align: center;
+    border-radius: 4px;
+    padding-top: 1em;
+}
+
+article#main.texts-page .text-list li img {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    padding: 0 .25rem .25rem .25rem;
+}
+
+article#main.texts-page .text-list li cite {
+    font-family: Lato, sans-serif;
+    font-size: .75em;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0 0 4px 4px;
+    width: 150px;
+    font-style: normal;
+    text-align: left;
+    padding: 0 .25rem;
+    line-height: 1.75;
+}
+
+article#main.texts-page .text-list li .cover-holder {
+    display: table-cell;
+    height: 237px;
+    vertical-align: bottom;
+}
+
+a.delete {
+    display: none;
 }

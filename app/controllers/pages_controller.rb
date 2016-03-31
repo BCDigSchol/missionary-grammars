@@ -1,5 +1,4 @@
 class PagesController < ApplicationController
-  layout 'page'
 
   def home
     @texts = Text.order('title ASC').where(nil)
