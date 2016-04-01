@@ -1,4 +1,4 @@
-<%= content_for :header do %>Citation Info<% end %>
+<%= content_for :header do %>Cite CTLM<% end %>
 
 * To cite the project Missionary Linguistics in colonial Africa / Corpus de travaux linguistiques des missionnaires (CTLM), please adhere to the following formats: 
 
