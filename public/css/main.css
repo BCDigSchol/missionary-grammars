@@ -1706,3 +1706,18 @@ a.delete {
     background-color: hsla(31, 18%, 95%, 1);
     border: 1px dotted gray;
 }
+
+/* Front page title text */
+body.homepage #header h1 {
+    font-size: 3em;
+}
+
+body.homepage #header h1[lang='fr'] {
+    font-size: 2em;
+    font-style: italic;
+    margin-top: 1em;
+}
+
+#header header > p {
+    font-size: 1.1em;
+}
