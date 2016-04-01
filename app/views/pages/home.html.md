@@ -1,6 +1,6 @@
 <%= content_for :header do %>Introduction<% end %>
 
-The project *Missionary linguistics in colonial Africa | Corpus de travaux linguistiques des missionnaires* presents in digital form a variety of linguistic
+The project *French Missionary Grammar and Lexicography in Africa / Corpus de travaux linguistiques des missionnaires* presents in digital form a variety of linguistic
 analyses of languages of continental Africa and Madagascar, compiled by French Catholic
 missionaries between the late 19th and early 20th centuries. The <%= link_to 'corpus', texts_path %> is comprised of
 multi-lingual (and multi-directional) dictionaries, descriptive grammars, vocabularies,
