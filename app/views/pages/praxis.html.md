@@ -88,5 +88,5 @@ The location intelligence and visualization engine CartoDB was used to convert t
 contained in the publication gazetteer and the target language metadata fields into an
 interactive map that plots the places of publication for each text in the corpus, as well
 as the loci of target language speech communities. We used MapWarper to georectify a
-period (1892) map from the from the University of Illinois at <a href="http://imagesearchnew.library.illinois.edu/cdm/landingpage/collection/africanmaps" target="_blank">Urbana-Champaign Maps of
+period (1892) map from the from the University of Illinois at Urbana-Champaign <a href="http://imagesearchnew.library.illinois.edu/cdm/landingpage/collection/africanmaps" target="_blank">Maps of
 Africa to 1900</a> collection, which we used as a base-layer. This resource was then embedded directly into the HTML site. 
