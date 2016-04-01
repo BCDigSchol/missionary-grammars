@@ -17,7 +17,7 @@
 ### Content development and methodology
 
 Prior to digitization, content development, and design, corpus texts were selected from
-the [<cite>Nicholas M. Williams Ethnological Collection</cite>](http://www.bc.edu/libraries/collections/collinfo/a-zlist/rarebooks.html) of the the John J. Burns Library at
+the <a href="http://www.bc.edu/libraries/collections/collinfo/a-zlist/rarebooks.html" target="_blank">Nicholas M. Williams Ethnological Collection</a> of the the John J. Burns Library at
 Boston College according to the following constraints: (1) the text is authored by a
 French missionary (rather than a government official or layperson); (2) the text comments
 on a language (or languages) of continental Africa or Madagascar (in this case,
@@ -82,11 +82,11 @@ represented in the corpus; and a publication gazetteer, which associates each te
 place of publication. We also encoded the preface and a dictionary entry from the (1855)
 <cite>Dictionnaire Français–Wolof et Wolof–Français</cite>, as ‘proofs-of-concept’, to demonstrate a
 technique that might be extended over the entirety of the corpus texts in the frame of a
-longer project, and further to model XML rendering of older linguistic documentation. All of the TEI files are housed in the TAPAS [repository](http://beta.tapasproject.org/documenting-indigenous-languages/documenting-indigenous-languages), but are also directly accessible on this site.
+longer project, and further to model XML rendering of older linguistic documentation. All of the TEI files are housed in the TAPAS <a href="http://beta.tapasproject.org/" target="_blank">repository</a>, but are also directly accessible on this site.
 
 The location intelligence and visualization engine CartoDB was used to convert the data
 contained in the publication gazetteer and the target language metadata fields into an
 interactive map that plots the places of publication for each text in the corpus, as well
 as the loci of target language speech communities. We used MapWarper to georectify a
-period (1892) map from the from the University of Illinois at [Urbana-Champaign Maps of
-Africa to 1900](http://imagesearchnew.library.illinois.edu/cdm/landingpage/collection/africanmaps) collection, which we used as a base-layer. This resource was then embedded directly into the HTML site. 
+period (1892) map from the from the University of Illinois at <a href="http://imagesearchnew.library.illinois.edu/cdm/landingpage/collection/africanmaps" target="_blank">Urbana-Champaign Maps of
+Africa to 1900</a> collection, which we used as a base-layer. This resource was then embedded directly into the HTML site. 
