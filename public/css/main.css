@@ -1700,3 +1700,9 @@ article#main.texts-page .text-list li .cover-holder {
 a.delete {
     display: none;
 }
+
+.citation-example {
+    padding: 1em 2em;
+    background-color: hsla(31, 18%, 95%, 1);
+    border: 1px dotted gray;
+}
