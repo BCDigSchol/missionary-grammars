@@ -12,7 +12,7 @@
 
   *Additional software*: CartoDB 
   
-  *Code is available on [GitHub](https://github.com/BCDigSchol/missionary-grammars)* 
+  *Code is available on <a href="https://github.com/BCDigSchol/missionary-grammars" target="_blank">GitHub</a>* 
 
 ### Content development and methodology
 
