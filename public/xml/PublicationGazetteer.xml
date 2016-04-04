@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Publication Gazatteer</title>
+            <author>Doyle Calhoun</author>
+            <sponsor>Boston College Libraries</sponsor>
+            <respStmt>
+               <resp>Transcription and encoding by</resp>
+               <persName>Doyle Calhoun</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: 02 February 2016. P5.</edition>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Doyle Calhoun</authority>
+            <availability>
+               <p>This file supplements the project <ref target="http://corpus-missionnaire.bc.edu"><emph>Missionary Linguistics in colonial Africa / Corpus de travaux linguistiques des missionnaires</emph></ref>.</p>
+               <licence target="http://creativecommons.org/licenses/by-sa/3.0/"> This electronic
+                  transcription is distributed under a Creative Commons Attribution-ShareAlike 3.0
+                  Unported License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p>This file organizes the texts represented in the project <ref target="http://corpus-missionnaire.bc.edu"><emph>Missionary Linguistics in colonial Africa / Corpus de travaux linguistiques des missionnaires</emph></ref> according to their place of publication.</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPlace>
+            <place xml:id="Brazzaville">
+               <placeName>Brazzaville</placeName>
+               <location>
+                  <geo>-4.2633597 15.2428853</geo>
+               </location>
+               <listBibl>
+                  <bibl>
+                     <author>Cotel, Pierre</author>
+                     <title level="m">Dictionnaire Français–Banda et Banda–Français: précédé d’un
+                        essai de grammaire Banda</title>
+                     <date>(1907)</date>
+                  </bibl>
+               </listBibl>
+            </place>
+            
+            <place xml:id="Paris">
+               <placeName>Paris</placeName>
+               <location>
+                  <geo>48.856614 2.3522219</geo>
+               </location>
+               <listBibl>
+                  <bibl>
+                     <author>Calloc'h, Jean-René</author>
+                     <title level="m">Vocabulaire Français-Gmbwaga-Gbanziri-Monjombo: précédé
+                        d'éléments de grammaire</title>
+                     <date>(1911)</date>
+                     
+                  </bibl>
+                  <bibl>
+                     <author>Gainot, Aimé</author>
+                     <title level="m">Grammaire Ibo</title>
+                     <date>(1899)</date>
+                     
+                  </bibl>
+                  <bibl>
+                     <author>Lejeune, Léon</author>
+                     <title level="m">Dictionnaire Français-Fang: précédé de quelques principes
+                        grammaticaux sur cette même langue</title>
+                     <date>(1892)</date>
+                     
+                  </bibl>
+                  <bibl>
+                     <author>Visseq, Alexandre</author>
+                     <title level="m">Grammaire Fiote: ou, grammaire de la langue du Congo</title>
+                     <date>(1889)</date>
+                     
+                  </bibl>
+                  
+                  <bibl>
+                     <author>Anonymous</author>
+                     <title level="m">Dictionnaire Français–Fiote, dialecte du Kakongo</title>
+                     <date>(1890)</date>
+                     
+                  </bibl>
+                  
+                  <bibl>
+                     <author>Visseq, Alexandre</author>
+                     <title level="m">Dictionnaire Fiot-Français</title>
+                     <date>(1889)</date>
+                  </bibl>
+                  
+                  <bibl>
+                     <author>Calloc'h, Jean-René</author>
+                     <title level="m">Vocabulaire Français-Ifumu (Batéké)</title>
+                     <date>(1911)</date>
+                     
+                  </bibl>
+                  
+                  
+                  <bibl>
+                     <author>Malzac, Victorin</author>
+                     <title level="m">Dictionnaire Français-Malgache</title>
+                     <date>(1926)</date>
+                     
+                  </bibl>
+                  
+                  
+                  
+                  <bibl>
+                     <author>Le Berrre, Pierre-Marie</author>
+                     <title level="m">Grammaire de la langue Pongouée</title>
+                     <date>(1873)</date>
+                     
+                  </bibl>
+               </listBibl>
+            </place>
+            
+            <place xml:id="Abbeville">
+               <placeName>Abbeville</placeName>
+               <location>
+                  <geo>50.105467 1.836833</geo>
+               </location>
+               <listBibl>
+                  <bibl>
+                     <author>Anonymous</author>
+                     <title level="m">Dictionnaire Français-Malinké et Malinké-Français: précédé
+                        d'un abrégé de grammaire Malinkée</title>
+                     <date>(1906)</date>
+                     
+                  </bibl>
+                  
+                  
+                  
+                  <bibl>
+                     <author>Wintz, Édouard</author>
+                     <title level="m">Dictionnaire Franc̜ais-Dyola et Dyola-Franc̜ais: précédé d'un
+                        essai de grammaire</title>
+                     <date>(1909)</date>
+                     
+                  </bibl>
+               </listBibl>
+            </place>
+            
+            <place xml:id="Rome">
+               <placeName>Rome</placeName>
+               <location>
+                  <geo>41.9027835 12.4963655</geo>
+               </location>
+               <listBibl>
+                  <bibl>
+                     <author>Marcel, Gérard</author>
+                     <title level="m">Sango: langue commerciale de l'Oubangui-Chari</title>
+                     <date>(1930)</date>
+                     
+                  </bibl>
+                  
+                  
+                  
+                  <bibl>
+                     <author>Riebstein, É.</author>
+                     <title level="m">Vocabulaire de la langue Eẃe: Eẃe-Français</title>
+                     <date>(1926)</date>
+                     
+                  </bibl>
+                  
+                  
+                  
+                  <bibl>
+                     <author>Raimbault, Jean-Baptiste</author>
+                     <title level="m">Dictionnaire Français-Soso et Soso-Français</title>
+                     <date>(1923)</date>
+                     
+                  </bibl>
+               </listBibl>
+            </place>
+            
+            <place xml:id="Dakar">
+               <placeName>Dakar</placeName>
+               <location>
+                  <geo>14.7645042 -17.3660286</geo>
+               </location>
+               <listBibl>
+                  <bibl>
+                     <author>Anonymous</author>
+                     <title level="m">Dictionnaire Français-Wolof et Wolof-Français</title>
+                     <date>(1855)</date>
+                     
+                  </bibl>
+                  
+                  
+                  
+                  <bibl>
+                     <author>Guy-Grand, V.J.</author>
+                     <title level="m">Dictionnaire Français-Volof</title>
+                     <date>(1923)</date>
+                     
+                  </bibl>
+                  
+                  
+                  
+                  <bibl>
+                     <author>Kobès, Aloyse</author>
+                     <title level="m">Dictionnaire Volof-Français</title>
+                     <date>(1923)</date>
+                     
+                  </bibl>
+               </listBibl>
+            </place>
+            
+            <place xml:id="Salzburg">
+               <placeName>Salzburg</placeName>
+               <location>
+                  <geo>47.80949 13.05501</geo>
+               </location>
+               <listBibl>
+                  <bibl>
+                     <author>Holy Ghost Fathers</author>
+                     <title level="m">English, Ibo and French dictionary</title>
+                     <date>(1904)</date>
+                     
+                  </bibl>
+               </listBibl>
+            </place>
+            
+            <place xml:id="Algeria">
+               <placeName>Algeria</placeName>
+               <location>
+                  <geo>28.033886 1.659626</geo>
+               </location>
+               <listBibl>
+                  <bibl>
+                     <author>Huyghe, G.</author>
+                     <title level="m">Dictionnaire Français-Chaouia = qamus rumicaui</title>
+                     <date>(1906)</date>
+                     
+                  </bibl>
+                  
+                  
+                  
+                  <bibl>
+                     <author>Huyghe, G.</author>
+                     <title level="m">Dictionnaire Chaouia-Arabe-Kabyle &amp; Français = qamus
+                        caui-arbi-qbaili u rumi</title>
+                     <date>(1907)</date>
+                     
+                  </bibl>
+               </listBibl>
+            </place>
+            
+            <place xml:id="Tananarive">
+               <placeName>Tananarive</placeName>
+               <location>
+                  <geo>-18.933333 47.516667</geo>
+               </location>
+               <listBibl>
+                  <bibl>
+                     <author>Malzac, Victorin</author>
+                     <author>Abinal, Antoine</author>
+                     <title level="m">Dictionnaire Malgache-Français</title>
+                     <date>(1888)</date>
+                     
+                  </bibl>
+               </listBibl>
+            </place>
+            
+            <place xml:id="LePV">
+               <placeName>Le Puy-en-Velay</placeName>
+               <location>
+                  <geo>45.042768 3.882936</geo>
+               </location>
+               <listBibl>
+                  <bibl>
+                     <author>Olivier, Augustine</author>
+                     <title level="m">Dictionnaire Français-Kabyle</title>
+                     <date>(1878)</date>
+                     
+                  </bibl>
+               </listBibl>
+            </place>
+            
+            <place xml:id="Zanzibar">
+               <placeName>Zanzibar</placeName>
+               <location>
+                  <geo>-6.165917 39.202641</geo>
+               </location>
+               <listBibl>
+                  <bibl>
+                     <author>Sacleux, Charles</author>
+                     <title level="m">Dictionnaire Français-Swahili</title>
+                     <date>(1891)</date>
+                     
+                  </bibl>
+               </listBibl>
+            </place>
+         </listPlace>
+      </body>
+   </text>
+</TEI>

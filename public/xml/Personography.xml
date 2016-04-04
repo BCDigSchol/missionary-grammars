@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Personography</title>
+            <author>Doyle Calhoun</author>
+            <sponsor> Boston College</sponsor>
+            <respStmt>
+               <resp>Transcription and encoding by</resp>
+               <persName>Doyle Calhoun</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: 02 February 2016. P5.</edition>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Doyle Calhoun</authority>
+            <availability>
+               <p>This file supplements the project <ref target="http://corpus-missionnaire.bc.edu"><emph>Missionary Linguistics in colonial Africa / Corpus de travaux linguistiques des missionnaires</emph></ref>.</p>
+               <licence target="http://creativecommons.org/licenses/by-sa/3.0/"> This electronic
+                  transcription is distributed under a Creative Commons Attribution-ShareAlike 3.0
+                  Unported License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p>This file assigns each of the missionary linguists represented in the project <ref target="http://corpus-missionnaire.bc.edu"><emph>Missionary Linguistics in colonial Africa / Corpus de travaux linguistiques des missionnaires</emph></ref> a unique xml:id, and, when the information is available, identifies them along the following perameters: name, life dates, nationality, affiliation, residence, entry in relevant missionary organization records. Biographic information is assembled from three sources: French Spiritan, or <emph><foreign
+               xml:lang="fr">Spiritain</foreign></emph>, online records; the Jesuit <title level ="m">Catalogus Defunctorum</title>; and the <title level="m">Dictionnaire Biographique des Chrétiens d'Afrique</title>. The entity <emph>idno</emph> includes the unique identifier number assigned to the missionary in the the Jesuit <title level ="m">Catalogus Defunctorum</title> and/or a link to a biographic entry pertaining to that missionary.</p>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <listChange>
+            <change><date>2016-02-12</date><name>Anna Kijas</name>
+               <p>Added xml:id from org.xml to congregation names.</p>
+               <p>Added italics to title element using "m" level.</p>
+               <p>Added URL target to first entry.</p>
+               <p>Removed example text and closed empty elements</p>
+            </change>
+            <change><date>2016-02-13</date><name>Doyle Calhoun</name>
+               <p>Added URL targets to remaining entries</p>
+               <p>Removed remaining example text and closed remainng empty elements</p>
+               <p>Added Source Description</p>
+            </change>
+         </listChange>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPerson>
+            <person xml:id="cotel_pierre">
+               <persName>Cotel, Pierre</persName>
+               <birth when="1871">1871</birth>
+               <death when="1914">1914</death>
+               <nationality>French</nationality>
+               <affiliation ana="congregation" ref="org.xml#SE">Saint-Ésprit</affiliation>
+               <affiliation ana="congregation" ref="org.xml#CJ">Compagnie de Jésus</affiliation>
+               <residence ana="prefecture">Oubangi-Chari</residence>
+               <idno ana="CD">6.004</idno>
+               <!-- CD refers to catalogus_defunctorum -->
+               <note>
+                  <p>
+                     <ref target="http://spiritains.forums.free.fr/defunts/cotelp.htm">Entry in
+                        Spiritan records</ref>
+                  </p>
+               </note>
+               <note>
+                  <bibl>
+                     <title level="m">Dictionnaire Français–Banda et Banda–Français: précédé d’un
+                        essai de grammaire Banda</title>
+                     <date>(1907)</date>. </bibl>
+               </note>
+            </person>
+
+            <person xml:id="calloch_jean-rene">
+               <persName>Calloc'h, Jean-René</persName>
+               <birth when="1875">1875</birth>
+               <death when="1928">1928</death>
+               <nationality>French</nationality>
+               <affiliation ana="congregation" ref="org.xml#SE">Saint-Ésprit</affiliation>
+               <affiliation ana="prefecture">Oubangi-Chari</affiliation>
+               <idno ana="CD"><!-- insert CD ID if known --></idno>
+               <note>
+                  <p>
+                     <ref target="http://spiritains.forums.free.fr/defunts/callochj.htm">Entry in Spiritan records</ref>
+                  </p>
+               </note>
+               <note>
+                  <bibl>
+                     <title level="m">Vocabulaire Français-Gmbwaga-Gbanziri-Monjombo : précédé
+                        d'éléments de grammaire</title>
+                     <date>(1911)</date>. </bibl>
+                  <bibl>
+                     <title level="m">Vocabulaire Français-Ifumu (Batéké)</title>
+                     <date>(1911)</date>. </bibl>
+               </note>
+            </person>
+
+            <person xml:id="gerad_marcel">
+               <persName>Gérard, Marcel</persName>
+               <birth when="1889">1889</birth>
+               <death when="1946">1946</death>
+               <nationality>French</nationality>
+               <affiliation ana="congregation" ref="org.xml#SE">Saint–Ésprit</affiliation>
+               <residence ana="prefecture">
+                  <placeName>Bangui</placeName>
+               </residence>
+               <floruit notBefore="1234" notAfter="1234"/>
+               <residence ana="prefecture">
+                  <placeName>Saint-Pierre-et-Miquelon</placeName>
+               </residence>
+               <floruit/>
+               <note>
+                  <p>
+                     <ref target = "http://spiritains.forums.free.fr/defunts/gerardm.htm">Entry in Spiritan records</ref>
+                  </p>
+               </note>
+               <idno ana="CD"><!-- insert CD ID if known --></idno>
+               <note>
+                  <bibl>
+                     <title level="m">Sango: langue commerciale de l'Oubangui-Chari</title>
+                     <date>(1930)</date>. </bibl>
+               </note>
+            </person>
+
+            <person xml:id="ganot_aime">
+               <persName>Ganot, Aimé</persName>
+               <birth when="1868">1868</birth>
+               <death when="1942">1942</death>
+               <nationality>French</nationality>
+               <affiliation ana="congregation" ref="org.xml#SE">Saint–Ésprit</affiliation>
+               <affiliation ana="congregation" ref="org.xml#SE_SCM">Saint-Cœur de
+                  Marie</affiliation>
+               <affiliation ana="prefecture">Nigeria</affiliation>
+               <note>
+                  <p>
+                     <ref target = "http://spiritains.forums.free.fr/defunts/ganota.htm">Entry in Spiritan records</ref>
+                  </p>
+               </note>
+               <idno ana="CD"><!-- insert CD ID if known --></idno>
+               <note>
+                  <bibl>
+                     <title level="m">Grammaire Ibo</title>
+                     <date>(1899)</date>. </bibl>
+               </note>
+            </person>
+
+            <person xml:id="guy-grand_vj">
+               <persName>Guy-Grand, V.J.</persName>
+               <birth when="1854">1854</birth>
+               <death when="1901">1901</death>
+               <nationality>French</nationality>
+               <affiliation ana="congregation" ref="org.xml#SE">Saint–Ésprit</affiliation>
+               <affiliation ana="prefecture">Ngasobil</affiliation>
+               <note>
+                  <p>
+                     <ref target= "http://spiritains.forums.free.fr/defunts/guygrand.htm">Entry in Spiritan records</ref>
+                  </p>
+               </note>
+               <idno ana="CD"><!-- insert CD ID if known --></idno>
+               <note>
+                  <bibl>
+                     <title level="m">Dictionnaire Français-Volof</title>
+                     <date>(1923)</date>. </bibl>
+               </note>
+            </person>
+
+            <person xml:id="lejeune_leon">
+               <persName>Lejeune, Léon</persName>
+               <birth when="1860">1860</birth>
+               <death when="1905">1905</death>
+               <nationality>French</nationality>
+               <affiliation ana="congregation" ref="org.xml#SE">Saint–Ésprit</affiliation>
+               <affiliation ana="congregation" ref="org.xml#SE_SCM">Saint-Cœur de
+                  Marie</affiliation>
+               <affiliation ana="prefecture">Lambaréné</affiliation>
+               <note>
+                  <p>
+                     <ref target="http://spiritains.forums.free.fr/defunts/lejeunel.htm">Entry in Spiritan Records</ref>
+                  </p>
+               </note>
+               <idno ana="CD"><!-- insert CD ID if known --></idno>
+               <note>
+                  <bibl>
+                     <title level="m">Dictionnaire Français-Fang: précédé de quelques principes
+                        grammaticaux sur cette même langue</title>
+                     <date>(1892)</date>. </bibl>
+               </note>
+            </person>
+
+            <person xml:id="kobes_aloyse">
+               <persName>Kobès, Aloyse</persName>
+               <birth when="1820">1820</birth>
+               <death when="1872">1872</death>
+               <nationality>French</nationality>
+               <affiliation ana="congregation" ref="org.xml#SE">Saint–Ésprit</affiliation>
+               <affiliation ana="prefecture">Ngasobil</affiliation>
+               <note>
+                  <p>
+                     <ref target="http://spiritains.forums.free.fr/defunts/kobesa.htm">Entry in Spiritan records</ref>
+                  </p>
+               </note>
+               <idno ana="CD"><!-- insert CD ID if known --></idno>
+               <note>
+                  <bibl>
+                     <title level="m">Dictionnaire Volof-Français</title>
+                     <date>(1923)</date>. </bibl>
+               </note>
+            </person>
+
+            <person xml:id="sacleux_charles">
+               <persName>Sacleux, Charles</persName>
+               <birth when="1855">1855</birth>
+               <death when="1943">1943</death>
+               <nationality>French</nationality>
+               <affiliation ana="congregation" ref="org.xml#SE">Saint–Ésprit</affiliation>
+               <affiliation ana="congregation" ref="org.xml#SE_SCM">Saint-Cœur de
+                  Marie</affiliation>
+               <affiliation ana="prefecture">Zanzibar</affiliation>
+               <note>
+                  <p>
+                     <ref target = "http://spiritains.forums.free.fr/defunts/sacleuxc.htm">Entry in Spiritan records</ref>
+                  </p>
+               </note>
+               <idno ana="CD"><!-- insert CD ID if known --></idno>
+               <note>
+                  <bibl>
+                     <title level="m">Dictionnaire Français-Swahili</title>
+                     <date>(1891)</date>. </bibl>
+               </note>
+            </person>
+
+            <person xml:id="malzac_victorin">
+               <persName>Malzac, Victorin</persName>
+               <birth when="1840">1840</birth>
+               <death when="1943">1943</death>
+               <nationality>French</nationality>
+               <affiliation ana="congregation" ref="org.xml#CJ">Compagnie de Jésus</affiliation>
+               <affiliation ana="prefecture">Tananarive</affiliation>
+               <note>
+                  <p>
+                     <ref type = "http://www.dacb.org/stories/madagascar/f-malzac_rpvictorin.html">Entry in <title level="m">Dictionnaire Biographique des Chrétiens d'Afrique</title></ref>
+                  </p>
+               </note>
+               <idno ana="CD">12.983</idno>
+               <note>
+                  <bibl>
+                     <title level="m">Dictionnaire Malgache-Français</title>
+                     <date>(1888)</date>. <bibl>
+                        <title level="m">Dictionnaire Français-Malgache</title>
+                        <date>(1926)</date>. </bibl></bibl>
+               </note>
+            </person>
+
+            <person xml:id="abinal_antoine">
+               <persName>Abinal, Antoine</persName>
+               <birth when="1829">1829</birth>
+               <death when="1887">1887</death>
+               <nationality>French</nationality>
+               <affiliation ana="congregation" ref="org.xml#CJ">Compagnie de Jésus</affiliation>
+               <affiliation ana="prefecture">Tananarive</affiliation>
+               <note>
+                  <p>
+                     <ref type = "http://www.dacb.org/stories/madagascar/abinal_antoine.html">Entry in <title level="m">Dictionnaire Biographique des Chrétiens d'Afrique</title></ref>
+                  </p>
+               </note>
+               <idno ana="CD">6.713</idno>
+               <note>
+                  <bibl>
+                     <title level="m">Dictionnaire Malgache-Français></title>
+                     <date>(1888)</date>. </bibl>
+               </note>
+            </person>
+
+            <person xml:id="raimbault_jean-baptiste">
+               <persName>Raimbault, Jean-Baptiste</persName>
+               <birth/>
+               <death/>
+               <nationality/>
+               <affiliation ana="congregation" ref="org.xml#SE">Saint–Ésprit</affiliation>
+               <affiliation ana="congregation" ref="org.xml#SE_SCM">Saint-Cœur de
+                  Marie</affiliation>
+               <affiliation ana="prefecture">Conakry</affiliation>
+               <idno type="URL">
+                  <!-- insert Spiritan link associated with author --></idno>
+               <idno ana="CD"><!-- insert CD ID if known --></idno>
+               <note>
+                  <bibl>
+                     <title level="m">Dictionnaire Français-Soso et Soso-Français </title>
+                     <date>(1923)</date>. </bibl>
+               </note>
+            </person>
+
+            <person xml:id="wintz_e">
+               <persName>Wintz, É.</persName>
+               <birth/>
+               <death/>
+               <nationality>French</nationality>
+               <affiliation ana="congregation" ref="org.xml#SE">Saint–Ésprit</affiliation>
+               <affiliation ana="prefecture"> </affiliation>
+               <idno type="URL">
+                  <!-- insert Spiritan link associated with author --></idno>
+               <idno ana="CD"><!-- insert CD ID if known --></idno>
+               <note>
+                  <bibl>
+                     <title level="m">Dictionnaire Français-Dyola et Dyola-Français: précédé d'un
+                        essai de grammaire </title>
+                     <date>(1909)</date>. </bibl>
+               </note>
+            </person>
+
+            <person xml:id="riebstein_e">
+               <persName>Riebstein, É.</persName>
+               <birth/>
+               <death/>
+               <nationality>French</nationality>
+               <affiliation ana="congregation" ref="org.xml#SE">Saint–Ésprit</affiliation>
+               <affiliation ana="prefecture"> </affiliation>
+               <idno type="URL">
+                  <!-- insert Spiritan link associated with author --></idno>
+               <idno/>
+               <idno ana="CD"><!-- insert CD ID if known --></idno>
+               <note>
+                  <bibl>
+                     <title level="m">Vocabulaire de la langue Eẃe: Eẃe-Français </title>
+                     <date>(1926)</date>. </bibl>
+               </note>
+            </person>
+
+            <person xml:id="visseq_alexandre">
+               <persName>Visseq, Alexandre</persName>
+               <!-- insert birth and date year -->
+               <birth/>
+               <death/>
+               <nationality/>
+               <affiliation ana="congregation" ref="org.xml#SE">Saint–Ésprit</affiliation>
+               <affiliation ana="congregation" ref="org.xml#SE_SCM">Saint-Cœur de
+                  Marie</affiliation>
+               <affiliation ana="prefecture"> </affiliation>
+               <idno type="URL">
+                  <!-- insert Spiritan link associated with author --></idno>
+               <idno ana="CD"><!-- insert CD ID if known --></idno>
+               <note>
+                  <bibl>
+                     <title level="m">Dictionnaire Fiot-Français</title>
+                     <date>(1889)</date>. </bibl>
+               </note>
+            </person>
+
+            <person xml:id="huyghe_g">
+               <persName>Huyghe, G.</persName>
+               <!-- insert birth and date year -->
+               <birth/>
+               <death/>
+               <nationality/>
+               <affiliation ana="congregation" ref="org.xml#CJ">Compagnie de Jésus</affiliation>
+               <affiliation ana="congregation" ref="org.xml#PB">Pères Blancs</affiliation>
+               <affiliation ana="prefecture">Alger</affiliation>
+               <idno type="URL">
+                  <!-- insert Spiritan link associated with author --></idno>
+               <idno ana="CD">27.675</idno>
+               <note>
+                  <bibl>
+                     <title level="m">Dictionnaire Français-Chaouia = qamus rumicaui</title>
+                     <date>1906</date>
+                     <bibl>
+                        <title level="m">Dictionnaire Chaouia-Arabe-Kabyle and Français= qamus
+                           caui-arbi-qbaili u rumi</title>
+                        <date>(1907)</date>. </bibl></bibl>
+               </note>
+            </person>
+
+            <person xml:id="olivier_augustine">
+               <persName>Olivier, Augustine</persName>
+               <birth/>
+               <death/>
+               <nationality/>
+               <affiliation ana="congregation" ref="org.xml#CJ">Compagnie de Jésus</affiliation>
+               <affiliation ana="prefecture"> </affiliation>
+               <idno type="URL">
+                  <!-- insert Spiritan link associated with author --></idno>
+               <idno ana="CD">7.105</idno>
+               <note>
+                  <bibl>
+                     <title level="m">Dictionnaire Français-Kabyle</title>
+                     <date>(1878)</date>. </bibl>
+               </note>
+            </person>
+
+            <person xml:id="leberre_pierre-marie">
+               <persName>Leberre,Pierre-Marie</persName>
+               <birth/>
+               <death/>
+               <nationality/>
+               <affiliation ana="congregation" ref="org.xml#SE">Saint–Ésprit</affiliation>
+               <affiliation ana="congregation" ref="org.xml#SE_SCM">Saint-Cœur de
+                  Marie</affiliation>
+               <affiliation ana="prefecture"> </affiliation>
+               <idno type="URL">
+                  <!-- insert Spiritan link associated with author --></idno>
+               <idno ana="CD"><!-- insert CD ID if known --></idno>
+               <note>
+                  <bibl>
+                     <title level="m">Grammaire de la langue Pongouée</title>
+                     <date>(1873)</date>. </bibl>
+               </note>
+            </person>
+         </listPerson>
+      </body>
+   </text>
+</TEI>

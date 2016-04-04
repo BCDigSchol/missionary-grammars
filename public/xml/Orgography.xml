@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Orgography</title>
+            <author>Doyle Calhoun</author>
+            <sponsor>Boston College Libraries</sponsor>
+            <respStmt>
+               <resp>Transcription and encoding by</resp>
+               <persName>Doyle Calhoun</persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition in TEI, date: 02 February 2016. P5.</edition>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Doyle Calhoun</authority>
+            <availability>
+               <p>This file supplements the project <ref target="http://corpus-missionnaire.bc.edu"><emph>Missionary Linguistics in colonial Africa / Corpus de travaux linguistiques des missionnaires</emph></ref>.</p>
+               <licence target="http://creativecommons.org/licenses/by-sa/3.0/"> This electronic
+                  transcription is distributed under a Creative Commons Attribution-ShareAlike 3.0
+                  Unported License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p>This file provides a succinct overview of the provenance of the various missionary organizations represented in the project <ref target="http://corpus-missionnaire.bc.edu"><emph>Missionary Linguistics in colonial Africa / Corpus de travaux linguistiques des missionnaires</emph></ref>. All information is drawn from the organizations' websites.</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listOrg>
+            <org xml:id="SE">
+               <orgName>La Congrégation du Saint-Ésprit</orgName>
+               <note>
+                  <orgName>La Congrégation du Saint-Ésprit</orgName>, known in English as the
+                     <orgName>Congregation of the Holy Spirit</orgName>, is the original
+                     <orgName>Spiritan </orgName>community. It was founded in <date>1703 </date>by
+                     <persName>Claude Poullart des Places</persName> (<date type="birth"
+                     >1679</date>–<date type="death">1709</date>). In <date>1848</date>, it merged
+                  with the <orgName>Congregation of the Holy Heart of Mary</orgName>, another
+                     <orgName>Spiritan </orgName>organization which had been founded seven years
+                  prior by <persName>François-Marie-Paul Libermann</persName> (<date type="birth"
+                     >1804</date>–<date type="death">1852</date>). </note>
+            </org>
+
+            <org xml:id="SE_SCM">
+               <orgName>La congrégation du Saint-Ésprit et du Saint-Cœur de Marie</orgName>
+               <note>
+                  <orgName>La congrégation du Saint-Ésprit et du Saint-Cœur de Marie</orgName>,
+                  known in English as the <orgName>Congregation of the Holy Spirit and the
+                     Immaculate Heart of Mary</orgName> is the joint <orgName>Spiritan</orgName>
+                  organization, resulting from the merging of <orgName>Congregation of the Holy
+                     Spirit</orgName> and the <orgName>Immaculate Heart of Mary</orgName> in
+                     <date>1848</date>. </note>
+            </org>
+
+            <org xml:id="CJ">
+               <orgName>La Compagnie de Jésus</orgName>
+               <note>
+                  <orgName>La Compagnie de Jésus</orgName>, known in English as the <orgName>Society
+                     of Jesus</orgName> is a <name type="religion">Catholic</name> religious order,
+                  the members of which are called <emph><foreign xml:lang="fr"
+                  >jésuites</foreign></emph>, or <emph>jesuits</emph>. The society was officially
+                  recognized by <persName>Pope Paul III</persName> in <date>1540</date> by
+                     <persName>Ignatius of Loyola</persName> (<date type="birth">1491</date>–<date
+                     type="death">1556</date>) and several of his colleagues, namely,
+                     <persName>Francis Xavier</persName> (<date type="birth">1506</date>–<date
+                     type="death">1552</date>) and <persName>Peter Faber</persName> (<date
+                     type="birth">1506</date>–<date type="death">1546</date>) . </note>
+            </org>
+
+            <org xml:id="PB">
+               <orgName>Les Pères Blancs</orgName>
+               <note>
+                  <orgName>Les Pères Blancs</orgName>, known officially as <emph><foreign
+                        xml:lang="fr"><orgName>Les missionnaires d'Afrique</orgName></foreign></emph>
+                  and in English as the <orgName>White Fathers</orgName>, is a <name type="religion"
+                     >Catholic</name> missionary organization. It was founded in <date>1868</date>
+                  at <placeName type="commune">Maison Carée</placeName> in
+                     <placeName>Algeria</placeName> by <persName>Charles Martial
+                     Lavigerie</persName> (<date type="birth">1825</date>–<date type="birth"
+                     >1892</date>). </note>
+            </org>
+         </listOrg>
+      </body>
+   </text>
+</TEI>
