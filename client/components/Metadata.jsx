@@ -3,8 +3,6 @@ import React from "react";
 export const Metadata = (props) => {
     let text = props.text;
 
-    console.log(text);
-
     function is_plural(field) {
         return field.length > 1;
     }

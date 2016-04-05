@@ -11,7 +11,6 @@ let store = createStore(missionaryGrammarsApp);
 
 
 if (window.location.href.indexOf('search') > 0) {
-    console.log('searched');
     render(
         <SearchPage>Foo</SearchPage>,
         document.getElementById("search-holder")

@@ -119,7 +119,8 @@ class TextsController < ApplicationController
     response = {
         :language => es.languages,
         :title => es.titles,
-        :publisher => es.publishers
+        :publisher => es.publishers,
+        :hits => es.hits
     }
     respond_to do |format|
       format.html {}

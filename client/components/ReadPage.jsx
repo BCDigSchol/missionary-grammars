@@ -85,10 +85,6 @@ export default class ReadPage extends React.Component {
 
         let nextlink = <div onClick={this.incrementPage} className="next-page">&gt;</div>;
 
-        console.log('state');
-        console.log(this.state.tab);
-
-
         return (
             <div className="read-page">
                 <div className="structure-pane">

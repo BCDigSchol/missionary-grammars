@@ -1,4 +1,5 @@
 import { Facet } from "./Facet.jsx";
+import { SearchResults } from "./SearchResults.jsx";
 
 import React from "react";
 
@@ -16,16 +17,19 @@ export default class SearchPage extends React.Component {
             results: {
                 language: [],
                 publisher: [],
-                title: []
+                title: [],
+                hits: {
+                    total: 0,
+                    items: []
+                }
             }
+
         };
         this.fetched = false;
         me = this;
-        console.log('fooo');
     }
 
     fetch() {
-        console.log(this.state);
         this.fetched = true;
         var url = '/texts/search?' + this.state.filters.join('&');
         $.get(url, {}, function (response) {
@@ -36,10 +40,24 @@ export default class SearchPage extends React.Component {
     }
 
     narrowSearch(field, term) {
+        let my_filters = me.state.filters;
+        my_filters.push(field + "=" + term);
         me.setState({
-            filters: me.state.filters.push(field + "=" + term)
+            filters: my_filters
         });
-        me.fetch()
+        me.fetch();
+    }
+
+    removeFilter(filter) {
+        let my_filters = me.state.filters;
+
+        let index = my_filters.indexOf(filter);
+        my_filters.splice(index);
+
+        me.setState({
+            filters: my_filters
+        });
+        me.fetch();
     }
 
     toggleField(field) {
@@ -100,7 +118,12 @@ export default class SearchPage extends React.Component {
                 </div>
 
                 <div className="read-pane">
-
+                    <SearchResults
+                        hits={this.state.results.hits.items}
+                        total={this.state.results.hits.total}
+                        filters={this.state.filters}
+                        removeFilter={this.removeFilter}
+                    />
                 </div>
             </div>
         );

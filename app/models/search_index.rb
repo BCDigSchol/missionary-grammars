@@ -9,6 +9,11 @@ class SearchIndex
     @authors = []
     @publishers = []
     @groups = []
+    @hits = {}
+  end
+
+  def hits
+    @hits
   end
 
   def titles
@@ -23,7 +28,7 @@ class SearchIndex
     @publishers
   end
 
-  def search_texts(title=nil, author=nil, language=nil, publisher=nil, group=nil)
+  def search_texts(title=nil, author=nil, language=nil, publisher=nil, group=nil, sorted=true)
     field_term_pairs = []
 
     if title
@@ -38,7 +43,7 @@ class SearchIndex
 
     if language
       new_language = {:language => language}
-      field_term_pairs.push  new_language
+      field_term_pairs.push new_language
     end
 
     if publisher
@@ -47,10 +52,10 @@ class SearchIndex
     end
 
     search(field_term_pairs)
-  end
 
-  def search_pages(text=nil, title=nil, authors=nil, languages=nil, publishers=nil, groups=nil)
-    search([{'pages.text': 'dictionnaire'}])
+    if sorted
+      @hits[:items].sort_by { |hit| hit['title'] }
+    end
   end
 
   private
@@ -59,7 +64,8 @@ class SearchIndex
     @client ||= Elasticsearch::Client.new log: true
     response = @client.search index: 'grammars',
                               type: 'text',
-                              size: 10,
+                              size: 30,
+                              fields: [:title, :author],
                               body: {
                                   query: {
                                       bool: {
@@ -75,6 +81,7 @@ class SearchIndex
                                   }
                               }
     %w(titles languages publishers).each { |field| get_agg field, response }
+    get_hits response
   end
 
   def get_agg(field, response)
@@ -83,6 +90,12 @@ class SearchIndex
     response['aggregations'][field]['buckets'].each do |item|
       list.push(item['key'])
     end
+  end
+
+  def get_hits(response)
+    @hits = {}
+    @hits[:hits] = response['hits']['total']
+    @hits[:items] = response['hits']['hits'].map { |hit| {id: hit['_id'], title: hit['fields']['title'], author: hit['fields']['author']} }
   end
 
 
