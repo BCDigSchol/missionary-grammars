@@ -81,6 +81,21 @@ export default class SearchPage extends React.Component {
             this.fetch();
         }
 
+        let facets = [
+            {
+                field: 'language',
+                values: this.state.results.language,
+                display: 'Language'
+            },
+            {
+                field: 'publisher',
+                values: this.state.results.publisher,
+                display: 'Publisher'
+            }
+
+        ];
+
+
         return (
             <div className="read-page">
                 <div className="structure-pane">
@@ -96,24 +111,18 @@ export default class SearchPage extends React.Component {
                         </li>
                     </ul>
                     <div className={this.state.tab === 'search-browse' ? 'show' :'hidden' } id="text-structure">
-                        <Facet
-                            field="language"
-                            values={this.state.results.language}
-                            addFilter={this.addFilter}
-                            removeFilter={this.removeFilter}
-                            filters={this.state.filters}
-                            toggleField={this.toggleField}
-                            open_fields={this.state.open_fields}
-                            displayName="Language"/>
-                        <Facet
-                            field="publisher"
-                            values={this.state.results.publisher}
-                            addFilter={this.addFilter}
-                            removeFilter={this.removeFilter}
-                            filters={this.state.filters}
-                            toggleField={this.toggleField}
-                            open_fields={this.state.open_fields}
-                            displayName="Publisher"/>
+                        {facets.map((facet) =>(
+                                <Facet
+                                    field={facet.field}
+                                    values={facet.values}
+                                    addFilter={this.addFilter}
+                                    removeFilter={this.removeFilter}
+                                    filters={this.state.filters}
+                                    toggleField={this.toggleField}
+                                    open_fields={this.state.open_fields}
+                                    displayName={facet.display}/>
+                            )
+                        )}
                     </div>
                     <div className={this.state.tab === 'search-fulltext' ? 'show' :'hidden' } id="text-metadata">
                     </div>
