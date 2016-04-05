@@ -1721,3 +1721,22 @@ body.homepage #header h1[lang='fr'] {
 #header header > p {
     font-size: 1.1em;
 }
+
+/* Nav */
+#nav {
+    padding: 8px 0 8px 0;
+    font-size: 16px;
+    font-family: Lato, sans-serif;
+}
+
+#nav > ul > li {
+    display: inline-block;
+    margin: -9px 8px 0 8px;
+    border-radius: 0.5em;
+    padding: 14px;
+    border: solid 1px transparent;
+    -moz-transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+    -webkit-transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+    -ms-transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+    transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+}

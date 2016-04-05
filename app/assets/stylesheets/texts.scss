@@ -1,6 +1,8 @@
 // Place all the styles related to the texts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$menu-height: 60px;
+
 #reader-body {
   background-color: #fff;
 
@@ -77,9 +79,8 @@
 .structure-pane {
   flex-basis: 35%;
   width: 35%;
-  padding: 0 2em;
+  padding: $menu-height 2em 0 2em;
   font-size: .9em;
-  background-color: #f3f2f4;
   overflow: scroll;
   font-family: $accent_font;
 
@@ -150,7 +151,7 @@
 
 .read-pane {
   background-color: #000;
-  padding: 0;
+  padding: $menu-height 0 0 0;
   flex-basis: 65%;
   @media screen and (max-width: $break-medium) {
     flex: 0 0 100%;
