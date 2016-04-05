@@ -39,9 +39,9 @@ export default class SearchPage extends React.Component {
         }.bind(this), 'json');
     }
 
-    narrowSearch(field, term) {
+    addFilter(filter) {
         let my_filters = me.state.filters;
-        my_filters.push(field + "=" + term);
+        my_filters.push(filter);
         me.setState({
             filters: my_filters
         });
@@ -96,24 +96,26 @@ export default class SearchPage extends React.Component {
                         </li>
                     </ul>
                     <div className={this.state.tab === 'search-browse' ? 'show' :'hidden' } id="text-structure">
-                        <h3>Browse</h3>
                         <Facet
                             field="language"
                             values={this.state.results.language}
-                            addFilter={this.narrowSearch}
+                            addFilter={this.addFilter}
+                            removeFilter={this.removeFilter}
+                            filters={this.state.filters}
                             toggleField={this.toggleField}
                             open_fields={this.state.open_fields}
                             displayName="Language"/>
                         <Facet
                             field="publisher"
                             values={this.state.results.publisher}
-                            addFilter={this.narrowSearch}
+                            addFilter={this.addFilter}
+                            removeFilter={this.removeFilter}
+                            filters={this.state.filters}
                             toggleField={this.toggleField}
                             open_fields={this.state.open_fields}
                             displayName="Publisher"/>
                     </div>
                     <div className={this.state.tab === 'search-fulltext' ? 'show' :'hidden' } id="text-metadata">
-                        <h3>Fulltext</h3>
                     </div>
                 </div>
 
