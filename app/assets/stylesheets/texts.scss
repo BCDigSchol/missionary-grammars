@@ -314,12 +314,34 @@ li.closed-section > ul {
   text-align: left;
   padding-left: 1em;
 
-  ul {
+  &.search-page {
+    overflow-y: scroll;
+  }
+
+  h2 {
+    display: inline-block;
+    width: 4em;
+  }
+
+  .result-total {
+    display: inline-block;
+    margin-left: 1em;
+  }
+
+  ul#search-results {
     padding-left: 0;
+    line-height: 1.7;
+    font-size: .9rem;
+    clear: both;
 
     li {
       list-style: none;
-      margin-left: 0;
+      margin: 0 1em 1em 0;
+      clear: both;
+
+      a {
+        font-weight:bold;
+      }
     }
   }
 
@@ -328,10 +350,6 @@ li.closed-section > ul {
     padding: 0 1em 0 2em;
   }
 
-  #search-results {
-    line-height: 1.7;
-    font-size: 1em;
-  }
 
   .searched-for-box {
     margin-top: .83em;
@@ -366,4 +384,11 @@ li.closed-section > ul {
       }
     }
   }
+}
+
+img.list-cover-image {
+  float: left;
+  width: 100px;
+  padding-bottom: 2em;
+  margin-right: 2em;
 }

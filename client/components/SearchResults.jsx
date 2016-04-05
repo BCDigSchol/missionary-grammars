@@ -1,4 +1,6 @@
 import React, { PropTypes } from "react";
+import { SearchResult } from "./SearchResult.jsx";
+
 
 export const SearchResults = ({hits, total, filters, removeFilter}) => {
 
@@ -10,11 +12,13 @@ export const SearchResults = ({hits, total, filters, removeFilter}) => {
         </ul>
     </div>;
 
+    console.log(hits);
+
     return <div className="search-result-page">
         {filters.length ? result_box : ''}
-        <h2>Results</h2>
+        <h2>Results</h2><div className="result-total">{total} results</div>
         <ul id="search-results">
-            {hits.map((hit) => (<li><a href={hit.id}>{hit.title}</a></li>))}
+            {hits.map((hit) => (<SearchResult id={hit.id} title={hit.title} author={hit.author} date={hit.date} />))}
         </ul>
     </div>
 };

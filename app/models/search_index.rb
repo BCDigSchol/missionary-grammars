@@ -80,7 +80,7 @@ class SearchIndex
     response = @client.search index: 'grammars',
                               type: 'text',
                               size: 30,
-                              fields: [:title, :author],
+                              fields: [:title, :author, :date],
                               body: {
                                   query: {
                                       bool: {
@@ -88,12 +88,12 @@ class SearchIndex
                                       }
                                   },
                                   aggregations: {
-                                      titles: {terms: {field: 'title.raw', order: { _term: 'asc' }, size: 50}},
-                                      languages: {terms: {field: 'language.raw', order: { _term: 'asc' }, size: 50}},
-                                      authors: {terms: {field: 'author.raw', order: { _term: 'asc' }, size: 50}},
-                                      publishers: {terms: {field: 'publisher.raw', order: { _term: 'asc' }, size: 50}},
-                                      groups: {terms: {field: 'group.raw', order: { _term: 'asc' }, size: 50}},
-                                      dates: {terms: {field: 'date', order: { _term: 'asc' }, size: 50}}
+                                      titles: {terms: {field: 'title.raw', order: {_term: 'asc'}, size: 50}},
+                                      languages: {terms: {field: 'language.raw', order: {_term: 'asc'}, size: 50}},
+                                      authors: {terms: {field: 'author.raw', order: {_term: 'asc'}, size: 50}},
+                                      publishers: {terms: {field: 'publisher.raw', order: {_term: 'asc'}, size: 50}},
+                                      groups: {terms: {field: 'group.raw', order: {_term: 'asc'}, size: 50}},
+                                      dates: {terms: {field: 'date', order: {_term: 'asc'}, size: 50}}
                                   }
                               }
     %w(titles authors languages publishers dates).each { |field| get_agg field, response }
@@ -111,7 +111,12 @@ class SearchIndex
   def get_hits(response)
     @hits = {}
     @hits[:hits] = response['hits']['total']
-    @hits[:items] = response['hits']['hits'].map { |hit| {id: hit['_id'], title: hit['fields']['title'], author: hit['fields']['author']} }
+    @hits[:items] = response['hits']['hits'].map { |hit| {
+        id: hit['_id'],
+        title: hit['fields']['title'],
+        author: hit['fields']['author'],
+        date: hit['fields']['date']}
+    }
   end
 
 

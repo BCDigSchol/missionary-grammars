@@ -140,10 +140,10 @@ export default class SearchPage extends React.Component {
                     </div>
                 </div>
 
-                <div className="read-pane">
+                <div className="read-pane search-page">
                     <SearchResults
                         hits={this.state.results.hits.items}
-                        total={this.state.results.hits.total}
+                        total={this.state.results.hits.hits}
                         filters={this.state.filters}
                         removeFilter={this.removeFilter}
                     />
