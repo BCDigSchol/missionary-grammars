@@ -110,8 +110,9 @@ class TextsController < ApplicationController
   end
 
   def search
+
     es = SearchIndex.new
-    es.search_texts
+    es.search_texts params['title'], params['author'], params['language'], params['publisher'], params['group']
     @languages = es.languages
     @titles = es.titles
     @publishers = es.publishers
