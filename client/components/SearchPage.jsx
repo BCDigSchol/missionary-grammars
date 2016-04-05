@@ -16,8 +16,10 @@ export default class SearchPage extends React.Component {
             open_fields: [],
             results: {
                 language: [],
+                author: [],
                 publisher: [],
                 title: [],
+                date: [],
                 hits: {
                     total: 0,
                     items: []
@@ -86,6 +88,16 @@ export default class SearchPage extends React.Component {
                 field: 'language',
                 values: this.state.results.language,
                 display: 'Language'
+            },
+            {
+                field: 'author',
+                values: this.state.results.author,
+                display: 'Author'
+            },
+            {
+                field: 'date',
+                values: this.state.results.date,
+                display: 'Date'
             },
             {
                 field: 'publisher',

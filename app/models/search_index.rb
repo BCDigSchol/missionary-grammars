@@ -9,6 +9,7 @@ class SearchIndex
     @authors = []
     @publishers = []
     @groups = []
+    @dates = []
     @hits = {}
   end
 
@@ -20,6 +21,10 @@ class SearchIndex
     @titles
   end
 
+  def authors
+    @authors
+  end
+
   def languages
     @languages
   end
@@ -28,7 +33,11 @@ class SearchIndex
     @publishers
   end
 
-  def search_texts(title=nil, author=nil, language=nil, publisher=nil, group=nil, sorted=true)
+  def dates
+    @dates
+  end
+
+  def search_texts(title=nil, author=nil, language=nil, publisher=nil, group=nil, date=nil, sorted=true)
     field_term_pairs = []
 
     if title
@@ -48,7 +57,12 @@ class SearchIndex
 
     if publisher
       new_publisher = {:publisher => publisher}
-      field_term_pairs[:publisher] = new_publisher
+      field_term_pairs.push new_publisher
+    end
+
+    if date
+      new_date = {:date => date}
+      field_term_pairs.push new_date
     end
 
     search(field_term_pairs)
@@ -61,6 +75,7 @@ class SearchIndex
   private
   def search(field_term_pairs=[])
     must_array = field_term_pairs.map { |pair| {match: pair} }
+
     @client ||= Elasticsearch::Client.new log: true
     response = @client.search index: 'grammars',
                               type: 'text',
@@ -73,14 +88,15 @@ class SearchIndex
                                       }
                                   },
                                   aggregations: {
-                                      titles: {terms: {field: 'title.raw', size: 50}},
-                                      languages: {terms: {field: 'language.raw', size: 50}},
-                                      authors: {terms: {field: 'author.raw', size: 50}},
-                                      publishers: {terms: {field: 'publisher.raw', size: 50}},
-                                      groups: {terms: {field: 'group.raw', size: 50}}
+                                      titles: {terms: {field: 'title.raw', order: { _term: 'asc' }, size: 50}},
+                                      languages: {terms: {field: 'language.raw', order: { _term: 'asc' }, size: 50}},
+                                      authors: {terms: {field: 'author.raw', order: { _term: 'asc' }, size: 50}},
+                                      publishers: {terms: {field: 'publisher.raw', order: { _term: 'asc' }, size: 50}},
+                                      groups: {terms: {field: 'group.raw', order: { _term: 'asc' }, size: 50}},
+                                      dates: {terms: {field: 'date', order: { _term: 'asc' }, size: 50}}
                                   }
                               }
-    %w(titles languages publishers).each { |field| get_agg field, response }
+    %w(titles authors languages publishers dates).each { |field| get_agg field, response }
     get_hits response
   end
 
