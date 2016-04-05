@@ -322,4 +322,48 @@ li.closed-section > ul {
       margin-left: 0;
     }
   }
+
+  .search-result-page {
+    width: 100%;
+    padding: 0 1em 0 2em;
+  }
+
+  #search-results {
+    line-height: 1.7;
+    font-size: 1em;
+  }
+
+  .searched-for-box {
+    margin-top: .83em;
+    background-color: #f5f5f5;
+    border: 1px solid #e4e3e6;
+    padding: 1em;
+    font-size: .9em;
+
+    ul {
+      display: flex;
+      max-width: 80%;
+      width: 80%;
+      margin: 0;
+    }
+
+    li {
+      margin: .5em;
+      background-color: #fffaea;
+      border: 1px solid #ccc6e6;
+      border-radius: 4px;
+
+      .filter {
+        display: inline-block;
+        padding: .5em;
+      }
+
+      a.remove-filter {
+        border-left: 1px solid #ccc6e6;
+        display: inline-block;
+        padding: .5em;
+        cursor: pointer;
+      }
+    }
+  }
 }
