@@ -1,7 +1,7 @@
 require 'set'
 
 class TextsController < ApplicationController
-  layout 'read', only: [:show]
+  layout 'read', only: [:show, :search]
 
   def index
     @page = 'texts'
@@ -40,7 +40,7 @@ class TextsController < ApplicationController
     @text = Text.find(params[:id])
     respond_to do |format|
       format.html {}
-      format.json {self.structure}
+      format.json { self.structure }
     end
 
   end
@@ -110,6 +110,23 @@ class TextsController < ApplicationController
   end
 
   def search
+    es = SearchIndex.new
+    es.search_texts
+    @languages = es.languages
+    @titles = es.titles
+    @publishers = es.publishers
+    response = {
+        :language => es.languages,
+        :title => es.titles,
+        :publisher => es.publishers
+    }
+    respond_to do |format|
+      format.html {}
+      format.json { render json: response }
+    end
+  end
+
+  def oldsearch
     @authors = build_select_list(Author, 'authors.last ASC, authors.first ASC', :full_name, :author)
     @groups = build_select_list(MissionaryGroup, 'name ASC', :name, :group)
     @publishers = build_select_list(Publisher, 'name ASC', :name, :publisher)

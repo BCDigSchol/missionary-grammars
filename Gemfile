@@ -51,5 +51,7 @@ gem 'react-rails', '~> 1.4.0'
 
 gem 'simple_form'
 
+gem  'elasticsearch'
+
 # Markdown support
 gem 'redcarpet'
