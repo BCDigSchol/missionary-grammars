@@ -81,11 +81,16 @@ export default class ReadPage extends React.Component {
         this.handleUpdate = this.handleUpdate.bind(this);
 
         let prevlink = <div className="prev-page">&nbsp;</div>;
-        if (this.state && this.state.page > 0) {
+        let nextlink = <div className="next-page">&nbsp;</div>;
+        if (this.state && this.state.page > 1) {
             prevlink = <div onClick={this.decrementPage} className="prev-page">&lt;</div>;
         }
 
-        let nextlink = <div onClick={this.incrementPage} className="next-page">&gt;</div>;
+        if (this.state && this.state.page < this.state.text.pages) {
+            nextlink = <div onClick={this.incrementPage} className="next-page">&gt;</div>;
+        } else {
+            console.log(this.state.text.pages);
+        }
 
         return (
             <div className="read-page">

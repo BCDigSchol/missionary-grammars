@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160322035940) do
+ActiveRecord::Schema.define(version: 20160407195655) do
 
   create_table "alternate_designations", force: :cascade do |t|
     t.string   "designation"
@@ -156,6 +156,7 @@ ActiveRecord::Schema.define(version: 20160322035940) do
     t.datetime "updated_at",                         null: false
     t.string   "title"
     t.string   "cover_image"
+    t.integer  "pages"
   end
 
 end
