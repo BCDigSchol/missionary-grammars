@@ -364,6 +364,7 @@ li.closed-section > ul {
       max-width: 80%;
       width: 80%;
       margin: 0;
+      padding: 0;
     }
 
     li {
@@ -371,6 +372,7 @@ li.closed-section > ul {
       background-color: #fffaea;
       border: 1px solid #ccc6e6;
       border-radius: 4px;
+      list-style: none;
 
       .filter {
         display: inline-block;
