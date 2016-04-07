@@ -74,6 +74,7 @@ class TextsController < ApplicationController
         :place => @text.publication_place,
         :publisher => @text.publishers,
         :languages => @text.languages,
+        :first_page => @text.cover_image.to_i,
         :flags => {
             :by_same_author => @text.by_same_author_flag,
             :preface => @text.preface_flag,

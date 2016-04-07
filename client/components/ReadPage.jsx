@@ -34,7 +34,9 @@ export default class ReadPage extends React.Component {
         this.fetched = true;
         var url = '/texts/' + id + '/structure';
         $.get(url, {}, function (response) {
+            console.log(response);
             this.setState({
+                page: response.first_page,
                 text: response
             });
         }.bind(this), 'json');
