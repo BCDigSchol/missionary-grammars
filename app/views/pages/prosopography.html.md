@@ -1,4 +1,4 @@
-<%= content_for :header do %>Prosography<% end %>
+<%= content_for :header do %>Prosopography<% end %>
 
 The three TEI XML files included here encode information about the authors, missionary organizations, and places of publication represented in the corpus. The files are also available for viewing and download, along with an encoded dictionary preface and encoded dictionary entry, at the <a href="http://beta.tapasproject.org/" target="_blank">TAPAS repository</a>.
 
