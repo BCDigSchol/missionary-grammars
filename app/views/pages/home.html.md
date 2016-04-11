@@ -30,6 +30,6 @@ from the missionary enterprise are undoubtedly inscribed in the history of Weste
 language science, and warrant scholarly attention. For a brief summary of the field of
 missionary linguistics and its relevance to the study of the history of linguistics, see
 <%= link_to 'Project Overview', overview_path %>. Reading missionary linguistic texts makes significant demands on the
-modern linguist, but insofar as the texts alerts us to the reality that the contours of the
-history of linguistic are discontinuous, irregular, and in flux, they can
+modern linguist, but insofar as the texts alerts us to the fact that the contours of the
+history of linguistics are discontinuous, irregular, and in flux, they can
 help us to cultivate hermeneutic and intercultural openness.
