@@ -307,8 +307,14 @@ li.closed-section > ul {
 
   .extended-metadata {
     position: relative;
-    left: -24%;
-    background: lightcyan;
+    left: -123px;
+    width: 620px;
+    margin-top: 1em;
+
+    .extended-metadata-control {
+      margin-left: .25em;
+    }
+
   }
 }
 
@@ -347,7 +353,7 @@ li.closed-section > ul {
       clear: both;
 
       a {
-        font-weight:bold;
+        font-weight: bold;
       }
     }
   }
@@ -356,7 +362,6 @@ li.closed-section > ul {
     width: 100%;
     padding: 0 1em 0 2em;
   }
-
 
   .searched-for-box {
     margin-top: .83em;
@@ -401,3 +406,4 @@ img.list-cover-image {
   padding-bottom: 2em;
   margin-right: 2em;
 }
+
