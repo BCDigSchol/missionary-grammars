@@ -12,8 +12,6 @@ export const SearchResults = ({hits, total, filters, removeFilter}) => {
         </ul>
     </div>;
 
-    console.log(hits);
-
     return <div className="search-result-page">
         {filters.length ? result_box : ''}
         <h2>Results</h2><div className="result-total">{total} results</div>

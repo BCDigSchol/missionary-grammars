@@ -24,7 +24,8 @@ export default class ReadPage extends React.Component {
             },
             tab: 'text-structure',
             page: 1,
-            open_sections: []
+            open_sections: [],
+            open_langs: []
         };
         this.fetched = false;
         me = this;
@@ -34,7 +35,6 @@ export default class ReadPage extends React.Component {
         this.fetched = true;
         var url = '/texts/' + id + '/structure';
         $.get(url, {}, function (response) {
-            console.log(response);
             this.setState({
                 page: response.first_page,
                 text: response
@@ -66,6 +66,24 @@ export default class ReadPage extends React.Component {
         );
     }
 
+    toggleOpenLangs(lang_id) {
+        let open_langs = me.state.open_langs;
+        let index = open_langs.indexOf(lang_id);
+
+        if (index === -1) {
+            open_langs.push(lang_id);
+        } else {
+            open_langs.splice(index);
+        }
+        me.setState(
+            {
+                open_langs: open_langs
+            }
+        );
+
+        console.log(open_langs);
+    }
+
     incrementPage() {
         me.handleUpdate(me.state.page + 1);
     }
@@ -89,7 +107,6 @@ export default class ReadPage extends React.Component {
         if (this.state && this.state.page < this.state.text.pages) {
             nextlink = <div onClick={this.incrementPage} className="next-page">&gt;</div>;
         } else {
-            console.log(this.state.text.pages);
         }
 
         return (
@@ -114,7 +131,9 @@ export default class ReadPage extends React.Component {
                                        open_sections={this.state.open_sections}/>
                     </div>
                     <div className={this.state.tab === 'text-metadata' ? 'show' :'hidden' } id="text-metadata">
-                        <Metadata text={this.state.text}/>
+                        <Metadata text={this.state.text}
+                                  toggleOpenLangs={this.toggleOpenLangs}
+                                  open_langs={this.state.open_langs}/>
                     </div>
                 </div>
                 <div className="read-pane">

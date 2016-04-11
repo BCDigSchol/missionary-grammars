@@ -1,5 +1,7 @@
 import React from "react";
 
+import { LanguageMetadata } from "./LanguageMetadata.jsx";
+
 export const Metadata = (props) => {
     let text = props.text;
 
@@ -13,19 +15,27 @@ export const Metadata = (props) => {
         language: is_plural(text.languages) ? 'Languages' : 'Language'
     };
 
+    let languages = text.languages.map((lang) => (
+        <LanguageMetadata key={lang.id + 'langkey'}
+                          language={lang}
+                          toggleOpenLangs={props.toggleOpenLangs}
+                          open_langs={props.open_langs}/>));
+    let authors = text.authors.map((author) => (<dd key={author.first+author.last}>{author.first} {author.last}</dd>));
+    let publishers = text.publisher.map((publisher) => (<dd key={publisher.name}>{publisher.name}</dd>));
+
     return (
-        <div id="img-holder">
+        <div>
             <dl>
                 <dt>{labels.author}</dt>
-                {text.authors.map((author) => (<dd>{author.first} {author.last}</dd>))}
+                {authors}
                 <dt>Date</dt>
                 <dd>{text.year}</dd>
                 <dt>{labels.publisher}</dt>
-                {text.publisher.map((publisher) => (<dd>{publisher.name}</dd>))}
+                {publishers}
                 <dt>Place</dt>
                 <dd>{text.place}</dd>
-                <dt>{labels.language}</dt>
-                {text.languages.map((language) => (<dd>{language.designation}</dd>))}
+                <dt className="language-metadata-label">{labels.language}</dt>
+                {languages}
             </dl>
         </div>
     );

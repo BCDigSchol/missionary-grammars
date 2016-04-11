@@ -37,6 +37,10 @@ class LanguagesController < ApplicationController
     @language = Language.find(params[:id])
   end
 
+  def show_json
+    @language = Language.find(params[:id])
+  end
+
   def update
     @language = Language.find(params[:id])
     @language.update_attributes(language_params)

@@ -14,6 +14,7 @@ export default class SearchPage extends React.Component {
             filters: [],
             tab: 'search-browse',
             open_fields: [],
+            open_langs: [],
             results: {
                 language: [],
                 author: [],

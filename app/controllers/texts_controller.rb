@@ -66,6 +66,21 @@ class TextsController < ApplicationController
 
   def structure
     @text = Text.find(params[:id])
+
+    languages = []
+    @text.languages.each do |lang|
+      languages.push({
+                         :id => lang.id,
+                         :glottocode => lang.glottocode,
+                         :iso => lang.iso,
+                         :designation => lang.designation,
+                         :alternate_designations => lang.alternate_designations,
+                         :macro_classification => lang.macro_classification,
+                         :orthography => lang.orthography,
+                         :status => lang.status
+                     })
+    end
+
     render json: {
         :title => @text.title,
         :category => @text.text_category,
@@ -73,7 +88,7 @@ class TextsController < ApplicationController
         :year => @text.publication_year,
         :place => @text.publication_place,
         :publisher => @text.publishers,
-        :languages => @text.languages,
+        :languages => languages,
         :first_page => @text.cover_image.to_i,
         :pages => @text.pages - 1,
         :flags => {
