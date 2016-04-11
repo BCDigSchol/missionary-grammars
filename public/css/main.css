@@ -1750,3 +1750,17 @@ body.homepage #header h1[lang='fr'] {
 .dropotron li {
     font-size: 16px;
 }
+
+/* CV */
+.cv-list li {
+    margin-bottom: 1em;
+}
+
+.cv-item-head {
+    font-size: 1em;
+    font-family: Lato, sans-serif;
+}
+
+.cv-item-head .cv-title {
+    font-weight: 600;
+}
