@@ -223,9 +223,12 @@ $menu-height: 60px;
 }
 
 .open-subsection-control, .open-field-control {
-  display: inline;
-  margin-left: .5em;
   cursor: pointer;
+
+  div {
+    display: inline;
+    margin-left: .5em;
+  }
 }
 
 li.closed-section > ul {
