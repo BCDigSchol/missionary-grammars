@@ -60,11 +60,7 @@ of interests. In doing so, we hope to renew attention to older
 linguistic documentation; improve understanding of earlier language
 scholarship and the circulation of ethnolinguistic information; and to
 contribute to present-day knowledge on the (often ill-documented)
-languages recorded in missionary texts. As this is an ongoing research
-project, we hope to continue to explore the ways in which the nature of
-the object of study (that is, missionary linguistic texts) and the
-various methodologies employed participate in a process of mutual
-shaping.
+languages recorded in missionary texts.
 
 ### About the source texts
 
