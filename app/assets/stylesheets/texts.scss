@@ -307,9 +307,13 @@ li.closed-section > ul {
 
   .extended-metadata {
     position: relative;
-    left: -123px;
-    width: 620px;
+    left: -24.6%;
+    width: 124%;
     margin-top: 1em;
+
+    ul {
+      padding: 0;
+    }
 
     .extended-metadata-control {
       margin-left: .25em;
