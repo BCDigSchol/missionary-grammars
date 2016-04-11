@@ -129,61 +129,19 @@ class TextsController < ApplicationController
   def search
 
     es = SearchIndex.new
-    es.search_texts params['title'], params['author'], params['language'], params['publisher'], params['group'], params['date']
+    es.search_texts params['title'], params['author'], params['language'], params['publisher'], params['group'], params['date'], params['category']
     response = {
         :language => es.languages,
         :title => es.titles,
         :author => es.authors,
         :publisher => es.publishers,
         :date => es.dates,
+        :category => es.categories,
         :hits => es.hits
     }
     respond_to do |format|
       format.html {}
       format.json { render json: response }
-    end
-  end
-
-  def oldsearch
-    @authors = build_select_list(Author, 'authors.last ASC, authors.first ASC', :full_name, :author)
-    @groups = build_select_list(MissionaryGroup, 'name ASC', :name, :group)
-    @publishers = build_select_list(Publisher, 'name ASC', :name, :publisher)
-    @languages = build_select_list(Language, 'designation ASC', :designation, :language)
-
-    respond_to do |format|
-      format.html
-      format.json {
-
-        results = build_text_results.map { |text| build_api_result(text) }
-        authors = Set.new
-
-        response = {
-            results: results,
-            fields: [
-                {
-                    display: 'Authors',
-                    name: 'authors',
-                    options: @authors
-                },
-                {
-                    display: 'Groups',
-                    name: 'groups',
-                    options: @groups
-                },
-                {
-                    display: 'Publisher',
-                    name: 'publishers',
-                    options: @publishers
-                },
-                {
-                    display: 'Languages',
-                    name: 'languages',
-                    options: @languages
-                }
-            ]
-        }
-        render json: response
-      }
     end
   end
 

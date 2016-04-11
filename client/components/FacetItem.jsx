@@ -6,7 +6,7 @@ export const FacetItem = ({addFilter, removeFilter, value, field, filters}) => {
 
 
     let drop_button = (
-        <div className="open-field-control"
+        <div className="close-facet-control"
              onClick={() => removeFilter(filter)}>{filters.indexOf(filter) > -1 ? 'x' : ''}</div>
     );
 

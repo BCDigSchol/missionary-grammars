@@ -21,6 +21,7 @@ export default class SearchPage extends React.Component {
                 publisher: [],
                 title: [],
                 date: [],
+                category: [],
                 hits: {
                     total: 0,
                     items: []
@@ -104,10 +105,17 @@ export default class SearchPage extends React.Component {
                 field: 'publisher',
                 values: this.state.results.publisher,
                 display: 'Publisher'
+            },
+            {
+                field: 'category',
+                values: this.state.results.category,
+                display: 'Categories'
             }
 
         ];
 
+
+        console.log(this.state.results);
 
         return (
             <div className="read-page">

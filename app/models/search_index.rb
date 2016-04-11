@@ -10,6 +10,7 @@ class SearchIndex
     @publishers = []
     @groups = []
     @dates = []
+    @categories = []
     @hits = {}
   end
 
@@ -37,7 +38,11 @@ class SearchIndex
     @dates
   end
 
-  def search_texts(title=nil, author=nil, language=nil, publisher=nil, group=nil, date=nil, sorted=true)
+  def categories
+    @categories
+  end
+
+  def search_texts(title=nil, author=nil, language=nil, publisher=nil, group=nil, date=nil, text_category=nil, sorted=true)
     field_term_pairs = []
 
     if title
@@ -65,6 +70,11 @@ class SearchIndex
       field_term_pairs.push new_date
     end
 
+    if text_category
+      new_category = {:text_category => text_category}
+      field_term_pairs.push new_category
+    end
+
     search(field_term_pairs)
 
     if sorted
@@ -80,7 +90,7 @@ class SearchIndex
     response = @client.search index: 'grammars',
                               type: 'text',
                               size: 30,
-                              fields: [:title, :author, :date],
+                              fields: [:title, :author, :date, :text_category],
                               body: {
                                   query: {
                                       bool: {
@@ -93,10 +103,11 @@ class SearchIndex
                                       authors: {terms: {field: 'author.raw', order: {_term: 'asc'}, size: 50}},
                                       publishers: {terms: {field: 'publisher.raw', order: {_term: 'asc'}, size: 50}},
                                       groups: {terms: {field: 'group.raw', order: {_term: 'asc'}, size: 50}},
-                                      dates: {terms: {field: 'date', order: {_term: 'asc'}, size: 50}}
+                                      dates: {terms: {field: 'date', order: {_term: 'asc'}, size: 50}},
+                                      categories: {terms: {field: 'text_category.raw', order: {_term: 'asc'}, size: 50}}
                                   }
                               }
-    %w(titles authors languages publishers dates).each { |field| get_agg field, response }
+    %w(titles authors languages publishers dates categories).each { |field| get_agg field, response }
     get_hits response
   end
 
