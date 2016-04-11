@@ -1764,3 +1764,14 @@ body.homepage #header h1[lang='fr'] {
 .cv-item-head .cv-title {
     font-weight: 600;
 }
+
+/* Propsopography */
+.prosopography-page h3 {
+    display: inline-block;
+}
+
+a.xml-link {
+    font-size: .8em;
+    margin-left: 1em;
+    display: inline-block;
+}
