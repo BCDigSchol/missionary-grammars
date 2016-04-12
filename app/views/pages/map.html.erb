@@ -2,18 +2,11 @@
     Map
 <% end %>
 
-<style>
-  #map {
-    height: 2000px;
-    padding: 1.5em;
-    margin: 0;
-  }
-</style>
-
 <p>
   This map allows the corpus to be explored geographically. It organizes metadata for the texts into two information
   layers on a geo-rectified period (1892) map, from the University of Illinois at Urbana-Champaign
-  <a href="http://imagesearchnew.library.illinois.edu/cdm/landingpage/collection/africanmaps" target ="_blank">Maps of Africa to
+  <a href="http://imagesearchnew.library.illinois.edu/cdm/landingpage/collection/africanmaps" target="_blank">Maps of
+    Africa to
     1900</a> collection. <em class="blue">Blue</em> plots the various places of publication, and associates each point
   with
   the text(s) published at that location. <em class="red">Red</em> plots the loci of the different target language
@@ -25,47 +18,47 @@
   The purpose of this map visualization tool is to allow the researcher to explore the corpus through space. No static
   image can ever fully capture the shifting political landscape of colonial Africa. For a more thorough representation
   of Africa’s shifting political borders, conflicts, and demographics, between 1879–2002, please consult the Brown
-  University <a href="http://www.brown.edu/Research/AAAH/" target ="_blank">Animated Atlas of African History</a>; or, for a period of
-  map of missionary activity in Africa, the <a href="http://imagesearchnew.library.illinois.edu/cdm/ref/collection/africanmaps/id/2478" target ="_blank">Carte des
-  Missions Catholique en Afrique (1889)</a>.
+  University <a href="http://www.brown.edu/Research/AAAH/" target="_blank">Animated Atlas of African History</a>; or,
+  for a period of
+  map of missionary activity in Africa, the
+  <a href="http://imagesearchnew.library.illinois.edu/cdm/ref/collection/africanmaps/id/2478" target="_blank">Carte des
+    Missions Catholique en Afrique (1889)</a>.
 </p>
 
 <%= content_for :map do %>
-<div id="map"></div>
+    <div id="map"></div>
 
-<!-- include cartodb.js library -->
-<script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
-
-<script>
-  console.log('loading');
-  function main() {
-    cartodb.createVis('map', 'https://calhound.cartodb.com/api/v2/viz/6131a10c-bae6-11e5-8960-0ef24382571b/viz.json', {
-          shareable: true,
-          title: true,
-          description: true,
-          search: false,
-          tiles_loader: true,
-          center_lat: 6.79,
-          center_lon: 20.17,
-          zoom: 5
-        })
-        .done(function(vis, layers) {
-          // layer 0 is the base layer, layer 1 is cartodb layer
-          // setInteraction is disabled by default
-          layers[1].setInteraction(true);
-          layers[1].on('featureOver', function(e, latlng, pos, data) {
-            cartodb.log.log(e, latlng, pos, data);
-          });
-          // you can get the native map to work with it
-          var map = vis.getNativeMap();
-          // now, perform any operations you need
-          // map.setZoom(3);
-          // map.panTo([50.5, 30.5]);
-        })
-        .error(function(err) {
-          console.log(err);
-        });
-  }
-  window.onload = main;
-</script>
+    <!-- include cartodb.js library -->
+    <script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+    <script>
+      function main() {
+        cartodb.createVis('map', 'https://calhound.cartodb.com/api/v2/viz/6131a10c-bae6-11e5-8960-0ef24382571b/viz.json', {
+              shareable: true,
+              title: true,
+              description: true,
+              search: true,
+              tiles_loader: true,
+              center_lat: 8.473531,
+              center_lon: 7.613731,
+              zoom: 4
+            })
+            .done(function (vis, layers) {
+              // layer 0 is the base layer, layer 1 is cartodb layer
+              // setInteraction is disabled by default
+              layers[1].setInteraction(true);
+              layers[1].on('featureOver', function (e, latlng, pos, data) {
+                cartodb.log.log(e, latlng, pos, data);
+              });
+              // you can get the native map to work with it
+              var map = vis.getNativeMap();
+              // now, perform any operations you need
+              // map.setZoom(3);
+              // map.panTo([50.5, 30.5]);
+            })
+            .error(function (err) {
+              console.log(err);
+            });
+      }
+      window.onload = main;
+    </script>
 <% end %>
