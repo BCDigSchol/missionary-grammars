@@ -55,6 +55,10 @@ dd {
 }
 
 .language-search {
+  .structure-pane ul {
+    padding-left: 0;
+  }
+
   li.selected a {
     font-weight: 600;
   }
@@ -64,6 +68,11 @@ dd {
   }
 }
 
-#search-holder.language-search .read-pane .search-result-page {
-  width: auto;
+.language {
+  width: 80%;
+}
+
+p.no-language-message {
+  top: 52px;
+  position: relative;
 }
