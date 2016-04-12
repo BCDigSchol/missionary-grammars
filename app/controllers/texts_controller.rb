@@ -77,7 +77,10 @@ class TextsController < ApplicationController
                          :alternate_designations => lang.alternate_designations,
                          :macro_classification => lang.macro_classification,
                          :orthography => lang.orthography,
-                         :status => lang.status
+                         :status => lang.status,
+                         :latitude => lang.latitude,
+                         :longitude => lang.longitude,
+                         :location => lang.location
                      })
     end
 

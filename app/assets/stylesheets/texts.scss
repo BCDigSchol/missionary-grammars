@@ -228,6 +228,12 @@ $menu-height: 60px;
   margin-left: .5em;
 }
 
+.open-subsection-control {
+  display: inline;
+  margin-left: .5em;
+  cursor: pointer;
+}
+
 .open-subsection-control, .open-field-control {
   cursor: pointer;
 
