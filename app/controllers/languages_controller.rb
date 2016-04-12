@@ -1,6 +1,9 @@
 class LanguagesController < ApplicationController
+  layout 'read', only: [:show, :index]
+
   def index
     @languages = Language.order('designation ASC').where(nil)
+    @language = nil
   end
   
   def new
@@ -34,7 +37,9 @@ class LanguagesController < ApplicationController
   end
 
   def show
+    @languages = Language.order('designation ASC').where(nil)
     @language = Language.find(params[:id])
+    render :template => 'languages/index'
   end
 
   def show_json

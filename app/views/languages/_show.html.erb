@@ -1,7 +1,6 @@
-<h2><%= @language.designation %></h2>
+<h2 class='language-designation'><%= @language.designation %></h2>
 <div class="language">
   <div class="metadata">
-    <h3>Metadata</h3>
     <% if logged_in? %>
         <%= link_to_if(logged_in?, "Edit", [:edit, @language]) %>
     <% end %>

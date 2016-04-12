@@ -17,7 +17,6 @@ dt {
   margin: 0 0 1em 0;
   color: #727272;
   clear: left;
-  font-size: .9em;
   font: $accent_font;
 }
 
@@ -53,4 +52,18 @@ dd {
     list-style: none;
   }
 
+}
+
+.language-search {
+  li.selected a {
+    font-weight: 600;
+  }
+
+  .search-result-page {
+    padding-right: 12em
+  }
+}
+
+#search-holder.language-search .read-pane .search-result-page {
+  width: auto;
 }

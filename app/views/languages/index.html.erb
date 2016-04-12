@@ -1,16 +1,28 @@
-<h1>Languages</h1>
+<div id="search-holder" class="language-search">
+  <div class="read-page">
+    <div class="structure-pane">
+      <h2>Languages</h2>
 
-<ul>
-  <% @languages.each do |language| %>
-      <li><%= link_to language.designation, language_path(language) %>
-      <% if logged_in? %>
-          <%= link_to 'delete', language_path(language.id), :method => :delete, :class => 'delete', :confirm => 'Are you sure ?' %>
-      <% end %>
-      </li>
-  <% end %>
-</ul>
+      <ul id="language-list">
+        <% @languages.each do |language| %>
+            <li class="<%= 'selected' if @language and language.id==@language.id %>">
+              <%= link_to language.designation, language_path(language) %>
+              <% if logged_in? %>
+                  <%= link_to 'delete', language_path(language.id), :method => :delete, :class => 'delete', :confirm => 'Are you sure ?' %>
+              <% end %>
+            </li>
+        <% end %>
+      </ul>
+    </div>
 
-
-<% if logged_in? %>
-    <%= link_to '+ New language', :controller => :languages, :action => :new %>
-<% end %>
+    <div class="read-pane search-page">
+      <div class="search-result-page">
+        <% if @language %>
+        <%= render 'show' %>
+        <% else %>
+            <p>Select a language</p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
