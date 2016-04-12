@@ -132,9 +132,10 @@ class TextsController < ApplicationController
   def search
 
     es = SearchIndex.new
-    es.search_texts params['title'], params['author'], params['language'], params['publisher'], params['group'], params['date'], params['category']
+    es.search_texts params['title'], params['author'], params['language'], params['publisher'], params['group'], params['date'], params['category'], params['alternate_designations']
     response = {
         :language => es.languages,
+        :alternate_designations => es.alternate_designations,
         :title => es.titles,
         :author => es.authors,
         :publisher => es.publishers,

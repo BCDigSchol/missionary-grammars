@@ -17,6 +17,7 @@ export default class SearchPage extends React.Component {
             open_langs: [],
             results: {
                 language: [],
+                alternate_designations: [],
                 author: [],
                 publisher: [],
                 title: [],
@@ -92,6 +93,11 @@ export default class SearchPage extends React.Component {
                 display: 'Language'
             },
             {
+                field: 'alternate_designations',
+                values: this.state.results.alternate_designations,
+                display: 'Alternate designations'
+            },
+            {
                 field: 'author',
                 values: this.state.results.author,
                 display: 'Author'
@@ -111,7 +117,6 @@ export default class SearchPage extends React.Component {
                 values: this.state.results.category,
                 display: 'Categories'
             }
-
         ];
 
 

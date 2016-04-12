@@ -11,6 +11,7 @@ class SearchIndex
     @groups = []
     @dates = []
     @categories = []
+    @alternate_designations = []
     @hits = {}
   end
 
@@ -42,7 +43,11 @@ class SearchIndex
     @categories
   end
 
-  def search_texts(title=nil, author=nil, language=nil, publisher=nil, group=nil, date=nil, text_category=nil, sorted=true)
+  def alternate_designations
+    @alternate_designations
+  end
+
+  def search_texts(title=nil, author=nil, language=nil, publisher=nil, group=nil, date=nil, text_category=nil, alternate_designations=nil, sorted=true)
     field_term_pairs = []
 
     if title
@@ -75,6 +80,11 @@ class SearchIndex
       field_term_pairs.push new_category
     end
 
+    if alternate_designations
+      new_alt = {:alternate_designations => alternate_designations}
+      field_term_pairs.push new_alt
+    end
+
     search(field_term_pairs)
 
     if sorted
@@ -104,10 +114,13 @@ class SearchIndex
                                       publishers: {terms: {field: 'publisher.raw', order: {_term: 'asc'}, size: 50}},
                                       groups: {terms: {field: 'group.raw', order: {_term: 'asc'}, size: 50}},
                                       dates: {terms: {field: 'date', order: {_term: 'asc'}, size: 50}},
-                                      categories: {terms: {field: 'text_category.raw', order: {_term: 'asc'}, size: 50}}
+                                      categories: {terms: {field: 'text_category.raw', order: {_term: 'asc'}, size: 50}},
+                                      alternate_designations: {terms: {field: 'alternate_designations.raw', order: {_term: 'asc'}, size: 50}}
+
                                   }
                               }
-    %w(titles authors languages publishers dates categories).each { |field| get_agg field, response }
+    #abort response.to_json
+    %w(titles authors languages publishers dates categories alternate_designations).each { |field| get_agg field, response }
     get_hits response
   end
 
