@@ -7,7 +7,7 @@
   <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
   <style>
      #map {
-      height: 95%;
+      height: 650px;
       padding: 1.5em;
       margin: 0;
     }
@@ -67,6 +67,8 @@
     <!-- Carousel for home page (see /views/shared/_carousel.html.erb) -->
     <%= render 'shared/carousel' %>
 <% end %>
+
+<%= yield :map %>
 
 <!-- Footer -->
 <div id="footer">

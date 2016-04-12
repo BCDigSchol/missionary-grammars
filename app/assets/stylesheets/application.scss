@@ -173,6 +173,11 @@ input[type="text"], textarea {
   width: 500px;
 }
 
+a, a:link, a:visited {
+  color: #2B68A8
+}
+
+
 @import "language";
 @import "nav";
 @import "authors";
