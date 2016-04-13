@@ -338,6 +338,12 @@ li.closed-section > ul {
 /* Search */
 #search-holder {
 
+  .read-page {
+    @media screen and (max-width: $break-medium) {
+      flex-direction: column;
+    }
+  }
+
   .read-pane {
     background-color: #fefefe;
     font-family: Lato, sans-serif;
@@ -346,6 +352,10 @@ li.closed-section > ul {
     text-align: left;
     padding-left: 1em;
     flex-basis: 75%;
+
+    @media screen and (max-width: $break-medium) {
+      height: 100%;
+    }
 
     &.search-page {
       overflow-y: scroll;

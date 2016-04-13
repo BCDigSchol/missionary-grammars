@@ -7,7 +7,7 @@ export const Facet = ({addFilter, removeFilter, filters, values, displayName, fi
         <div >{open_fields.indexOf(field) > -1 ? '-' : '+'}</div>
     );
 
-    return <div>
+    return <div className="facet-container">
         <h3 className="open-field-control" onClick={() => toggleField(field)}>{displayName} {toggle_switch}</h3>
         <ul className={open_fields.indexOf(field) > -1 ? 'show' : 'hidden'}>
             {values.map((value) => (<FacetItem value={value}
