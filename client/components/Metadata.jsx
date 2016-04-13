@@ -1,9 +1,12 @@
 import React from "react";
 
 import { LanguageMetadata } from "./LanguageMetadata.jsx";
+import { Paratexts } from "./Paratexts.jsx";
 
 export const Metadata = (props) => {
     let text = props.text;
+
+    console.log(text);
 
     function is_plural(field) {
         return field.length > 1;
@@ -23,6 +26,8 @@ export const Metadata = (props) => {
     let authors = text.authors.map((author) => (<dd key={author.first+author.last}>{author.first} {author.last}</dd>));
     let publishers = text.publisher.map((publisher) => (<dd key={publisher.name}>{publisher.name}</dd>));
 
+    console.log(text);
+
     return (
         <div>
             <dl>
@@ -36,6 +41,10 @@ export const Metadata = (props) => {
                 <dd>{text.place}</dd>
                 <dt className="language-metadata-label">{labels.language}</dt>
                 {languages}
+                <dt>Category</dt>
+                <dd>{text.category}</dd>
+                <dt>Paratetxts</dt>
+                <dd><Paratexts flags={text.flags} /></dd>
             </dl>
         </div>
     );

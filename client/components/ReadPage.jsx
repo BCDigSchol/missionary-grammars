@@ -21,6 +21,7 @@ export default class ReadPage extends React.Component {
                 title: '',
                 publisher: [],
                 languages: [],
+                flags:{},
             },
             tab: 'text-structure',
             page: 1,

@@ -1,4 +1,5 @@
 require 'set'
+require 'json'
 
 class TextsController < ApplicationController
   layout 'read', only: [:show, :search]
@@ -86,7 +87,7 @@ class TextsController < ApplicationController
 
     render json: {
         :title => @text.title,
-        :category => @text.text_category,
+        :category => TextCategory.find(@text.text_categories_id).name,
         :authors => @text.authors,
         :year => @text.publication_year,
         :place => @text.publication_place,
