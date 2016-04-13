@@ -109,6 +109,10 @@ $menu-height: 60px;
     font-family: $accent_font;
   }
 
+  #text-structure.hidden {
+    display: none;
+  }
+
   #text-structure > ul {
 
     > li {
@@ -301,6 +305,10 @@ li.closed-section > ul {
 }
 
 #text-metadata {
+  &.hidden {
+    display: none;
+  }
+
   dl {
     overflow: hidden;
     position: relative;
