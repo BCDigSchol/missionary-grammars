@@ -126,16 +126,7 @@ export default class SearchPage extends React.Component {
             <div className="read-page">
                 <div className="structure-pane">
                     <h2>Search</h2>
-                    <ul className="tabs">
-                        <li onClick={() => {this.setState({ tab: 'search-browse'});}}
-                            className={this.state.tab === 'search-browse' ? 'selected' :'not-selected' }>
-                            Browse
-                        </li>
-                        <li onClick={() => {this.setState({ tab: 'search-fulltext'});}}
-                            className={this.state.tab === 'search-fulltext' ? 'selected' :'not-selected' }>
-                            Fulltext search
-                        </li>
-                    </ul>
+
                     <div className={this.state.tab === 'search-browse' ? 'show' :'hidden' } id="text-structure">
                         {facets.map((facet) =>(
                                 <Facet
