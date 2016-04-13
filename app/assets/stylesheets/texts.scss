@@ -144,7 +144,9 @@ $menu-height: 60px;
 
 #reader, #search-holder {
   width: 100%;
+}
 
+#reader {
   @media screen and (min-width: $break-medium) {
     height: 100vh;
   }
