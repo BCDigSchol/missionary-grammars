@@ -43,7 +43,7 @@ export const Metadata = (props) => {
                 {languages}
                 <dt>Category</dt>
                 <dd>{text.category}</dd>
-                <dt>Paratetxts</dt>
+                <dt>Paratexts</dt>
                 <dd><Paratexts flags={text.flags} /></dd>
             </dl>
         </div>
