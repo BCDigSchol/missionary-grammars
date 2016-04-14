@@ -1,0 +1,10 @@
+@mixin respond-to($media) {
+  @if $media == tablets {
+    @media screen and (max-width: $break-medium) {
+      @content;
+    }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+      @content;
+    }
+  }
+}
