@@ -13,4 +13,4 @@ Project Team
 * Carli Spina 
 * Patrick Goncalves
 
-With support from Nina Bogdanovsky, Digital Library Program, Burns Library, and Library Systems at Boston College, as well as Ben Doyle and the staff at TAPAS/Northeastern University.
+With support from Nina Bogdanovsky, Digital Scholarship and Digital Library Program, Burns Library, and Library Systems at Boston College, as well as Ben Doyle and the staff at TAPAS/Northeastern University.
