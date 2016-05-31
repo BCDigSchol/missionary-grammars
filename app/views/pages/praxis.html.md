@@ -61,18 +61,18 @@ target language to source language and source language to target language), or
 multidirectional (source language mediated by two or more target languages). We also
 inventoried the paratextual elements (forewords, prefaces, appendices, etc.) in text.
 
-For each text, we created a word document in which we mapped the text’s organizational
+For each text, we created an MS Word document in which we mapped the text’s organizational
 structure (which we reconstructed from the hierarchical ordering of sections and
 subsections in the primary source), in anticipation of creating a clickable structure
-coordinated with the e-text. This step allows the user to navigate the text according to
-their internal organizational structure, rather than being limited to ‘paging’ or ‘scrolling’ through the
+coordinated with the e-text. This step allows the user to navigate the digitized dictionary or grammar according to
+its internal organizational structure, rather than being limited to ‘paging’ or ‘scrolling’ through the
 digitized version. Not only does this improve user experience by allowing the research to quickly locate and go to
 specific topics treated in the text (for instance, nominal declension), but it also provides insight into how the missionary linguist
 conceived of the target language and partitioned it out into a series of hierarchically
 ordered, discrete, categories, often (but not always) in accord with a Greco-Latin
 grammatical framework. Moreover, this technique of keying a clickable hierarchy to the digitized text
 avoids the disadvantages of ‘excerpting’— by which the digital text-object is partitioned
-into individual files corresponding to its subsections— which can create a truncated reader experience and distorts the source text. The clickable hierarchies are also collapsible into several levels, meaning the researcher can navigate the structure of each text with varying degrees of detail.
+into individual files corresponding to its subsections— which distorts the source text and can create a truncated reader experience. The clickable hierarchies are also collapsible into several levels, allowing the researcher to navigate the structure of each text with varying degrees of detail.
 
 We created a number of TEI XML support files that digest, organize, and encode some of the
 assembled metadata, using Oxygen XML Editor and TEI standards. These include an
