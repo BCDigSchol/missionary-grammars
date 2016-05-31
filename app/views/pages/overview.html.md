@@ -1,16 +1,5 @@
 <%= content_for :header do %>Overview<% end %>
 
-### About the source texts
-
-The 24 original source texts belong to
-the <a href="http://www.bc.edu/libraries/collections/collinfo/a-zlist/rarebooks.html" target="_blank">Nicholas M. Williams Ethnological Collection</a> of the the John J.
-Burns Library at Boston College (Chestnut Hill, MA). This collection was
-assembled and donated by Joseph J. Williams, S.J., a Jesuit missionary
-and ethnologist (and former Professor of Cultural Anthropology at Boston
-College), and named in honor of his father. It contains over 10,000
-volumes that document the history, life, and culture of the people of
-Jamaica and Africa.
-
 ### What is missionary linguistics and why does it matter?
 
 The study of missionary linguistics, in its broadest terms, seeks to
