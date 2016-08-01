@@ -77,7 +77,7 @@ into individual files corresponding to its subsections— which distorts the sou
 We created a number of TEI XML support files that digest, organize, and encode some of the
 assembled metadata, using Oxygen XML Editor and TEI standards. These include an
 authorography (i.e. prosopography), which encodes information about each missionary represented in the corpus;
-an orgography, which encodes information about the missionary orders or organizations;
+an orgography, which encodes information about the missionary orders or organizations
 represented in the corpus; and a publication gazetteer, which associates each text with its
 place of publication. We also encoded the preface and a dictionary entry from the (1855)
 <cite>Dictionnaire Français–Wolof et Wolof–Français</cite>, as ‘proofs-of-concept’, to demonstrate a
