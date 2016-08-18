@@ -13,4 +13,4 @@ Project Team
 * Carli Spina  (Boston College, Head Librarian: Assessment and Outreach) 
 * Patrick Goncalves (Boston College, UI/UX Design Strategist) 
 
-With support from Nina Bogdanovsky (Boston College, Senior Researhc Librarian), Digital Scholarship and the Digital Library Program, Burns Library, and Library Systems at Boston College, as well as Ben Doyle and the staff at TAPAS/Northeastern University.
+With support from Nina Bogdanovsky (Boston College, Senior Research Librarian), Digital Scholarship and the Digital Library Program, Burns Library, and Library Systems at Boston College, as well as Ben Doyle and the staff at TAPAS/Northeastern University.
