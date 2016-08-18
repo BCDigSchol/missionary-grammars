@@ -83,7 +83,7 @@ languages recorded in missionary texts.
   *Language* 85(3): 629–635.
 
 * Zwartjes, Otto. (2012). The Historiography of Missionary Linguistics: Present state and further research
-  opportunities. *Historiographia Linguistica* 39.185–242.
+  opportunities. *Historiographia Linguistica* 39: 185–242.
 
 * Zwartjes, Otto et al. ed. 2014. Missionary linguistics V: Translation theories and practices. Amsterdam &
   Philadelphia: Benjamins.
