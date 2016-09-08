@@ -34,7 +34,7 @@ modern linguist, but insofar as the texts alerts us to the fact that the contour
 history of linguistics are discontinuous, irregular, and in flux, they can
 help us to cultivate hermeneutic and intercultural openness.
 
-<%= content_for :header do %><p align = "center">About the source texts<p><% end %>
+<h3 align = "center">About the source texts</h3>
 
 The 24 original source texts belong to
 the <a href="http://www.bc.edu/libraries/collections/collinfo/a-zlist/rarebooks.html" target="_blank">Williams Ethnological Collection</a> of the John J.
