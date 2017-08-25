@@ -26,6 +26,18 @@ The Corpus can be run inside a [Docker](https://www.docker.com/) container. The 
 
        cd /Users/benjaminflorin/RubymineProjects/grammars
 
-2. Rub the Docker container:
+2. Run the Docker container:
 
-          docker-compose up
+       docker-compose up
+
+## Troubleshooting
+
+### Stopping Docker
+
+To stop Docker, press ctrl-c from inside the Terminal where Docker is running.
+
+### Fixing "A server is already running"
+
+Remove the server's `.pid` file. From the `grammars` directory in your Terminal:
+
+    rm tmp/pids/server.pid
