@@ -81,8 +81,6 @@ export default class ReadPage extends React.Component {
                 open_langs: open_langs
             }
         );
-
-        console.log(open_langs);
     }
 
     incrementPage() {

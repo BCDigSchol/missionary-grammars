@@ -25,6 +25,9 @@ Rails.application.routes.draw do
   get 'texts/search' => 'texts#search'
   post 'texts/search' => 'texts#search'
 
+  get 'texts/searchpages' => 'texts#searchpages'
+
+
   get 'texts/:id/structure' => 'texts#structure'
 
   get 'login' => 'sessions#new'

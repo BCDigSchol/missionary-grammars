@@ -6,8 +6,6 @@ import { Paratexts } from "./Paratexts.jsx";
 export const Metadata = (props) => {
     let text = props.text;
 
-    console.log(text);
-
     function is_plural(field) {
         return field.length > 1;
     }
@@ -25,8 +23,6 @@ export const Metadata = (props) => {
                           open_langs={props.open_langs}/>));
     let authors = text.authors.map((author) => (<dd key={author.first+author.last}>{author.first} {author.last}</dd>));
     let publishers = text.publisher.map((publisher) => (<dd key={publisher.name}>{publisher.name}</dd>));
-
-    console.log(text);
 
     return (
         <div>

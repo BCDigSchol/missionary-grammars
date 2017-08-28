@@ -1,22 +1,30 @@
-import React, { PropTypes } from "react";
-import { SearchResult } from "./SearchResult.jsx";
+import React, {PropTypes} from "react";
+import {SearchResult} from "./SearchResult.jsx";
 
 
-export const SearchResults = ({hits, total, filters, removeFilter}) => {
+export const SearchResults = ({hits, total, filters, removeFilter, pageSearch}) => {
 
-    let result_box = <div className="searched-for-box">You searched for:
-        <ul>
-            {filters.map((filter)=> (<li className='searched-for-item'>
-                <div className="filter">{filter}</div>
-                <a className='remove-filter' onClick={() => removeFilter(filter)}>x</a></li>))}
-        </ul>
-    </div>;
+    let search_string = '';
+
+    let handleChange = function(e) {
+        search_string = e.target.value;
+    };
+
+    let search_bar = <div className="text-search-box">
+        <h2>Search</h2>
+        <form  onSubmit={(e) => pageSearch(e, search_string)}>
+            <input type="text" id="text-search" onChange={handleChange}/>
+            <button>go</button>
+        </form>
+    </div>
+
 
     return <div className="search-result-page">
-        {result_box}
-        <h2>Results</h2><div className="result-total">{total} results</div>
+        {search_bar}
+        <h2>Results</h2>
+        <div className="result-total">{total} results</div>
         <ul id="search-results">
-            {hits.map((hit) => (<SearchResult id={hit.id} title={hit.title} author={hit.author} date={hit.date} />))}
+            {hits.map((hit) => (<SearchResult id={hit.id} title={hit.title} author={hit.author} date={hit.date}/>))}
         </ul>
     </div>
 };

@@ -1,5 +1,5 @@
-import { Facet } from "./Facet.jsx";
-import { SearchResults } from "./SearchResults.jsx";
+import {Facet} from "./Facet.jsx";
+import {SearchResults} from "./SearchResults.jsx";
 
 import React from "react";
 
@@ -65,6 +65,17 @@ export default class SearchPage extends React.Component {
         me.fetch();
     }
 
+    pageSearch(e, keyword) {
+        e.preventDefault();
+        me.fetched = true;
+        var url = '/texts/searchpages?q=' + keyword;
+        $.get(url, {}, function (response) {
+            me.setState({
+                results: response
+            });
+        }.bind(this), 'json');
+    }
+
     toggleField(field) {
         let open_fields = me.state.open_fields;
         let index = open_fields.indexOf(field);
@@ -120,15 +131,13 @@ export default class SearchPage extends React.Component {
         ];
 
 
-        console.log(this.state.results);
-
         return (
             <div className="read-page">
                 <div className="structure-pane">
                     <h2>Search</h2>
 
-                    <div className={this.state.tab === 'search-browse' ? 'show' :'hidden' } id="text-structure">
-                        {facets.map((facet) =>(
+                    <div className={this.state.tab === 'search-browse' ? 'show' : 'hidden' } id="text-structure">
+                        {facets.map((facet) => (
                                 <Facet
                                     field={facet.field}
                                     values={facet.values}
@@ -141,7 +150,7 @@ export default class SearchPage extends React.Component {
                             )
                         )}
                     </div>
-                    <div className={this.state.tab === 'search-fulltext' ? 'show' :'hidden' } id="text-metadata">
+                    <div className={this.state.tab === 'search-fulltext' ? 'show' : 'hidden' } id="text-metadata">
                     </div>
                 </div>
 
@@ -151,6 +160,7 @@ export default class SearchPage extends React.Component {
                         total={this.state.results.hits.hits}
                         filters={this.state.filters}
                         removeFilter={this.removeFilter}
+                        pageSearch={this.pageSearch}
                     />
                 </div>
             </div>

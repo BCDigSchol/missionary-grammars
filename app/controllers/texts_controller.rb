@@ -131,9 +131,27 @@ class TextsController < ApplicationController
   end
 
   def search
-
     es = SearchIndex.new
     es.search_texts params['title'], params['author'], params['language'], params['publisher'], params['group'], params['date'], params['category'], params['alternate_designations']
+    response = {
+        :language => es.languages,
+        :alternate_designations => es.alternate_designations,
+        :title => es.titles,
+        :author => es.authors,
+        :publisher => es.publishers,
+        :date => es.dates,
+        :category => es.categories,
+        :hits => es.hits
+    }
+    respond_to do |format|
+      format.html {}
+      format.json { render json: response }
+    end
+  end
+
+  def searchpages
+    es = SearchIndex.new
+    es.search_pages params['q']
     response = {
         :language => es.languages,
         :alternate_designations => es.alternate_designations,
