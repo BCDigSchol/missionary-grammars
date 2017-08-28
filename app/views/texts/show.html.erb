@@ -1,3 +1,6 @@
+<script>
+    var page_data = <%= @page_json %>;
+</script>
 <div class="center-content">
-  <div id="reader" data-react-props="<%= @text.id %>"></div>
+  <div id="reader" data-react-props="<%= @text.id %>" data-search-string="<%= @search_string %>" data-page-result="<%= @page_json %>"></div>
 </div>

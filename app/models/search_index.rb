@@ -1,3 +1,5 @@
+require 'action_view'
+
 class SearchIndex
   include ActiveModel::Validations
   include ActiveModel::Conversion
@@ -48,7 +50,12 @@ class SearchIndex
   end
 
 
-  def search_pages(search_string, field_term_pairs=[])
+  def search_pages(search_string, field_term_pairs=[], id=false)
+
+    if (id)
+      field_term_pairs.push({:_id => id});
+    end
+
     must_array = field_term_pairs.map {|pair| {match: pair}}
 
     nested_q = {
@@ -59,7 +66,14 @@ class SearchIndex
                     'pages.text' => search_string
                 }
             },
-            inner_hits: {}
+            inner_hits: {
+                size: 200,
+                highlight: {
+                    fields: {
+                        'pages.text' => {fragment_size: 150}
+                    }
+                }
+            }
         }
     }
 
@@ -89,7 +103,7 @@ class SearchIndex
                                   }
                               }
     %w(titles authors languages publishers dates categories alternate_designations).each {|field| get_agg field, response}
-    get_hits response
+    get_hits response, search_string
   end
 
   def search_texts(title=nil, author=nil, language=nil, publisher=nil, group=nil, date=nil, text_category=nil, alternate_designations=nil, sorted=true)
@@ -177,16 +191,51 @@ class SearchIndex
     end
   end
 
-  def get_hits(response)
+  def get_hits(response, search_string = false)
     @hits = {}
+    @hits[:search_string] = search_string
     @hits[:hits] = response['hits']['total']
-    @hits[:items] = response['hits']['hits'].map {|hit| {
+    @hits[:items] = response['hits']['hits'].map {|hit| get_hit(hit, search_string)}
+  end
+
+  def get_hit(hit, search_string)
+    if hit['inner_hits']
+      pages =get_pages(hit['inner_hits']['pages']['hits'], search_string)
+    else
+      pages = false
+    end
+
+    hit = {
         id: hit['_id'],
         title: hit['fields']['title'],
         author: hit['fields']['author'],
-        date: hit['fields']['date']}
+        date: hit['fields']['date'],
+        pages: pages
     }
   end
 
+  def get_pages(hit, search_string)
+    pages = {
+        total: hit['total'],
+        page_hits: hit['hits'].map {|hit| get_page(hit, search_string)}
+    }
+  end
+
+  def get_page(page_hit, search_string)
+
+
+    #text = ActionView::Base.new.excerpt(page_hit['_source']['text'], search_string, :radius => 10, separator: ' ')
+
+    #text = ActionView::Base.new.highlight(text, search_string, highlighter: '<strong class="match">\1</strong>')
+
+    puts 'after'
+
+    page = {
+        id: page_hit['_id'],
+        score: page_hit['_score'],
+        text: page_hit['highlight']['pages.text'],
+        number: page_hit['_source']['number']
+    }
+  end
 
 end

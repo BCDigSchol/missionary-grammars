@@ -39,9 +39,22 @@ class TextsController < ApplicationController
 
   def show
     @text = Text.find(params[:id])
+    @search_string = params['q']
+    @pages = []
+    @total = 0
+    es = SearchIndex.new
+    es.search_pages params['q'], [], params['id']
+    puts es.hits
+    if (es.hits[:hits] > 0)
+      @total =
+      @pages = es.hits[:items][0][:pages][:page_hits]
+    end
+
+    @page_json = @pages.to_json.html_safe
+
     respond_to do |format|
       format.html {}
-      format.json { self.structure }
+      format.json {self.structure}
     end
 
   end
@@ -145,13 +158,13 @@ class TextsController < ApplicationController
     }
     respond_to do |format|
       format.html {}
-      format.json { render json: response }
+      format.json {render json: response}
     end
   end
 
   def searchpages
     es = SearchIndex.new
-    es.search_pages params['q']
+    es.search_pages params['q'], [], params['id']
     response = {
         :language => es.languages,
         :alternate_designations => es.alternate_designations,
@@ -164,7 +177,7 @@ class TextsController < ApplicationController
     }
     respond_to do |format|
       format.html {}
-      format.json { render json: response }
+      format.json {render json: response}
     end
   end
 
@@ -172,7 +185,7 @@ class TextsController < ApplicationController
 
   def build_select_list(base_class, order_sql, value_field, param_symbol)
     response = []
-    response = base_class.order(order_sql).all.map { |item| {label: item.send(value_field), value: item.id} }
+    response = base_class.order(order_sql).all.map {|item| {label: item.send(value_field), value: item.id}}
     return response
   end
 

@@ -301,8 +301,30 @@ li.closed-section > ul {
   }
 }
 
-.tabs li:nth-child(2) {
+.tabs li:nth-child(1) {
+  margin-left: 0;
+}
+
+.tabs li {
   margin-left: 1em;
+}
+
+#text-page-results {
+  &.hidden {
+    display: none;
+  }
+
+  li {
+    list-style-type: circle;
+    margin-bottom: 2em;
+    width: 80%;
+  }
+
+  em {
+    font-weight: 800;
+    font-style: normal;
+  }
+
 }
 
 #text-metadata {

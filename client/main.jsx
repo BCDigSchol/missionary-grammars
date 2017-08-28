@@ -16,9 +16,10 @@ if (window.location.href.indexOf('search') > 0) {
         document.getElementById("search-holder")
     );
 } else {
-    let initial_data = document.getElementById('reader').getAttribute('data-react-props');
+    let text_id = document.getElementById('reader').getAttribute('data-react-props');
+    let search_string = document.getElementById('reader').getAttribute('data-search-string');
     render(
-        <ReadPage text_id={initial_data}></ReadPage>,
+        <ReadPage text_id={text_id} search_string={search_string}></ReadPage>,
         document.getElementById("reader")
     );
 }

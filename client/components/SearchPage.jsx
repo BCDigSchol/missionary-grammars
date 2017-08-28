@@ -159,6 +159,7 @@ export default class SearchPage extends React.Component {
                         hits={this.state.results.hits.items}
                         total={this.state.results.hits.hits}
                         filters={this.state.filters}
+                        search_string={this.state.results.hits.search_string}
                         removeFilter={this.removeFilter}
                         pageSearch={this.pageSearch}
                     />

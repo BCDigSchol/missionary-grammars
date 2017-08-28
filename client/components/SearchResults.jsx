@@ -2,9 +2,7 @@ import React, {PropTypes} from "react";
 import {SearchResult} from "./SearchResult.jsx";
 
 
-export const SearchResults = ({hits, total, filters, removeFilter, pageSearch}) => {
-
-    let search_string = '';
+export const SearchResults = ({hits, total, filters, removeFilter, pageSearch, search_string}) => {
 
     let handleChange = function(e) {
         search_string = e.target.value;
@@ -12,7 +10,7 @@ export const SearchResults = ({hits, total, filters, removeFilter, pageSearch}) 
 
     let search_bar = <div className="text-search-box">
         <h2>Search</h2>
-        <form  onSubmit={(e) => pageSearch(e, search_string)}>
+        <form onSubmit={(e) => pageSearch(e, search_string)}>
             <input type="text" id="text-search" onChange={handleChange}/>
             <button>go</button>
         </form>
@@ -24,7 +22,7 @@ export const SearchResults = ({hits, total, filters, removeFilter, pageSearch}) 
         <h2>Results</h2>
         <div className="result-total">{total} results</div>
         <ul id="search-results">
-            {hits.map((hit) => (<SearchResult id={hit.id} title={hit.title} author={hit.author} date={hit.date}/>))}
+            {hits.map((hit) => (<SearchResult id={hit.id} title={hit.title} author={hit.author} date={hit.date} pages={hit.pages} search_string={search_string}/>))}
         </ul>
     </div>
 };

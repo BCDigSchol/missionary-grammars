@@ -1,8 +1,9 @@
 import React from "react";
 
-import { TextStructure } from "./TextStructure.jsx";
-import { Metadata } from "./Metadata.jsx";
-import { ReadBox } from "./ReadBox.jsx";
+import {TextStructure} from "./TextStructure.jsx";
+import {Metadata} from "./Metadata.jsx";
+import {ReadBox} from "./ReadBox.jsx";
+import {PageResults} from "./PageResults.jsx";
 
 // Horrible kludge until I understand why ES6 objects sometimes kill 'this'.
 var me;
@@ -21,7 +22,7 @@ export default class ReadPage extends React.Component {
                 title: '',
                 publisher: [],
                 languages: [],
-                flags:{},
+                flags: {},
             },
             tab: 'text-structure',
             page: 1,
@@ -108,31 +109,46 @@ export default class ReadPage extends React.Component {
         } else {
         }
 
+        console.log(page_data)
         return (
             <div className="read-page">
                 <div className="structure-pane">
                     <h2>{this.state.text.title}</h2>
 
                     <ul className="tabs">
-                        <li onClick={() => {this.setState({ tab: 'text-structure'});}}
-                            className={this.state.tab === 'text-structure' ? 'selected' :'not-selected' }>
+                        <li onClick={() => {
+                            this.setState({tab: 'text-structure'});
+                        }}
+                            className={this.state.tab === 'text-structure' ? 'selected' : 'not-selected' }>
                             Structure
                         </li>
-                        <li onClick={() => {this.setState({ tab: 'text-metadata'});}}
-                            className={this.state.tab === 'text-metadata' ? 'selected' :'not-selected' }>
+                        <li onClick={() => {
+                            this.setState({tab: 'text-metadata'});
+                        }}
+                            className={this.state.tab === 'text-metadata' ? 'selected' : 'not-selected' }>
                             Metadata
                         </li>
+                        <li onClick={() => {
+                            this.setState({tab: 'text-page-results'});
+                        }}
+                            className={this.state.tab === 'text-page-results' ? 'selected' : 'not-selected' }>
+                            Search results
+                        </li>
                     </ul>
-                    <div className={this.state.tab === 'text-structure' ? 'show' :'hidden' } id="text-structure">
+                    <div className={this.state.tab === 'text-structure' ? 'show' : 'hidden' } id="text-structure">
                         <TextStructure structure={this.state.text.structure.sections}
                                        handleUpdate={this.handleUpdate}
                                        toggleSectionDisplay={this.toggleSectionDisplay}
                                        open_sections={this.state.open_sections}/>
                     </div>
-                    <div className={this.state.tab === 'text-metadata' ? 'show' :'hidden' } id="text-metadata">
+                    <div className={this.state.tab === 'text-metadata' ? 'show' : 'hidden' } id="text-metadata">
                         <Metadata text={this.state.text}
                                   toggleOpenLangs={this.toggleOpenLangs}
                                   open_langs={this.state.open_langs}/>
+                    </div>
+                    <div className={this.state.tab === 'text-page-results' ? 'show' : 'hidden' } id="text-page-results">
+                        <PageResults pages={page_data}
+                                     handleUpdate={this.handleUpdate}/>
                     </div>
                 </div>
                 <div className="read-pane">
